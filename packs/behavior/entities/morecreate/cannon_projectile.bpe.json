@@ -1,0 +1,62 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "morecreate:cannon_projectile",
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"cannon:timer_despawn": {
+				"minecraft:timer": {
+					"time": 5.0,
+					"looping": false,
+					"time_down_event": {
+						"event": "cannon:despawn_event"
+					}
+				}
+			},
+			"cannon:remover": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:movement": {
+				"value": 0.0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": "no"
+				}
+			},
+			"minecraft:fire_immune": {
+				"value": true
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"cannon:timer_despawn"
+					]
+				}
+			},
+			"cannon:despawn_event": {
+				"add": {
+					"component_groups": [
+						"cannon:remover"
+					]
+				}
+			}
+		}
+	}
+}

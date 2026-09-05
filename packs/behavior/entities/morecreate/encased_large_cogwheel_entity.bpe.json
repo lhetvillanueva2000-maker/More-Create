@@ -1,0 +1,136 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "morecreate:encased_large_cogwheel_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "properties": {
+                "create:rpm": {
+                    "client_sync": true,
+                    "type": "float",
+                    "range": [
+                        -256.0,
+                        256.0
+                    ],
+                    "default": "(0.0)"
+                },
+                "create:cardinal_rotation": {
+                    "client_sync": true,
+                    "type": "enum",
+                    "values": [
+                        "north",
+                        "south",
+                        "east",
+                        "west",
+                        "up",
+                        "down"
+                    ],
+                    "default": "south"
+                },
+                "create:offset": {
+                    "client_sync": true,
+                    "type": "bool",
+                    "default": false
+                },
+                "create:offset_horizontal": {
+                    "client_sync": true,
+                    "type": "bool",
+                    "default": false
+                },
+                "create:offset_vertical": {
+                    "client_sync": true,
+                    "type": "bool",
+                    "default": false
+                }
+            }
+        },
+        "component_groups": {
+            "create:despawn_component": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:inside_block_notifier": {
+                "block_list": [
+                    {
+                        "block": {
+                            "name": "morecreate:andesite_encased_large_cogwheel"
+                        },
+                        "exited_block_event": {
+                            "event": "create:despawn_entity",
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "block": {
+                            "name": "morecreate:brass_encased_large_cogwheel"
+                        },
+                        "exited_block_event": {
+                            "event": "create:despawn_entity",
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "block": {
+                            "name": "morecreate:copper_encased_large_cogwheel"
+                        },
+                        "exited_block_event": {
+                            "event": "create:despawn_entity",
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "block": {
+                            "name": "morecreate:creative_encased_large_cogwheel"
+                        },
+                        "exited_block_event": {
+                            "event": "create:despawn_entity",
+                            "target": "self"
+                        }
+                    }
+                ]
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "immovable",
+                    "inanimate"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.0,
+                "height": 0.0
+            },
+            "minecraft:physics": {
+                "has_collision": false,
+                "has_gravity": false
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": "no"
+                }
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1,
+                "min": 1
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "create:despawn_entity": {
+                "add": {
+                    "component_groups": [
+                        "create:despawn_component"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "morecreate:schematic_and_quill"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+        "unlock": [
+      { "item": "morecreate:empty_schematic" }
+    ],
+    "pattern": [
+      "AB ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "morecreate:empty_schematic"
+      },
+      "B": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "morecreate:schematic_and_quill",
+      "count": 1
+    }
+  }
+}

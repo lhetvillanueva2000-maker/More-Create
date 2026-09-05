@@ -1,0 +1,40 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "items",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "morecreate:encased_chain_drive",
+                            "name": "morecreate:itemGroup.name.kinetics"
+                        },
+                        "items": [
+                            "morecreate:encased_chain_drive"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category_name": "construction",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "morecreate:cannon",
+                            "name": "morecreate:itemGroup.name.schematics"
+                        },
+                        "items": [
+                            "morecreate:cannon",
+                            "morecreate:schematic_table",
+                            "morecreate:cannon_guide",
+                            "morecreate:empty_schematic",
+                            "morecreate:schematic_and_quill",
+                            "morecreate:empty_clipboard"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

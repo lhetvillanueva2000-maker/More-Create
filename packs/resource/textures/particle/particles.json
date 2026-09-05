@@ -1,0 +1,8 @@
+{
+    "texture_name": "atlas.particles",
+    "texture_data": {
+        "textures/morecreate/particle/schematic_box": {
+            "textures": "textures/morecreate/particle/schematic_box"
+        }
+    }
+}

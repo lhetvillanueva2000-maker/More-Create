@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "morecreate:cannon_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/morecreate/blocks/cannon"
+      },
+      "geometry": {
+        "default": "geometry.morecreate.cannon"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.x = query.target_x_rotation;",
+          "v.y = query.target_y_rotation;"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "morecreate:cannon",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.morecreate.cannon_item_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "morecreate:cannon_block",
+          "render_method": "alpha_test",
+          "face_dimming": true,
+          "ambient_occlusion": true
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      }
+    }
+  }
+}

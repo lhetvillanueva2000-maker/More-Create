@@ -1,0 +1,1089 @@
+{
+ "crushing": [
+  {
+   "name": "asurine",
+   "input": "create:asurine",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:cut_asurine",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:cut_asurine_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:cut_asurine_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:polished_cut_asurine",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:polished_cut_asurine_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "asurine_recycling",
+   "input": "create:small_asurine_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.3
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite",
+   "input": "create:crimsite",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:cut_crimsite",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:cut_crimsite_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:cut_crimsite_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:polished_cut_crimsite",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:polished_cut_crimsite_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "crimsite_recycling",
+   "input": "create:small_crimsite_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1,
+     "chance": 0.4
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.4
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "deepslate_zinc_ore",
+   "input": "create:deepslate_zinc_ore",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 2,
+     "chance": 1.0
+    },
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.75
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.125
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:cut_diorite",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:cut_diorite_bricks",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:cut_diorite_stairs",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:polished_cut_diorite",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:polished_cut_diorite_stairs",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "diorite_recycling",
+   "input": "create:small_diorite_bricks",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "gilded_blackstone",
+   "input": "minecraft:gilded_blackstone",
+   "outputs": [
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 18,
+     "chance": 1.0
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.75
+    },
+    {
+     "item": "minecraft:blackstone",
+     "count": 1,
+     "chance": 0.125
+    }
+   ],
+   "duration": 400
+  },
+  {
+   "name": "nether_wart_block",
+   "input": "minecraft:nether_wart_block",
+   "outputs": [
+    {
+     "item": "minecraft:nether_wart",
+     "count": 1,
+     "chance": 0.25
+    }
+   ],
+   "duration": 150
+  },
+  {
+   "name": "ochrum",
+   "input": "create:ochrum",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:cut_ochrum",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:cut_ochrum_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:cut_ochrum_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:polished_cut_ochrum",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:polished_cut_ochrum_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "ochrum_recycling",
+   "input": "create:small_ochrum_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "prismarine_crystals",
+   "input": "minecraft:prismarine_crystals",
+   "outputs": [
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 1.0
+    },
+    {
+     "item": "minecraft:quartz",
+     "count": 2,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:glowstone_dust",
+     "count": 2,
+     "chance": 0.1
+    }
+   ],
+   "duration": 150
+  },
+  {
+   "name": "tuff",
+   "input": "minecraft:tuff",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:cut_tuff",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:cut_tuff_bricks",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:cut_tuff_stairs",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:polished_cut_tuff",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:polished_cut_tuff_stairs",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "tuff_recycling",
+   "input": "create:small_tuff_bricks",
+   "outputs": [
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "create:zinc_nugget",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:iron_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 350
+  },
+  {
+   "name": "veridium",
+   "input": "create:veridium",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:cut_veridium",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:cut_veridium_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:cut_veridium_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:polished_cut_veridium",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:polished_cut_veridium_stairs",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "veridium_recycling",
+   "input": "create:small_veridium_bricks",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1,
+     "chance": 0.8
+    },
+    {
+     "item": "create:copper_nugget",
+     "count": 1,
+     "chance": 0.8
+    }
+   ],
+   "duration": 250
+  },
+  {
+   "name": "zinc_ore",
+   "input": "create:zinc_ore",
+   "outputs": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 1.0
+    },
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1,
+     "chance": 0.75
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.75
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.125
+    }
+   ],
+   "duration": 250
+  }
+ ],
+ "milling": [
+  {
+   "name": "pink_petals",
+   "input": "minecraft:pink_petals",
+   "outputs": [
+    {
+     "item": "minecraft:pink_dye",
+     "count": 2,
+     "chance": 1.0
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 50
+  },
+  {
+   "name": "pitcher_plant",
+   "input": "minecraft:pitcher_plant",
+   "outputs": [
+    {
+     "item": "minecraft:cyan_dye",
+     "count": 4,
+     "chance": 1.0
+    },
+    {
+     "item": "minecraft:purple_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 50
+  },
+  {
+   "name": "terracotta",
+   "input": "minecraft:hardened_clay",
+   "outputs": [
+    {
+     "item": "minecraft:red_sand",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 200
+  },
+  {
+   "name": "torchflower",
+   "input": "minecraft:torchflower",
+   "outputs": [
+    {
+     "item": "minecraft:orange_dye",
+     "count": 2,
+     "chance": 1.0
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ],
+   "duration": 50
+  }
+ ],
+ "splashing": [
+  {
+   "name": "industrial_iron_block",
+   "input": "create:industrial_iron_block",
+   "outputs": [
+    {
+     "item": "create:weathered_iron_block",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "industrial_iron_window",
+   "input": "create:industrial_iron_window",
+   "outputs": [
+    {
+     "item": "create:weathered_iron_window",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  }
+ ],
+ "haunting": [],
+ "pressing": [
+  {
+   "name": "path",
+   "input": "minecraft:dirt",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "path",
+   "input": "minecraft:coarse_dirt",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "path",
+   "input": "minecraft:rooted_dirt",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "path",
+   "input": "minecraft:mycelium",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "path",
+   "input": "minecraft:podzol",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  },
+  {
+   "name": "path_from_grass",
+   "input": "minecraft:grass_block",
+   "outputs": [
+    {
+     "item": "minecraft:dirt_path",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "duration": 100
+  }
+ ],
+ "blasting": [],
+ "smoking": [],
+ "mixing": [
+  {
+   "name": "andesite_alloy_from_zinc",
+   "input": {
+    "minecraft:andesite": 1,
+    "create:zinc_nugget": 1
+   },
+   "outputs": [
+    {
+     "item": "create:andesite_alloy",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "heated": false,
+   "heat": null
+  }
+ ],
+ "compacting": [
+  {
+   "name": "ice",
+   "input": {
+    "minecraft:snow": 9
+   },
+   "outputs": [
+    {
+     "item": "minecraft:ice",
+     "count": 1,
+     "chance": 1.0
+    }
+   ],
+   "heated": false,
+   "heat": null
+  }
+ ]
+}

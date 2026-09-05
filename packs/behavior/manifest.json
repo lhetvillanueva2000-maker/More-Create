@@ -1,0 +1,73 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "§1Usersainyy§r"
+        ],
+        "product_type": "addon"
+    },
+    "header": {
+        "pack_scope": "world",
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "7035dfae-7898-4df7-9b5f-a6a1366fcc9f",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            26,
+            13
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "951f2f24-68fa-4ca8-8444-856215d5e746",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "b8e2df71-c536-4b1f-bde9-56bda4c775e6",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "entry": "scripts/morecreate/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.6.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
+        },
+        {
+            "uuid": "2171db8f-ab05-4c7e-84d3-d1faa8d141db",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "uuid": "12cf12b5-b9b9-4d0e-987a-f22936bd0692",
+            "version": [
+                1,
+                0,
+                1
+            ]
+        }
+    ]
+}

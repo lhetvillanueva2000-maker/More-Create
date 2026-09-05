@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "morecreate:cannon_guide"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      { "item": "minecraft:book" }
+    ],
+    "pattern": [
+      "BP"
+    ],
+    "key": {
+      "B": { "item": "minecraft:book" },
+      "P": { "item": "minecraft:gunpowder" }
+    },
+    "result": {
+      "item": "morecreate:cannon_guide",
+      "count": 1
+    }
+  }
+}

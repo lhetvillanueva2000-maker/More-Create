@@ -1,0 +1,3745 @@
+{
+ "BLASTING_RECIPES": {
+  "create:dough": [
+   {
+    "item": "minecraft:bread",
+    "count": 1
+   }
+  ],
+  "create:crushed_raw_iron": [
+   {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+   }
+  ],
+  "create:crushed_raw_gold": [
+   {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+   }
+  ],
+  "create:crushed_raw_copper": [
+   {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+   }
+  ],
+  "create:crushed_raw_zinc": [
+   {
+    "item": "create:zinc_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:raw_iron": [
+   {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:raw_gold": [
+   {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:raw_copper": [
+   {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:iron_ore": [
+   {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:gold_ore": [
+   {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:copper_ore": [
+   {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_iron_ore": [
+   {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_gold_ore": [
+   {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_copper_ore": [
+   {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:nether_gold_ore": [
+   {
+    "item": "minecraft:gold_ingot",
+    "count": 1
+   }
+  ],
+  "create:zinc_ore": [
+   {
+    "item": "create:zinc_ingot",
+    "count": 1
+   }
+  ],
+  "create:deepslate_zinc_ore": [
+   {
+    "item": "create:zinc_ingot",
+    "count": 1
+   }
+  ],
+  "create:raw_zinc": [
+   {
+    "item": "create:zinc_ingot",
+    "count": 1
+   }
+  ],
+  "minecraft:cobblestone": [
+   {
+    "item": "minecraft:stone",
+    "count": 1
+   }
+  ],
+  "minecraft:stone": [
+   {
+    "item": "minecraft:smooth_stone",
+    "count": 1
+   }
+  ],
+  "minecraft:sandstone": [
+   {
+    "item": "minecraft:smooth_sandstone",
+    "count": 1
+   }
+  ],
+  "minecraft:red_sandstone": [
+   {
+    "item": "minecraft:smooth_red_sandstone",
+    "count": 1
+   }
+  ],
+  "minecraft:quartz_block": [
+   {
+    "item": "minecraft:smooth_quartz",
+    "count": 1
+   }
+  ],
+  "minecraft:basalt": [
+   {
+    "item": "minecraft:smooth_basalt",
+    "count": 1
+   }
+  ],
+  "minecraft:stone_bricks": [
+   {
+    "item": "minecraft:cracked_stone_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_bricks": [
+   {
+    "item": "minecraft:cracked_deepslate_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_tiles": [
+   {
+    "item": "minecraft:cracked_deepslate_tiles",
+    "count": 1
+   }
+  ],
+  "minecraft:nether_bricks": [
+   {
+    "item": "minecraft:cracked_nether_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:polished_blackstone_bricks": [
+   {
+    "item": "minecraft:cracked_polished_blackstone_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:netherrack": [
+   {
+    "item": "minecraft:nether_brick",
+    "count": 1
+   }
+  ],
+  "minecraft:clay_ball": [
+   {
+    "item": "minecraft:brick",
+    "count": 1
+   }
+  ],
+  "minecraft:clay": [
+   {
+    "item": "minecraft:hardened_clay",
+    "count": 1
+   }
+  ],
+  "minecraft:sand": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:red_sand": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:porkchop": [
+   {
+    "item": "minecraft:cooked_porkchop",
+    "count": 1
+   }
+  ],
+  "minecraft:beef": [
+   {
+    "item": "minecraft:cooked_beef",
+    "count": 1
+   }
+  ],
+  "minecraft:chicken": [
+   {
+    "item": "minecraft:cooked_chicken",
+    "count": 1
+   }
+  ],
+  "minecraft:cod": [
+   {
+    "item": "minecraft:cooked_cod",
+    "count": 1
+   }
+  ],
+  "minecraft:salmon": [
+   {
+    "item": "minecraft:cooked_salmon",
+    "count": 1
+   }
+  ],
+  "minecraft:mutton": [
+   {
+    "item": "minecraft:cooked_mutton",
+    "count": 1
+   }
+  ],
+  "minecraft:rabbit": [
+   {
+    "item": "minecraft:cooked_rabbit",
+    "count": 1
+   }
+  ],
+  "minecraft:potato": [
+   {
+    "item": "minecraft:baked_potato",
+    "count": 1
+   }
+  ],
+  "minecraft:kelp": [
+   {
+    "item": "minecraft:dried_kelp",
+    "count": 1
+   }
+  ],
+  "minecraft:oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:birch_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:spruce_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:jungle_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:acacia_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:dark_oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:cherry_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:mangrove_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:pale_oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:oak_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:birch_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:spruce_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:jungle_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:acacia_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:dark_oak_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:cherry_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:mangrove_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:pale_oak_wood": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_birch_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_spruce_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_jungle_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_acacia_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_dark_oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_cherry_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_mangrove_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:stripped_pale_oak_log": [
+   {
+    "item": "minecraft:charcoal",
+    "count": 1
+   }
+  ],
+  "minecraft:cactus": [
+   {
+    "item": "minecraft:green_dye",
+    "count": 1
+   }
+  ],
+  "minecraft:chorus_fruit": [
+   {
+    "item": "minecraft:popped_chorus_fruit",
+    "count": 1
+   }
+  ],
+  "minecraft:wet_sponge": [
+   {
+    "item": "minecraft:sponge",
+    "count": 1
+   }
+  ],
+  "minecraft:sea_pickle": [
+   {
+    "item": "minecraft:lime_dye",
+    "count": 1
+   }
+  ],
+  "minecraft:coal_ore": [
+   {
+    "item": "minecraft:coal",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_coal_ore": [
+   {
+    "item": "minecraft:coal",
+    "count": 1
+   }
+  ],
+  "minecraft:redstone_ore": [
+   {
+    "item": "minecraft:redstone",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_redstone_ore": [
+   {
+    "item": "minecraft:redstone",
+    "count": 1
+   }
+  ],
+  "minecraft:lapis_ore": [
+   {
+    "item": "minecraft:lapis_lazuli",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_lapis_ore": [
+   {
+    "item": "minecraft:lapis_lazuli",
+    "count": 1
+   }
+  ],
+  "minecraft:diamond_ore": [
+   {
+    "item": "minecraft:diamond",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_diamond_ore": [
+   {
+    "item": "minecraft:diamond",
+    "count": 1
+   }
+  ],
+  "minecraft:emerald_ore": [
+   {
+    "item": "minecraft:emerald",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate_emerald_ore": [
+   {
+    "item": "minecraft:emerald",
+    "count": 1
+   }
+  ],
+  "minecraft:quartz_ore": [
+   {
+    "item": "minecraft:quartz",
+    "count": 1
+   }
+  ],
+  "minecraft:ancient_debris": [
+   {
+    "item": "minecraft:netherite_scrap",
+    "count": 1
+   }
+  ],
+  "minecraft:iron_block": [
+   {
+    "item": "minecraft:iron_block",
+    "count": 1
+   }
+  ]
+ },
+ "SMOKING_RECIPES": {
+  "create:dough": [
+   {
+    "item": "minecraft:bread",
+    "count": 1
+   }
+  ],
+  "minecraft:porkchop": [
+   {
+    "item": "minecraft:cooked_porkchop",
+    "count": 1
+   }
+  ],
+  "minecraft:beef": [
+   {
+    "item": "minecraft:cooked_beef",
+    "count": 1
+   }
+  ],
+  "minecraft:chicken": [
+   {
+    "item": "minecraft:cooked_chicken",
+    "count": 1
+   }
+  ],
+  "minecraft:cod": [
+   {
+    "item": "minecraft:cooked_cod",
+    "count": 1
+   }
+  ],
+  "minecraft:salmon": [
+   {
+    "item": "minecraft:cooked_salmon",
+    "count": 1
+   }
+  ],
+  "minecraft:mutton": [
+   {
+    "item": "minecraft:cooked_mutton",
+    "count": 1
+   }
+  ],
+  "minecraft:rabbit": [
+   {
+    "item": "minecraft:cooked_rabbit",
+    "count": 1
+   }
+  ],
+  "minecraft:potato": [
+   {
+    "item": "minecraft:baked_potato",
+    "count": 1
+   }
+  ],
+  "minecraft:kelp": [
+   {
+    "item": "minecraft:dried_kelp",
+    "count": 1
+   }
+  ]
+ },
+ "SPLASHING_RECIPES": {
+  "create:wheat_flour": [
+   {
+    "item": "create:dough",
+    "count": 1
+   }
+  ],
+  "minecraft:sand": [
+   {
+    "item": "minecraft:clay_ball",
+    "count": 1,
+    "chance": 0.25
+   }
+  ],
+  "minecraft:red_sand": [
+   {
+    "item": "minecraft:gold_nugget",
+    "count": 3,
+    "chance": 0.125
+   },
+   {
+    "item": "minecraft:deadbush",
+    "count": 1,
+    "chance": 0.05
+   }
+  ],
+  "minecraft:gravel": [
+   {
+    "item": "minecraft:flint",
+    "count": 1,
+    "chance": 0.25
+   },
+   {
+    "item": "minecraft:iron_nugget",
+    "count": 1,
+    "chance": 0.125
+   }
+  ],
+  "minecraft:soul_sand": [
+   {
+    "item": "minecraft:quartz",
+    "count": 4,
+    "chance": 0.125
+   },
+   {
+    "item": "minecraft:gold_nugget",
+    "count": 1,
+    "chance": 0.02
+   }
+  ],
+  "minecraft:magma": [
+   {
+    "item": "minecraft:obsidian",
+    "count": 1
+   }
+  ],
+  "minecraft:ice": [
+   {
+    "item": "minecraft:packed_ice",
+    "count": 1
+   }
+  ],
+  "minecraft:light_gray_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:gray_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:black_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:brown_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:red_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:orange_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:yellow_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:lime_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:green_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:cyan_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:light_blue_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:blue_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:purple_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:magenta_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:pink_wool": [
+   {
+    "item": "minecraft:white_wool",
+    "count": 1
+   }
+  ],
+  "minecraft:white_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:light_gray_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:gray_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:black_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:brown_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:red_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:orange_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:yellow_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:lime_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:green_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:cyan_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:light_blue_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:blue_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:purple_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:magenta_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:pink_stained_glass": [
+   {
+    "item": "minecraft:glass",
+    "count": 1
+   }
+  ],
+  "minecraft:white_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:light_gray_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:gray_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:black_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:brown_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:red_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:orange_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:yellow_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:lime_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:green_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:cyan_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:light_blue_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:blue_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:purple_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:magenta_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:pink_stained_glass_pane": [
+   {
+    "item": "minecraft:glass_pane",
+    "count": 1
+   }
+  ],
+  "minecraft:white_concrete_powder": [
+   {
+    "item": "minecraft:white_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:light_gray_concrete_powder": [
+   {
+    "item": "minecraft:light_gray_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:gray_concrete_powder": [
+   {
+    "item": "minecraft:gray_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:black_concrete_powder": [
+   {
+    "item": "minecraft:black_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:brown_concrete_powder": [
+   {
+    "item": "minecraft:brown_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:red_concrete_powder": [
+   {
+    "item": "minecraft:red_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:orange_concrete_powder": [
+   {
+    "item": "minecraft:orange_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:yellow_concrete_powder": [
+   {
+    "item": "minecraft:yellow_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:lime_concrete_powder": [
+   {
+    "item": "minecraft:lime_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:green_concrete_powder": [
+   {
+    "item": "minecraft:green_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:cyan_concrete_powder": [
+   {
+    "item": "minecraft:cyan_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:light_blue_concrete_powder": [
+   {
+    "item": "minecraft:light_blue_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:blue_concrete_powder": [
+   {
+    "item": "minecraft:blue_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:purple_concrete_powder": [
+   {
+    "item": "minecraft:purple_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:magenta_concrete_powder": [
+   {
+    "item": "minecraft:magenta_concrete",
+    "count": 1
+   }
+  ],
+  "minecraft:pink_concrete_powder": [
+   {
+    "item": "minecraft:pink_concrete",
+    "count": 1
+   }
+  ],
+  "create:crushed_raw_iron": [
+   {
+    "item": "minecraft:iron_nugget",
+    "count": 9
+   },
+   {
+    "item": "minecraft:redstone",
+    "count": 1,
+    "chance": 0.75
+   }
+  ],
+  "create:crushed_raw_gold": [
+   {
+    "item": "minecraft:gold_nugget",
+    "count": 9
+   },
+   {
+    "item": "minecraft:quartz",
+    "count": 1,
+    "chance": 0.5
+   }
+  ],
+  "create:crushed_raw_copper": [
+   {
+    "item": "create:copper_nugget",
+    "count": 9
+   },
+   {
+    "item": "minecraft:clay_ball",
+    "count": 1,
+    "chance": 0.5
+   }
+  ],
+  "create:crushed_raw_zinc": [
+   {
+    "item": "create:zinc_nugget",
+    "count": 9
+   },
+   {
+    "item": "minecraft:gunpowder",
+    "count": 1,
+    "chance": 0.25
+   }
+  ]
+ },
+ "HAUNTING_RECIPES": {
+  "minecraft:sand": [
+   {
+    "item": "minecraft:soul_sand",
+    "count": 1
+   }
+  ],
+  "minecraft:red_sand": [
+   {
+    "item": "minecraft:soul_sand",
+    "count": 1
+   }
+  ],
+  "minecraft:dirt": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:coarse_dirt": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:rooted_dirt": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:grass_block": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:mycelium": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:podzol": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:mud": [
+   {
+    "item": "minecraft:soul_soil",
+    "count": 1
+   }
+  ],
+  "minecraft:cobblestone": [
+   {
+    "item": "minecraft:blackstone",
+    "count": 1
+   }
+  ],
+  "minecraft:mossy_cobblestone": [
+   {
+    "item": "minecraft:blackstone",
+    "count": 1
+   }
+  ],
+  "minecraft:cobbled_deepslate": [
+   {
+    "item": "minecraft:blackstone",
+    "count": 1
+   }
+  ],
+  "minecraft:red_mushroom": [
+   {
+    "item": "minecraft:crimson_fungus",
+    "count": 1
+   }
+  ],
+  "minecraft:brown_mushroom": [
+   {
+    "item": "minecraft:warped_fungus",
+    "count": 1
+   }
+  ],
+  "minecraft:torch": [
+   {
+    "item": "minecraft:soul_torch",
+    "count": 1
+   }
+  ],
+  "minecraft:lantern": [
+   {
+    "item": "minecraft:soul_lantern",
+    "count": 1
+   }
+  ],
+  "minecraft:campfire": [
+   {
+    "item": "minecraft:soul_campfire",
+    "count": 1
+   }
+  ],
+  "minecraft:brick": [
+   {
+    "item": "minecraft:nether_brick",
+    "count": 1
+   }
+  ],
+  "minecraft:bell": [
+   {
+    "item": "create:haunted_bell",
+    "count": 1
+   }
+  ],
+  "create:peculiar_bell": [
+   {
+    "item": "create:haunted_bell",
+    "count": 1
+   }
+  ],
+  "minecraft:lapis_lazuli": [
+   {
+    "item": "minecraft:prismarine_shard",
+    "count": 1,
+    "chance": 0.75
+   },
+   {
+    "item": "minecraft:prismarine_crystals",
+    "count": 1,
+    "chance": 0.125
+   }
+  ],
+  "minecraft:potato": [
+   {
+    "item": "minecraft:poisonous_potato",
+    "count": 1
+   }
+  ],
+  "minecraft:sweet_berries": [
+   {
+    "item": "minecraft:glow_berries",
+    "count": 1
+   }
+  ],
+  "minecraft:ink_sac": [
+   {
+    "item": "minecraft:glow_ink_sac",
+    "count": 1
+   }
+  ],
+  "minecraft:stone": [
+   {
+    "item": "minecraft:infested_stone",
+    "count": 1
+   }
+  ],
+  "minecraft:deepslate": [
+   {
+    "item": "minecraft:infested_deepslate",
+    "count": 1
+   }
+  ],
+  "minecraft:stone_bricks": [
+   {
+    "item": "minecraft:infested_stone_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:mossy_stone_bricks": [
+   {
+    "item": "minecraft:infested_mossy_stone_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:cracked_stone_bricks": [
+   {
+    "item": "minecraft:infested_cracked_stone_bricks",
+    "count": 1
+   }
+  ],
+  "minecraft:chiseled_stone_bricks": [
+   {
+    "item": "minecraft:infested_chiseled_stone_bricks",
+    "count": 1
+   }
+  ]
+ },
+ "CRUSHING_RECIPES": {
+  "minecraft:iron_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.4,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_iron",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:deepslate_iron_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.4,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_iron",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:copper_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.5,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_copper",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:deepslate_copper_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.5,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_copper",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:gold_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.8,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_gold",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.18
+    }
+   ]
+  },
+  "minecraft:deepslate_gold_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.8,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_gold",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.18
+    }
+   ]
+  },
+  "minecraft:nether_gold_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.8,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 2
+    },
+    {
+     "item": "minecraft:raw_gold",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:netherrack",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.2
+    }
+   ]
+  },
+  "minecraft:coal_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:coal",
+     "count": 2
+    },
+    {
+     "item": "minecraft:coal",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:deepslate_coal_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:coal",
+     "count": 2
+    },
+    {
+     "item": "minecraft:coal",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:lapis_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.2,
+    "blue": 0.75,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:lapis_lazuli",
+     "count": 8
+    },
+    {
+     "item": "minecraft:lapis_lazuli",
+     "count": 4,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 2,
+     "chance": 0.55
+    }
+   ]
+  },
+  "minecraft:deepslate_lapis_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.2,
+    "blue": 0.75,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:lapis_lazuli",
+     "count": 8
+    },
+    {
+     "item": "minecraft:lapis_lazuli",
+     "count": 4,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 2,
+     "chance": 0.55
+    }
+   ]
+  },
+  "minecraft:redstone_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.1,
+    "blue": 0.08,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:redstone",
+     "count": 6
+    },
+    {
+     "item": "minecraft:redstone",
+     "count": 2,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ]
+  },
+  "minecraft:deepslate_redstone_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.1,
+    "blue": 0.08,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:redstone",
+     "count": 6
+    },
+    {
+     "item": "minecraft:redstone",
+     "count": 2,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.3
+    }
+   ]
+  },
+  "minecraft:diamond_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.25,
+    "green": 0.85,
+    "blue": 0.9,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:diamond",
+     "count": 2
+    },
+    {
+     "item": "minecraft:diamond",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.35
+    }
+   ]
+  },
+  "minecraft:deepslate_diamond_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.25,
+    "green": 0.85,
+    "blue": 0.9,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:diamond",
+     "count": 2
+    },
+    {
+     "item": "minecraft:diamond",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.35
+    }
+   ]
+  },
+  "minecraft:emerald_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.1,
+    "green": 0.85,
+    "blue": 0.35,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:emerald",
+     "count": 2
+    },
+    {
+     "item": "minecraft:emerald",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.35
+    }
+   ]
+  },
+  "minecraft:deepslate_emerald_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.1,
+    "green": 0.85,
+    "blue": 0.35,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:emerald",
+     "count": 2
+    },
+    {
+     "item": "minecraft:emerald",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1,
+     "chance": 0.12
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.35
+    }
+   ]
+  },
+  "minecraft:raw_iron": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.4,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_iron",
+     "count": 1
+    },
+    {
+     "item": "minecraft:raw_iron",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.08
+    }
+   ]
+  },
+  "minecraft:raw_copper": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.5,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_copper",
+     "count": 1
+    },
+    {
+     "item": "minecraft:raw_copper",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.07
+    }
+   ]
+  },
+  "minecraft:raw_gold": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.8,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_gold",
+     "count": 1
+    },
+    {
+     "item": "minecraft:raw_gold",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "create:raw_zinc": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.75,
+    "green": 0.75,
+    "blue": 0.6,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:crushed_raw_zinc",
+     "count": 1
+    },
+    {
+     "item": "create:raw_zinc",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "create:experience_nugget",
+     "count": 1,
+     "chance": 0.08
+    }
+   ]
+  },
+  "minecraft:cobblestone": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.55,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    },
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:stone": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.55,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:gravel": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.48,
+    "blue": 0.46,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:sand",
+     "count": 1
+    },
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:granite": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.75,
+    "green": 0.5,
+    "blue": 0.45,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    },
+    {
+     "item": "minecraft:granite",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:diorite": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.85,
+    "blue": 0.85,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    },
+    {
+     "item": "minecraft:diorite",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:andesite": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.55,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    },
+    {
+     "item": "minecraft:andesite",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:deepslate": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.3,
+    "blue": 0.35,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:cobbled_deepslate",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:cobbled_deepslate": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.3,
+    "blue": 0.35,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    },
+    {
+     "item": "minecraft:flint",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:netherrack": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.65,
+    "green": 0.2,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:cinder_flour",
+     "count": 1
+    },
+    {
+     "item": "create:cinder_flour",
+     "count": 1,
+     "chance": 0.75
+    }
+   ]
+  },
+  "minecraft:oak_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.6,
+    "green": 0.45,
+    "blue": 0.25,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:oak_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:spruce_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.45,
+    "green": 0.3,
+    "blue": 0.18,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:spruce_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:birch_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.8,
+    "green": 0.72,
+    "blue": 0.5,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:birch_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:jungle_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.6,
+    "green": 0.42,
+    "blue": 0.22,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:jungle_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:acacia_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.4,
+    "blue": 0.22,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:acacia_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:dark_oak_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.28,
+    "green": 0.2,
+    "blue": 0.12,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:dark_oak_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:mangrove_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.22,
+    "blue": 0.18,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:mangrove_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:cherry_log": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.8,
+    "green": 0.55,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:cherry_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:crimson_stem": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.15,
+    "blue": 0.35,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:crimson_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:warped_stem": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.55,
+    "blue": 0.5,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:warped_planks",
+     "count": 6
+    }
+   ]
+  },
+  "minecraft:bone": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.88,
+    "blue": 0.8,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:bone_meal",
+     "count": 3
+    },
+    {
+     "item": "minecraft:bone_meal",
+     "count": 1,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:bone_block": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.88,
+    "blue": 0.8,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:bone_meal",
+     "count": 9
+    },
+    {
+     "item": "minecraft:bone_meal",
+     "count": 3,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:coal": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:coal",
+     "count": 1
+    },
+    {
+     "item": "minecraft:coal",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:charcoal": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.2,
+    "green": 0.18,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:charcoal",
+     "count": 1
+    },
+    {
+     "item": "minecraft:charcoal",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:quartz_ore": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.85,
+    "blue": 0.8,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:quartz",
+     "count": 2
+    },
+    {
+     "item": "minecraft:quartz",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:netherrack",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:glowstone": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.8,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:glowstone_dust",
+     "count": 4
+    },
+    {
+     "item": "minecraft:glowstone_dust",
+     "count": 2,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:sand": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.8,
+    "green": 0.75,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:prismarine": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.7,
+    "blue": 0.65,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:prismarine_shard",
+     "count": 4
+    },
+    {
+     "item": "minecraft:prismarine_crystals",
+     "count": 2,
+     "chance": 0.5
+    }
+   ]
+  }
+ },
+ "millstoneRecipes": {
+  "minecraft:allium": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.75,
+    "green": 0.3,
+    "blue": 0.75,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:magenta_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:purple_dye",
+     "count": 2,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:pink_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:azure_bluet": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.9,
+    "blue": 0.95,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:light_gray_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:white_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:blue_orchid": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.6,
+    "blue": 0.9,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:light_blue_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:light_gray_dye",
+     "count": 1,
+     "chance": 0.05
+    }
+   ]
+  },
+  "minecraft:cornflower": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.25,
+    "green": 0.35,
+    "blue": 0.8,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:blue_dye",
+     "count": 2
+    }
+   ]
+  },
+  "minecraft:dandelion": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.9,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:yellow_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:yellow_dye",
+     "count": 1,
+     "chance": 0.05
+    }
+   ]
+  },
+  "minecraft:lilac": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.4,
+    "blue": 0.7,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:magenta_dye",
+     "count": 3
+    },
+    {
+     "item": "minecraft:magenta_dye",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:purple_dye",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:lily_of_the_valley": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.95,
+    "blue": 0.95,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:white_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    },
+    {
+     "item": "minecraft:white_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:orange_tulip": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.55,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:orange_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:oxeye_daisy": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.9,
+    "blue": 0.85,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:light_gray_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:white_dye",
+     "count": 1,
+     "chance": 0.2
+    },
+    {
+     "item": "minecraft:yellow_dye",
+     "count": 1,
+     "chance": 0.05
+    }
+   ]
+  },
+  "minecraft:peony": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.6,
+    "blue": 0.7,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:pink_dye",
+     "count": 3
+    },
+    {
+     "item": "minecraft:magenta_dye",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:pink_dye",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:pink_tulip": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.55,
+    "blue": 0.65,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:pink_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:poppy": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.05
+    }
+   ]
+  },
+  "minecraft:red_tulip": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.2,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:rose_bush": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.8,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_dye",
+     "count": 3
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.05
+    },
+    {
+     "item": "minecraft:red_dye",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:sunflower": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.85,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:yellow_dye",
+     "count": 3
+    },
+    {
+     "item": "minecraft:orange_dye",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:yellow_dye",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:white_tulip": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.92,
+    "green": 0.92,
+    "blue": 0.92,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:white_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:lime_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:wither_rose": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:black_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:black_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:cactus": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.2,
+    "green": 0.55,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:green_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:sea_pickle": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.45,
+    "green": 0.6,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:lime_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:sugar_cane": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.75,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:sugar",
+     "count": 2
+    },
+    {
+     "item": "minecraft:sugar",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:fern": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.55,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:green_dye",
+     "count": 1
+    },
+    {
+     "item": "minecraft:wheat_seeds",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:large_fern": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.55,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:green_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:green_dye",
+     "count": 1,
+     "chance": 0.5
+    },
+    {
+     "item": "minecraft:wheat_seeds",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:tall_grass": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.4,
+    "green": 0.6,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:wheat_seeds",
+     "count": 1,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:short_grass": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.4,
+    "green": 0.6,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:wheat_seeds",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:bone_meal": {
+   "duration": 70,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.9,
+    "blue": 0.85,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:white_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:light_gray_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:bone": {
+   "duration": 70,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.88,
+    "blue": 0.8,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:bone_meal",
+     "count": 3
+    },
+    {
+     "item": "minecraft:white_dye",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:bone_meal",
+     "count": 3,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:cocoa_beans": {
+   "duration": 70,
+   "particleRGB": {
+    "red": 0.45,
+    "green": 0.25,
+    "blue": 0.1,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:brown_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:brown_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:beetroot": {
+   "duration": 70,
+   "particleRGB": {
+    "red": 0.7,
+    "green": 0.15,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:beetroot_seeds",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:ink_sac": {
+   "duration": 70,
+   "particleRGB": {
+    "red": 0.1,
+    "green": 0.1,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:black_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:gray_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:wheat": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.75,
+    "blue": 0.45,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "create:wheat_flour",
+     "count": 1
+    },
+    {
+     "item": "create:wheat_flour",
+     "count": 1,
+     "chance": 0.25
+    },
+    {
+     "item": "minecraft:wheat_seeds",
+     "count": 1,
+     "chance": 0.25
+    }
+   ]
+  },
+  "minecraft:charcoal": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.2,
+    "green": 0.18,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:black_dye",
+     "count": 1
+    },
+    {
+     "item": "minecraft:gray_dye",
+     "count": 2,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:coal": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:black_dye",
+     "count": 1
+    },
+    {
+     "item": "minecraft:gray_dye",
+     "count": 2,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:lapis_lazuli": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.15,
+    "green": 0.2,
+    "blue": 0.7,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:blue_dye",
+     "count": 2
+    },
+    {
+     "item": "minecraft:blue_dye",
+     "count": 1,
+     "chance": 0.1
+    }
+   ]
+  },
+  "minecraft:white_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.95,
+    "blue": 0.95,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:orange_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.55,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:magenta_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.75,
+    "green": 0.3,
+    "blue": 0.75,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:light_blue_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.7,
+    "blue": 0.9,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:yellow_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.95,
+    "green": 0.9,
+    "blue": 0.2,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:lime_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.75,
+    "blue": 0.1,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:pink_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.55,
+    "blue": 0.65,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:gray_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.4,
+    "green": 0.4,
+    "blue": 0.4,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:light_gray_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.65,
+    "green": 0.65,
+    "blue": 0.65,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:cyan_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.1,
+    "green": 0.5,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:purple_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.15,
+    "blue": 0.75,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:blue_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.2,
+    "green": 0.25,
+    "blue": 0.7,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:brown_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.45,
+    "green": 0.3,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:green_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.3,
+    "green": 0.4,
+    "blue": 0.1,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:red_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.8,
+    "green": 0.15,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:black_wool": {
+   "duration": 100,
+   "particleRGB": {
+    "red": 0.1,
+    "green": 0.1,
+    "blue": 0.1,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:string",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:cobblestone": {
+   "duration": 200,
+   "particleRGB": {
+    "red": 0.5,
+    "green": 0.5,
+    "blue": 0.5,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:gravel",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:gravel": {
+   "duration": 200,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.52,
+    "blue": 0.5,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:flint",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:sandstone": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.85,
+    "green": 0.8,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:sand",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:granite": {
+   "duration": 200,
+   "particleRGB": {
+    "red": 0.65,
+    "green": 0.4,
+    "blue": 0.3,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_sand",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:andesite": {
+   "duration": 200,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.55,
+    "blue": 0.55,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:cobblestone",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:terracotta": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.6,
+    "green": 0.38,
+    "blue": 0.25,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:red_sand",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:calcite": {
+   "duration": 250,
+   "particleRGB": {
+    "red": 0.9,
+    "green": 0.88,
+    "blue": 0.85,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:bone_meal",
+     "count": 1,
+     "chance": 0.12
+    }
+   ]
+  },
+  "minecraft:dripstone_block": {
+   "duration": 250,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.45,
+    "blue": 0.38,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:clay_ball",
+     "count": 1
+    }
+   ]
+  },
+  "minecraft:clay": {
+   "duration": 50,
+   "particleRGB": {
+    "red": 0.65,
+    "green": 0.62,
+    "blue": 0.58,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:clay_ball",
+     "count": 3
+    },
+    {
+     "item": "minecraft:clay_ball",
+     "count": 1,
+     "chance": 0.5
+    }
+   ]
+  },
+  "minecraft:saddle": {
+   "duration": 150,
+   "particleRGB": {
+    "red": 0.55,
+    "green": 0.3,
+    "blue": 0.15,
+    "alpha": 1
+   },
+   "output": [
+    {
+     "item": "minecraft:leather",
+     "count": 2
+    },
+    {
+     "item": "minecraft:leather",
+     "count": 2,
+     "chance": 0.5
+    }
+   ]
+  }
+ },
+ "PRESS_RECIPES": [
+  {
+   "input": "minecraft:iron_ingot",
+   "result": "create:iron_sheet"
+  },
+  {
+   "input": "minecraft:copper_ingot",
+   "result": "create:copper_sheet"
+  },
+  {
+   "input": "minecraft:gold_ingot",
+   "result": "create:golden_sheet"
+  },
+  {
+   "input": "create:brass_ingot",
+   "result": "create:brass_sheet"
+  },
+  {
+   "input": "minecraft:sugar_cane",
+   "result": "minecraft:paper"
+  },
+  {
+   "input": "minecraft:raw_iron",
+   "result": "create:crushed_raw_iron"
+  },
+  {
+   "input": "minecraft:raw_copper",
+   "result": "create:crushed_raw_copper"
+  },
+  {
+   "input": "minecraft:raw_gold",
+   "result": "create:crushed_raw_gold"
+  },
+  {
+   "input": "create:raw_zinc",
+   "result": "create:crushed_raw_zinc"
+  }
+ ],
+ "MIXER_RECIPES": [
+  {
+   "input": {
+    "minecraft:andesite": 1,
+    "minecraft:iron_nugget": 1
+   },
+   "output": {
+    "id": "create:andesite_alloy",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.5,
+    "green": 0.48,
+    "blue": 0.46,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:andesite": 1,
+    "create:zinc_nugget": 2
+   },
+   "output": {
+    "id": "create:andesite_alloy",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.5,
+    "green": 0.48,
+    "blue": 0.46,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:egg": 1,
+    "minecraft:sugar": 1,
+    "create:cinder_flour": 1
+   },
+   "output": {
+    "id": "create:blaze_cake_base",
+    "amount": 1
+   },
+   "particleColor": {
+    "red": 0.72,
+    "green": 0.16,
+    "blue": 0.09,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:redstone": 4,
+    "minecraft:quartz": 1
+   },
+   "output": {
+    "id": "create:rose_quartz",
+    "amount": 1
+   },
+   "particleColor": {
+    "red": 0.93,
+    "green": 0.45,
+    "blue": 0.55,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:red_dye": 1,
+    "minecraft:yellow_dye": 1
+   },
+   "output": {
+    "id": "minecraft:orange_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.98,
+    "green": 0.5,
+    "blue": 0.11,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:red_dye": 1,
+    "minecraft:white_dye": 1
+   },
+   "output": {
+    "id": "minecraft:pink_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.95,
+    "green": 0.55,
+    "blue": 0.74,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:white_dye": 1,
+    "minecraft:black_dye": 1
+   },
+   "output": {
+    "id": "minecraft:gray_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.3,
+    "green": 0.3,
+    "blue": 0.3,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:gray_dye": 1,
+    "minecraft:white_dye": 1
+   },
+   "output": {
+    "id": "minecraft:light_gray_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.62,
+    "green": 0.62,
+    "blue": 0.59,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:blue_dye": 1,
+    "minecraft:green_dye": 1
+   },
+   "output": {
+    "id": "minecraft:cyan_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.09,
+    "green": 0.61,
+    "blue": 0.61,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:blue_dye": 1,
+    "minecraft:white_dye": 1
+   },
+   "output": {
+    "id": "minecraft:light_blue_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.36,
+    "green": 0.69,
+    "blue": 0.85,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:red_dye": 1,
+    "minecraft:blue_dye": 1
+   },
+   "output": {
+    "id": "minecraft:purple_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.49,
+    "green": 0.18,
+    "blue": 0.74,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:purple_dye": 1,
+    "minecraft:pink_dye": 1
+   },
+   "output": {
+    "id": "minecraft:magenta_dye",
+    "amount": 2
+   },
+   "particleColor": {
+    "red": 0.78,
+    "green": 0.3,
+    "blue": 0.79,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:copper_ingot": 1,
+    "create:zinc_ingot": 1
+   },
+   "output": {
+    "id": "create:brass_ingot",
+    "amount": 1
+   },
+   "requiresHeat": true,
+   "particleColor": {
+    "red": 0.78,
+    "green": 0.58,
+    "blue": 0.24,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:sugar": 1,
+    "minecraft:cocoa_beans": 1
+   },
+   "fluidInput": "minecraft:milk_bucket",
+   "fluidOutput": "create:chocolate_bucket",
+   "requiresHeat": true,
+   "particleColor": {
+    "red": 0.3,
+    "green": 0.13,
+    "blue": 0.07,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:honey_block": 1
+   },
+   "fluidOutput": "create:honey_bucket",
+   "requiresHeat": true,
+   "particleColor": {
+    "red": 0.95,
+    "green": 0.62,
+    "blue": 0.12,
+    "alpha": 1
+   }
+  },
+  {
+   "input": {
+    "minecraft:cobblestone": 1
+   },
+   "fluidOutput": "minecraft:lava_bucket",
+   "requiresSuperheat": true,
+   "particleColor": {
+    "red": 1,
+    "green": 0.28,
+    "blue": 0.03,
+    "alpha": 1
+   }
+  }
+ ]
+}

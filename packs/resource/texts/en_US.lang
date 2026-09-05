@@ -1,0 +1,43 @@
+pack.name=More Create
+pack.description=An add-on for the original Create mod by §6Vatonage§r that adds more features that are missing in the Bedrock Create.
+
+## Kinetics ##########################################################
+tile.morecreate:encased_chain_drive.name=Encased Chain Drive
+
+tile.morecreate:andesite_encased_shaft.name=Andesite Encased Shaft
+tile.morecreate:andesite_encased_cogwheel.name=Andesite Encased Cogwheel
+tile.morecreate:andesite_encased_large_cogwheel.name=Andesite Encased Large Cogwheel
+tile.morecreate:brass_encased_shaft.name=Brass Encased Shaft
+tile.morecreate:brass_encased_cogwheel.name=Brass Encased Cogwheel
+tile.morecreate:brass_encased_large_cogwheel.name=Brass Encased Large Cogwheel
+tile.morecreate:copper_encased_shaft.name=Copper Encased Shaft
+tile.morecreate:copper_encased_cogwheel.name=Copper Encased Cogwheel
+tile.morecreate:copper_encased_large_cogwheel.name=Copper Encased Large Cogwheel
+tile.morecreate:creative_encased_shaft.name=Creative Encased Shaft
+tile.morecreate:creative_encased_cogwheel.name=Creative Encased Cogwheel
+tile.morecreate:creative_encased_large_cogwheel.name=Creative Encased Large Cogwheel
+
+## Schematic Cannon ###################################################
+tile.morecreate:cannon.name=Schematic Cannon
+tile.morecreate:cannon_base.name=Schematic Cannon Base
+tile.morecreate:schematic_table.name=Schematic Table
+item.morecreate:schematic_and_quill=Schematic and Quill
+item.morecreate:schematic=Schematic
+item.morecreate:empty_schematic=Empty Schematic
+item.morecreate:empty_clipboard=Empty Clipboard
+item.morecreate:clipboard=Material Clipboard
+item.morecreate:cannon_guide=Cannon Guide
+item.morecreate:start_button=Start
+item.morecreate:stop_button=Stop
+item.morecreate:reset_button=Reset
+item.morecreate:confirm_button=Confirm
+item.morecreate:configures_button=Settings
+item.morecreate:clipboard_button=Material List
+
+## Creative menu groups ###############################################
+morecreate:itemGroup.name.kinetics=More Create: Kinetics
+morecreate:itemGroup.name.schematics=More Create: Schematics
+
+## Entities ###########################################################
+entity.morecreate:cannon.name=Schematic Cannon
+entity.morecreate:cannon_projectile.name=Cannon Projectile

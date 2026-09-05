@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "morecreate:cannon_guide",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "item.morecreate:cannon_guide"
+      },
+      "minecraft:icon": "morecreate:cannon_guide",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": false,
+      "minecraft:stacked_by_data": true,
+      "minecraft:allow_off_hand": true,
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:cool_down": {
+        "category": "guide",
+        "duration": 0.5
+      }
+    }
+  }
+}

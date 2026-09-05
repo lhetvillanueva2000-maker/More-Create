@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "morecreate:empty_schematic"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+        "unlock": [
+      { "item": "minecraft:paper" }
+    ],
+    "pattern": [
+      "AB ",
+      "   "
+    ],
+    "key": {
+     "A": {
+        "item": "minecraft:paper"
+      },
+      "B": {
+        "item": "minecraft:light_blue_dye"
+      }
+    },
+    "result": {
+      "item": "morecreate:empty_schematic",
+      "count": 1
+    }
+  }
+}

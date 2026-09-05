@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "morecreate:encased_chain_drive_entity",
+            "materials": {
+                "default": "create_entity_block"
+            },
+            "textures": {
+                "default": "textures/create/common/blocks/shaft"
+            },
+            "geometry": {
+                "default": "geometry.morecreate.encased_chain_drive"
+            },
+            "animations": {
+                "rotation": "animation.create.rpm.rotation",
+                "offset": "animation.create.rpm.offsets"
+            },
+            "scripts": {
+                "animate": [
+                    "rotation",
+                    "offset"
+                ],
+                "pre_animation": [
+                    "v.rotation = q.property('create:cardinal_rotation');",
+                    "v.offset_sign = 1;",
+                    "v.visual_sign = 1;",
+                    "v.rpm = ((q.frame_alpha + q.time_stamp) / 3.33) * -q.property('create:rpm');",
+                    "v.rpm2 = 0;"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

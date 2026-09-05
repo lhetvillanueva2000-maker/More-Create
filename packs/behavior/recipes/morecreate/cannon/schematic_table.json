@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "morecreate:schematic_table"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      { "tag": "minecraft:planks" }
+    ],
+    "pattern": [
+      "AAA",
+      " B ",
+      " B "
+    ],
+    "key": {
+      "A": {
+        "tag": "minecraft:planks"
+      },
+      "B": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "morecreate:schematic_table",
+      "count": 1
+    }
+  }
+}

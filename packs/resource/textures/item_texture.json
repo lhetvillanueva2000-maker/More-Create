@@ -1,0 +1,48 @@
+{
+    "resource_pack_name": "morecreate",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "morecreate:clipboard": {
+            "textures": "textures/morecreate/items/clipboard"
+        },
+        "morecreate:empty_clipboard": {
+            "textures": "textures/morecreate/items/empty_clipboard"
+        },
+        "morecreate:start_button": {
+            "textures": "textures/morecreate/items/start_button"
+        },
+        "morecreate:reset_button": {
+            "textures": "textures/morecreate/items/reset_button"
+        },
+        "morecreate:stop_button": {
+            "textures": "textures/morecreate/items/stop_button"
+        },
+        "morecreate:confirm_button": {
+            "textures": "textures/morecreate/items/confirm_button"
+        },
+        "morecreate:configures_button": {
+            "textures": "textures/morecreate/items/configures_button"
+        },
+        "morecreate:clipboard_button": {
+            "textures": "textures/morecreate/items/clipboard_button"
+        },
+        "morecreate:schematic": {
+            "textures": "textures/morecreate/items/schematic"
+        },
+        "morecreate:cannon_guide": {
+            "textures": "textures/morecreate/items/cannon_guide"
+        },
+        "morecreate:cannon": {
+            "textures": "textures/morecreate/items/cannon_imagem"
+        },
+        "morecreate:schematic_table": {
+            "textures": "textures/morecreate/items/schematic_table_imagem"
+        },
+        "morecreate:schematic_and_quill": {
+            "textures": "textures/morecreate/items/schematic_and_quill"
+        },
+        "morecreate:empty_schematic": {
+            "textures": "textures/morecreate/items/empty_schematic"
+        }
+    }
+}

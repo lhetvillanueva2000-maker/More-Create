@@ -1,0 +1,80 @@
+{
+    "format_version": "1.26.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "morecreate:andesite_encased_shaft",
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": [
+                        "minecraft:block_face"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "create:rpm_system": {},
+            "minecraft:map_color": "#8B6C4D",
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "create:andesite_casing",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destruction_particles": {
+                "texture": "create:andesite_casing"
+            },
+            "minecraft:redstone_conductivity": {
+                "redstone_conductor": true
+            },
+            "minecraft:loot": "loot_tables/morecreate/andesite_encased_shaft.json",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 7.5,
+                "item_specific_speeds": [
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:wooden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier'))"
+                        },
+                        "destroy_speed": 1.15
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:stone_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier'))"
+                        },
+                        "destroy_speed": 0.6
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:copper_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:copper_tier'))"
+                        },
+                        "destroy_speed": 0.5
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:iron_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier'))"
+                        },
+                        "destroy_speed": 0.4
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:golden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier'))"
+                        },
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:diamond_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier'))"
+                        },
+                        "destroy_speed": 0.3
+                    },
+                    {
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:netherite_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier'))"
+                        },
+                        "destroy_speed": 0.25
+                    }
+                ]
+            }
+        }
+    }
+}
