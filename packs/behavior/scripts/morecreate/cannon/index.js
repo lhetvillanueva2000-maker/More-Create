@@ -11,7 +11,10 @@
 
 import "./cannon.js";
 import "./cannon_guide.js";
+import { initCannonRepair } from "./repair.js";
 
 export function initCannon() {
-    // Handlers are registered by the imports above.
+    // cannon.js and cannon_guide.js attach their handlers on import; the
+    // repair pass has to be started explicitly.
+    initCannonRepair();
 }

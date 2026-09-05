@@ -8,6 +8,7 @@ so `v1.9` is followed by `v2.0`.
 
 | Version | File | What it is |
 |---|---|---|
+| v1.4 | [`MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) | Schematic Cannon screen fix |
 | v1.3 | [`MoreCreate-v1.3.mcaddon`](dist/MoreCreate-v1.3.mcaddon) | Recipe Book, connected chain drives, slotted cogwheel casings, ghost-block fix |
 | v1.2 | [`MoreCreate-v1.2.mcaddon`](dist/MoreCreate-v1.2.mcaddon) | 581 stonecutter recipes |
 | v1.1 | [`MoreCreate-v1.1.mcaddon`](dist/MoreCreate-v1.1.mcaddon) | Crushing Wheel recipe, zinc smelting, full hook coverage |
@@ -110,3 +111,23 @@ Coverage after this version: 703 recipes.
   removes any visual entity whose block is gone.
 - **Last untranslated string.** The Schematic Table's dropdown still read
   "-- Nenhum Selecionado --"; it now reads "-- None Selected --".
+
+---
+
+## v1.4 — the Schematic Cannon screen
+
+- **The cannon's screen opens again.** Its interface is the container of a
+  hidden entity sitting inside the block — the same trick Create uses for its
+  vault — but unlike Create's, that entity was never marked persistent, so the
+  engine was free to remove it. Once it was gone, right-clicking the cannon did
+  nothing at all and there was no way to get it back.
+
+  The entity now carries `minecraft:persistent`, `minecraft:physics` and a type
+  family, matching Create's own working vault anchor. On top of that,
+  right-clicking a cannon that has lost its entity re-creates it — with its
+  control buttons back in place — and a small sweep around each player repairs
+  cannons in worlds saved before this fix.
+
+- The fuel, schematic and output slots stay **empty** on placement, so you
+  supply your own gunpowder and schematic. Only the control buttons are placed
+  for you.

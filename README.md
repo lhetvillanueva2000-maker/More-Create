@@ -4,7 +4,7 @@ An add-on for the **Create** Bedrock addon by Vatonage that adds features missin
 
 - **Author:** Usersainyy
 - **Requires:** Minecraft Bedrock **1.26.13 or newer**, and Vatonage's Create addon (behaviour + resource pack) enabled in the same world.
-- **Download:** [`dist/MoreCreate-v1.3.mcaddon`](dist/MoreCreate-v1.3.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
+- **Download:** [`dist/MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
 
 More Create never imports from the Create pack. Everything is registered through
 Create's **Compatibility API v2** over script events, so the two packs stay
