@@ -61,6 +61,35 @@ def destructible():
     ])
 
 
+def materials(casing, kind):
+    """Face textures for one encased block.
+
+    A shaft is hidden completely, so its casing is blank on all six sides. A
+    cogwheel is only sliced in half by the casing - Create draws the gap it
+    shows through with a dedicated `*_encased_cogwheel_side` texture, a dark
+    slot across the middle of the casing.
+
+    The base orientation here is a cogwheel spinning on the north-south axis,
+    the same one Create's own cogwheel block is authored in, so the two are
+    rotated by the identical transformation table below. North and south are
+    the axis faces and stay plain; the other four are cut by the wheel. On the
+    top and bottom the slot runs across X, and on east and west it runs across
+    Y, which is why there are separate `_h` and `_v` textures.
+    """
+    _, plain, _ = CASINGS[casing]
+    if kind == "shaft":
+        return {"*": {"texture": plain, "render_method": "opaque"}}
+    return OrderedDict([
+        ("*", {"texture": plain, "render_method": "opaque"}),
+        ("north", {"texture": plain, "render_method": "opaque"}),
+        ("south", {"texture": plain, "render_method": "opaque"}),
+        ("up", {"texture": "morecreate:%s_encased_cogwheel_h" % casing, "render_method": "opaque"}),
+        ("down", {"texture": "morecreate:%s_encased_cogwheel_h" % casing, "render_method": "opaque"}),
+        ("east", {"texture": "morecreate:%s_encased_cogwheel_v" % casing, "render_method": "opaque"}),
+        ("west", {"texture": "morecreate:%s_encased_cogwheel_v" % casing, "render_method": "opaque"}),
+    ])
+
+
 def block(casing, kind):
     casing_block, texture, map_color = CASINGS[casing]
     _, trait = KINDS[kind]
@@ -71,27 +100,46 @@ def block(casing, kind):
     else:
         traits = {"minecraft:placement_direction": {"enabled_states": ["minecraft:facing_direction"]}}
 
-    return OrderedDict([
+    components = OrderedDict([
+        ("create:rpm_system", {}),
+        ("minecraft:map_color", map_color),
+        ("minecraft:geometry", "minecraft:geometry.full_block"),
+        ("minecraft:material_instances", materials(casing, kind)),
+        ("minecraft:destruction_particles", {"texture": texture}),
+        ("minecraft:redstone_conductivity", {"redstone_conductor": True}),
+        ("minecraft:loot", "loot_tables/morecreate/%s_encased_%s.json" % (casing, kind)),
+        ("minecraft:destructible_by_mining", destructible()),
+    ])
+
+    doc = OrderedDict([
         ("format_version", "1.26.10"),
         ("minecraft:block", OrderedDict([
             ("description", OrderedDict([
                 ("identifier", identifier),
                 ("traits", traits),
             ])),
-            ("components", OrderedDict([
-                ("create:rpm_system", {}),
-                ("minecraft:map_color", map_color),
-                ("minecraft:geometry", "minecraft:geometry.full_block"),
-                ("minecraft:material_instances", {
-                    "*": {"texture": texture, "render_method": "opaque"}
-                }),
-                ("minecraft:destruction_particles", {"texture": texture}),
-                ("minecraft:redstone_conductivity", {"redstone_conductor": True}),
-                ("minecraft:loot", "loot_tables/morecreate/%s_encased_%s.json" % (casing, kind)),
-                ("minecraft:destructible_by_mining", destructible()),
-            ])),
+            ("components", components),
         ])),
     ])
+
+    if kind != "shaft":
+        # Same rotation table Create uses for its own cogwheel, so an encased
+        # wheel lines up with the plain one it was made from. The cube is
+        # rotated bodily, which carries the slot textures round with it.
+        components["minecraft:transformation"] = {"rotation": [90, 0, 0]}
+        doc["minecraft:block"]["permutations"] = [
+            OrderedDict([
+                ("condition", "q.block_state('minecraft:facing_direction') == 'north' "
+                              "|| q.block_state('minecraft:facing_direction') == 'south'"),
+                ("components", {"minecraft:transformation": {"rotation": [0, 0, 0]}}),
+            ]),
+            OrderedDict([
+                ("condition", "q.block_state('minecraft:facing_direction') == 'west' "
+                              "|| q.block_state('minecraft:facing_direction') == 'east'"),
+                ("components", {"minecraft:transformation": {"rotation": [0, 90, 0]}}),
+            ]),
+        ]
+    return doc
 
 
 def loot(casing, kind):

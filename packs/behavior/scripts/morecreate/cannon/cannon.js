@@ -609,7 +609,7 @@ function openSchematicTableUI(player) {
     const hasEmptySchematic = currentHandItem && currentHandItem.typeId === "morecreate:empty_schematic";
 
     const validQuills = [];
-    const quillNamesForDropdown = ["-- Nenhum Selecionado --"];
+    const quillNamesForDropdown = ["-- None Selected --"];
     
     for (let i = 0; i < inv.size; i++) {
         const slotItem = inv.getItem(i);

@@ -19,6 +19,30 @@
                 "*": {
                     "texture": "create:creative_casing",
                     "render_method": "opaque"
+                },
+                "north": {
+                    "texture": "create:creative_casing",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "create:creative_casing",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "morecreate:creative_encased_cogwheel_h",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "morecreate:creative_encased_cogwheel_h",
+                    "render_method": "opaque"
+                },
+                "east": {
+                    "texture": "morecreate:creative_encased_cogwheel_v",
+                    "render_method": "opaque"
+                },
+                "west": {
+                    "texture": "morecreate:creative_encased_cogwheel_v",
+                    "render_method": "opaque"
                 }
             },
             "minecraft:destruction_particles": {
@@ -74,7 +98,40 @@
                         "destroy_speed": 0.25
                     }
                 ]
+            },
+            "minecraft:transformation": {
+                "rotation": [
+                    90,
+                    0,
+                    0
+                ]
             }
-        }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'west' || q.block_state('minecraft:facing_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ]
     }
 }

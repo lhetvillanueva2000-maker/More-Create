@@ -18,6 +18,42 @@
         },
         "morecreate:schematic_table": {
             "textures": "textures/morecreate/blocks/schematic_table"
+        },
+        "morecreate:andesite_encased_cogwheel_h": {
+            "textures": "textures/morecreate/blocks/andesite_encased_cogwheel_h"
+        },
+        "morecreate:andesite_encased_cogwheel_v": {
+            "textures": "textures/morecreate/blocks/andesite_encased_cogwheel_v"
+        },
+        "morecreate:brass_encased_cogwheel_h": {
+            "textures": "textures/morecreate/blocks/brass_encased_cogwheel_h"
+        },
+        "morecreate:brass_encased_cogwheel_v": {
+            "textures": "textures/morecreate/blocks/brass_encased_cogwheel_v"
+        },
+        "morecreate:copper_encased_cogwheel_h": {
+            "textures": "textures/morecreate/blocks/copper_encased_cogwheel_h"
+        },
+        "morecreate:copper_encased_cogwheel_v": {
+            "textures": "textures/morecreate/blocks/copper_encased_cogwheel_v"
+        },
+        "morecreate:creative_encased_cogwheel_h": {
+            "textures": "textures/morecreate/blocks/creative_encased_cogwheel_h"
+        },
+        "morecreate:creative_encased_cogwheel_v": {
+            "textures": "textures/morecreate/blocks/creative_encased_cogwheel_v"
+        },
+        "morecreate:chain_drive_link_h": {
+            "textures": "textures/morecreate/blocks/chain_drive_link_h"
+        },
+        "morecreate:chain_drive_link_v": {
+            "textures": "textures/morecreate/blocks/chain_drive_link_v"
+        },
+        "morecreate:chain_drive_end_h": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_h"
+        },
+        "morecreate:chain_drive_end_v": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_v"
         }
     }
 }

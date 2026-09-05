@@ -12,12 +12,14 @@ import { watchAcknowledgements, registrationFailures, pendingRegistrations } fro
 import { registerMissingRecipes } from "./recipes/index.js";
 import { registerKineticBlocks, initKinetics } from "./kinetics/index.js";
 import { initCannon } from "./cannon/index.js";
+import { initRecipeBook } from "./book/index.js";
 
 watchAcknowledgements();
 
 // Interaction handlers are safe to attach immediately.
 initKinetics();
 initCannon();
+initRecipeBook();
 
 // Registrations wait for world load so Create's compatibility bridge is
 // guaranteed to be listening, whatever order the packs' scripts loaded in.

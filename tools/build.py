@@ -11,7 +11,11 @@ import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
-OUTPUT = os.path.join(DIST, "MoreCreate.mcaddon")
+
+# Release numbering: v<major>.<minor>, minor rolling into major at 10
+# (v1.9 is followed by v2.0). Bump this when cutting a release.
+VERSION = "1.3"
+OUTPUT = os.path.join(DIST, "MoreCreate-v%s.mcaddon" % VERSION)
 
 PACKS = [
     (os.path.join(ROOT, "packs/behavior"), "More Create BP"),

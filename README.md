@@ -4,7 +4,7 @@ An add-on for the **Create** Bedrock addon by Vatonage that adds features missin
 
 - **Author:** Usersainyy
 - **Requires:** Minecraft Bedrock **1.26.13 or newer**, and Vatonage's Create addon (behaviour + resource pack) enabled in the same world.
-- **Download:** [`dist/MoreCreate.mcaddon`](dist/MoreCreate.mcaddon)
+- **Download:** [`dist/MoreCreate-v1.3.mcaddon`](dist/MoreCreate-v1.3.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
 
 More Create never imports from the Create pack. Everything is registered through
 Create's **Compatibility API v2** over script events, so the two packs stay
@@ -119,7 +119,10 @@ andesite, brass, copper or creative — and it becomes an encased block.
   through it exactly as before.
 - **Encased cogwheel / large cogwheel** — the casing slices through the middle,
   hiding the hub and the through-shaft, leaving only the outer tooth ring
-  showing and still turning.
+  showing and still turning. The casing carries Create's slotted
+  `*_encased_cogwheel_side` texture, so you can see the dark gap the wheel runs
+  through. Create only ships that art for andesite and brass; the copper and
+  creative slots are generated from the same source so all four match.
 
 This is also a genuine optimisation. Create draws shafts as an *invisible*
 block with a visual entity on top; an encased shaft is registered with
@@ -132,7 +135,38 @@ Other interactions:
 - **Sneak + right-click with a Wrench** to take the casing back off.
 - Breaking an encased block always drops both the kinetic part and its casing, so the casing material is never lost.
 
-### 4. Schematic Cannon
+### 4. Recipe Book
+
+**Crafting (shapeless):** Book + Andesite Alloy.
+
+Bedrock has no recipe browser for script-driven machines, so Create's processing
+recipes are invisible unless you already know them. The book lists **all 400** —
+Create's own and More Create's together — grouped by machine:
+
+| Machine | Recipes |
+|---|---:|
+| Crushing Wheels | 94 |
+| Bulk Smelting | 87 |
+| Bulk Washing | 76 |
+| Millstone | 63 |
+| Bulk Haunting | 30 |
+| Mechanical Press | 15 |
+| Mechanical Mixer | 13 |
+| Spout | 12 |
+| Bulk Smoking | 10 |
+
+Each machine page names the setup it needs ("Encased Fan blowing through a water
+source onto the items") and lists every input with its outputs and drop chances.
+There is also a **search**, which finds every machine that uses or produces a
+given item — searching `gravel` answers all three at once:
+
+```
+Crushing Wheels   Gravel  ->  Sand, Flint (25%)
+Millstone         Gravel  ->  Flint
+Bulk Washing      Gravel  ->  Flint (25%), Iron Nugget (13%)
+```
+
+### 5. Schematic Cannon
 
 The Create Cannon / Schematic addon, integrated into More Create and fully
 translated to English:
@@ -206,7 +240,9 @@ dist/               built MoreCreate.mcaddon
 | `python3 tools/gen_native_recipes.py tools/data/gap_report_v2.json` | Regenerates the plain Bedrock crafting and cooking recipe files |
 | `python3 tools/port_cannon.py <extracted cannon addon>` | Re-runs the cannon asset port |
 | `CREATE_RP=<path to Create RP> python3 tools/validate.py` | Checks JSON, manifests, textures, geometry, lang keys and script imports |
-| `python3 tools/build.py` | Builds `dist/MoreCreate.mcaddon` |
+| `python3 tools/gen_chain_drive.py` | Regenerates the Encased Chain Drive block and its connection permutations |
+| `python3 tools/gen_book.py tools/data/be_recipes.json tools/data/gap_report.json tools/data/be_recipes2.json` | Regenerates the Recipe Book's recipe table |
+| `python3 tools/build.py` | Builds `dist/MoreCreate-v<VERSION>.mcaddon` (bump `VERSION` in the script) |
 
 `tools/data/` holds the recipe diff the generator consumes, so the recipe
 tables can be rebuilt without the original Create jar to hand.

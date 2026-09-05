@@ -1,6 +1,9 @@
 pack.name=More Create
 pack.description=An add-on for the original Create mod by §6Vatonage§r that adds more features that are missing in the Bedrock Create.
 
+## Recipe Book #######################################################
+item.morecreate:recipe_book=Recipe Book
+
 ## Kinetics ##########################################################
 tile.morecreate:encased_chain_drive.name=Encased Chain Drive
 

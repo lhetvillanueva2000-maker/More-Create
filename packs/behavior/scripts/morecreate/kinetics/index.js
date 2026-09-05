@@ -6,6 +6,7 @@
 import { registerKinetic } from "../compat.js";
 import { kineticRegistrations } from "./configs.js";
 import { initEncasing } from "./encasing.js";
+import { initChainDrives } from "./chainDrive.js";
 
 export function registerKineticBlocks() {
     let registered = 0;
@@ -17,4 +18,5 @@ export function registerKineticBlocks() {
 
 export function initKinetics() {
     initEncasing();
+    initChainDrives();
 }

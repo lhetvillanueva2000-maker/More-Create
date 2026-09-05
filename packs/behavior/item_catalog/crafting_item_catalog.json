@@ -11,6 +11,7 @@
                             "name": "morecreate:itemGroup.name.kinetics"
                         },
                         "items": [
+                            "morecreate:recipe_book",
                             "morecreate:encased_chain_drive"
                         ]
                     }

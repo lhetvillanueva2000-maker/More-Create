@@ -43,6 +43,9 @@
         },
         "morecreate:empty_schematic": {
             "textures": "textures/morecreate/items/empty_schematic"
+        },
+        "morecreate:recipe_book": {
+            "textures": "textures/morecreate/items/recipe_book"
         }
     }
 }

@@ -6,15 +6,23 @@
             "menu_category": {
                 "category": "items"
             },
+            "states": {
+                "morecreate:chain": [
+                    "none",
+                    "a",
+                    "b"
+                ]
+            },
             "traits": {
                 "minecraft:placement_position": {
-                    "enabled_states": ["minecraft:block_face"]
+                    "enabled_states": [
+                        "minecraft:block_face"
+                    ]
                 }
             }
         },
         "components": {
             "create:rpm_system": {},
-
             "minecraft:map_color": "#8B6C4D",
             "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:redstone_conductivity": {
@@ -41,31 +49,45 @@
                 "seconds_to_destroy": 7.5,
                 "item_specific_speeds": [
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:wooden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:wooden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier'))"
+                        },
                         "destroy_speed": 1.15
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:stone_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:stone_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier'))"
+                        },
                         "destroy_speed": 0.6
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:copper_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:copper_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:copper_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:copper_tier'))"
+                        },
                         "destroy_speed": 0.5
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:iron_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:iron_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier'))"
+                        },
                         "destroy_speed": 0.4
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:golden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:golden_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier'))"
+                        },
                         "destroy_speed": 0.2
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:diamond_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:diamond_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier'))"
+                        },
                         "destroy_speed": 0.3
                     },
                     {
-                        "item": { "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:netherite_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier'))" },
+                        "item": {
+                            "tags": "(q.all_tags('minecraft:is_axe', 'minecraft:netherite_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier'))"
+                        },
                         "destroy_speed": 0.25
                     }
                 ]
@@ -73,22 +95,173 @@
         },
         "permutations": [
             {
-                "condition": "q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south'",
+                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'none'",
                 "components": {
                     "minecraft:material_instances": {
-                        "*": { "texture": "morecreate:encased_chain_drive", "render_method": "opaque" },
-                        "north": { "texture": "morecreate:chain_drive_face", "render_method": "opaque" },
-                        "south": { "texture": "morecreate:chain_drive_face", "render_method": "opaque" }
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        }
                     }
                 }
             },
             {
-                "condition": "q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west'",
+                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'a'",
                 "components": {
                     "minecraft:material_instances": {
-                        "*": { "texture": "morecreate:encased_chain_drive", "render_method": "opaque" },
-                        "east": { "texture": "morecreate:chain_drive_face", "render_method": "opaque" },
-                        "west": { "texture": "morecreate:chain_drive_face", "render_method": "opaque" }
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'b'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'none'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'a'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'b'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'none'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_face",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'a'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_link_h",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'b'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        }
                     }
                 }
             }
