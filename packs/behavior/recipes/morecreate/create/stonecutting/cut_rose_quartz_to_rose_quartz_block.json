@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_rose_quartz_to_rose_quartz_block"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:rose_quartz"
+            }
+        ],
+        "result": {
+            "item": "create:rose_quartz_block",
+            "count": 2
+        }
+    }
+}

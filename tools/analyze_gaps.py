@@ -77,6 +77,10 @@ TAG_ITEM = {
     "c:stripped_logs": "minecraft:stripped_oak_log",
     "minecraft:wool": "minecraft:white_wool",
     "minecraft:stone_crafting_materials": "minecraft:cobblestone",
+    "c:glass_blocks/colorless": "minecraft:glass",
+    "c:glass_panes/colorless": "minecraft:glass_pane",
+    "c:glass_blocks": "minecraft:glass",
+    "c:glass_panes": "minecraft:glass_pane",
 }
 # Tags Bedrock understands directly in a recipe key.
 TAG_PASSTHROUGH = {"minecraft:planks"}
@@ -235,6 +239,40 @@ class World:
                 continue
             out.append((rel[:-5].replace("/", "_"), doc))
         return out
+
+    def read_top_level(self):
+        """Recipes sitting directly in `recipe/`, outside any category folder.
+
+        Create keeps its stonecutting web and a large batch of crafting recipes
+        here rather than in a named subfolder.
+        """
+        out = []
+        for path in sorted(glob.glob(os.path.join(self.recipe_root, "*.json"))):
+            try:
+                doc = load(path)
+            except Exception:
+                continue
+            conditions = doc.get("neoforge:conditions", [])
+            if any(isinstance(c, dict) and c.get("type") == "neoforge:mod_loaded" for c in conditions):
+                continue
+            out.append((os.path.basename(path)[:-5], doc))
+        return out
+
+    def sources(self, node):
+        """Every concrete Bedrock item an ingredient could be, for tag expansion."""
+        if not isinstance(node, dict):
+            return []
+        if "item" in node:
+            item = self.bedrock(node["item"])
+            return [item] if self.ok(item) else []
+        if "tag" in node:
+            found = [self.bedrock(x) for x in self.resolve_tag(node["tag"])]
+            found = [x for x in found if self.ok(x)]
+            if found:
+                return found
+            pinned = TAG_ITEM.get(node["tag"])
+            return [pinned] if pinned and self.ok(pinned) else []
+        return []
 
 
 def results_of(world, doc, key="results"):
@@ -415,8 +453,12 @@ def analyse(world, be_tables):
                 if isinstance(res, dict) and res.get("item"):
                     be_results.add(res["item"])
 
+    # Create keeps a large batch of crafting recipes loose in `recipe/` as well
+    # as under `recipe/crafting/`, so both are scanned.
     crafting = []
-    for name, doc in world.read_dir("crafting"):
+    top_level = [(n, d) for n, d in world.read_top_level()
+                 if d.get("type", "").startswith("minecraft:crafting_")]
+    for name, doc in world.read_dir("crafting") + top_level:
         kind = doc.get("type")
         results = results_of(world, doc, "result")
         if not results or results[0]["item"] in be_results:
@@ -450,6 +492,49 @@ def analyse(world, be_tables):
                 ("ingredients", ingredients), ("result", results[0]),
             ]))
     report["native_crafting"] = crafting
+
+    # ---- native: stonecutting ---------------------------------------------
+    # Create's stone families are wired as an any-to-any web through item tags.
+    # Bedrock stonecutter recipes take one concrete ingredient, so each tag is
+    # expanded into a recipe per source block.
+    have_cut = set()
+    for path in glob.glob(os.path.join(os.environ.get("BE_RECIPES", ""), "**/*.json"), recursive=True):
+        try:
+            doc = load(path)
+        except Exception:
+            continue
+        for key in ("minecraft:recipe_shaped", "minecraft:recipe_shapeless"):
+            node = doc.get(key)
+            if not isinstance(node, dict) or "stonecutter" not in (node.get("tags") or []):
+                continue
+            res = node.get("result")
+            res = res[0] if isinstance(res, list) and res else res
+            rid = res.get("item") if isinstance(res, dict) else None
+            slots = node.get("ingredients") or list((node.get("key") or {}).values())
+            for slot in slots:
+                iid = slot.get("item") if isinstance(slot, dict) else slot
+                if iid and rid:
+                    have_cut.add((iid, rid))
+
+    seen, stonecutting = set(), []
+    for name, doc in world.read_top_level():
+        if doc.get("type") != "minecraft:stonecutting":
+            continue
+        res = doc.get("result") or {}
+        rid = world.bedrock(res.get("id") or res.get("item") or "")
+        if not world.ok(rid):
+            continue
+        count = int(res.get("count", 1))
+        for source in world.sources(doc.get("ingredient") or {}):
+            # A block cutting into itself is a no-op, and Bedrock shows it as a
+            # confusing empty stonecutter entry.
+            if source == rid or (source, rid) in have_cut or (source, rid) in seen:
+                continue
+            seen.add((source, rid))
+            stonecutting.append(OrderedDict([
+                ("input", source), ("output", rid), ("count", count),
+            ]))
+    report["native_stonecutting"] = stonecutting
 
     # ---- categories Create Bedrock offers no hook for ----------------------
     report["_unhookable"] = OrderedDict(

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_cut_deepslate_stairs_to_deepslate"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:cut_deepslate_stairs"
+            }
+        ],
+        "result": {
+            "item": "minecraft:deepslate",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_polished_cut_tuff_stairs_to_cut_tuff_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:polished_cut_tuff_stairs"
+            }
+        ],
+        "result": {
+            "item": "create:cut_tuff_bricks",
+            "count": 1
+        }
+    }
+}

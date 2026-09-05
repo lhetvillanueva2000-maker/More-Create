@@ -14,7 +14,7 @@ independent and More Create simply does nothing if Create is missing.
 
 ## What it adds
 
-### 1. Missing recipes — 122 in total
+### 1. Missing recipes — 703 in total
 
 Produced by diffing every recipe folder in Create 1.21.1 against the tables and
 recipe files built into the Bedrock addon, then dropping anything whose items do
@@ -32,12 +32,18 @@ not exist on Bedrock.
 | **Mechanical Crafter** | 1 | **The Crushing Wheel.** It had no recipe anywhere in the Bedrock addon — not on the crafting table, not in the crafter. The crafter's own matcher already handles 5×5 patterns (its code comments even name the wheel), so only the recipe was missing. |
 | **Bug fix** | 1 | Washing Crushed Raw Copper produced `create:copper_nugget`, an item the addon never defines, so the recipe silently yielded nothing. It now returns one copper ingot (the nine nuggets Create gives are worth exactly that) plus the usual clay ball chance. |
 
-**As ordinary Bedrock recipe files (6)** — these need no Create hook at all:
+**As ordinary Bedrock recipe files (587)** — these need no Create hook at all:
 
 | Type | Added | Notes |
 |---|---:|---|
+| **Stonecutter** | 581 | Create wires each stone family as an any-to-any web through item tags — any andesite block cuts into any other andesite variant. Bedrock had 162 of those pairs; this adds the remaining 581, covering 113 result blocks across all 14 stone families. |
 | Furnace / blast furnace | 3 | Zinc Ore and Raw Zinc could not be smelted into Zinc Ingots. |
 | Crafting table | 3 | Chain from zinc, Dough from flour + water bucket, Minecart back from a Minecart Contraption. |
+
+The stonecutting recipes come from Create's 327 tag-driven entries. A Bedrock
+stonecutter recipe takes one concrete ingredient, so each tag is expanded into
+one recipe per source block, dropping blocks Bedrock does not have and pairs it
+already covers.
 
 Bulk smelting, bulk smoking, bulk haunting, mixing, spouting and sequenced
 assembly were already complete — the diff found nothing missing in those.
@@ -60,6 +66,20 @@ that no script event can reach. These stay missing until Vatonage adds hooks:
 
 Writing More Create's own handlers for these would mean duplicating Create's
 machine logic and risking double-processing, so they are deliberately left out.
+
+Two more things from Create's data folder land in the same bucket:
+
+- **Potato Cannon ammo.** Create defines 25 projectile types; Bedrock implements
+  25 too, but seven of them differ — Blaze Cake, Chocolate Glazed Berries,
+  Glistering Melon Slice, Honeyed Apple, Melon Block, Pumpkin and Suspicious
+  Stew are Create ammo that Bedrock does not accept. Every one of those items
+  exists on Bedrock, and the projectile's `create:ammo_type` property is even
+  declared with room for 32 values while only 25 are used — but the ammo list is
+  a private array in Create's `potatoCannon.js` with no hook, so nothing outside
+  that pack can extend it.
+- **Damage types.** Create ships nine (`crush`, `fan_fire`, `fan_lava`,
+  `mechanical_saw`, `run_over` and so on). Bedrock add-ons have no data-driven
+  damage-type system at all, so these have no equivalent.
 
 ### 2. Encased Chain Drive
 

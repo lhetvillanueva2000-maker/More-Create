@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_cut_veridium_to_polished_cut_veridium_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:cut_veridium"
+            }
+        ],
+        "result": {
+            "item": "create:polished_cut_veridium_slab",
+            "count": 2
+        }
+    }
+}

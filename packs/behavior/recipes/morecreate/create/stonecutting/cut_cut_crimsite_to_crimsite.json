@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_cut_crimsite_to_crimsite"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:cut_crimsite"
+            }
+        ],
+        "result": {
+            "item": "create:crimsite",
+            "count": 1
+        }
+    }
+}

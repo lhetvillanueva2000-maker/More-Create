@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_cut_andesite_bricks_to_cut_andesite"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:cut_andesite_bricks"
+            }
+        ],
+        "result": {
+            "item": "create:cut_andesite",
+            "count": 1
+        }
+    }
+}

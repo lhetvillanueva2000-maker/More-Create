@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_polished_cut_veridium_stairs_to_veridium"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:polished_cut_veridium_stairs"
+            }
+        ],
+        "result": {
+            "item": "create:veridium",
+            "count": 1
+        }
+    }
+}

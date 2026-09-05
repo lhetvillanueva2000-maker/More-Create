@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_small_diorite_bricks_to_diorite"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:small_diorite_bricks"
+            }
+        ],
+        "result": {
+            "item": "minecraft:diorite",
+            "count": 1
+        }
+    }
+}

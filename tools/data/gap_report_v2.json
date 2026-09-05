@@ -112,6 +112,2913 @@
    }
   }
  ],
+ "native_stonecutting": [
+  {
+   "input": "create:cut_andesite",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "minecraft:andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "minecraft:calcite",
+   "count": 1
+  },
+  {
+   "input": "create:zinc_ingot",
+   "output": "create:copycat_panel",
+   "count": 4
+  },
+  {
+   "input": "create:zinc_ingot",
+   "output": "create:copycat_step",
+   "count": 4
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:cut_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:cut_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:cut_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:cut_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:cut_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:cut_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:cut_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:cut_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:cut_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:cut_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:cut_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:cut_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:cut_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:cut_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:cut_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:cut_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:cut_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:cut_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:cut_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:cut_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:cut_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:cut_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:cut_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:cut_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:cut_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:cut_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:cut_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:cut_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:cut_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:cut_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:cut_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:cut_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:cut_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:cut_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:cut_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:cut_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:cut_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:cut_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:cut_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:cut_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:cut_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:cut_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:cut_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:cut_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:cut_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:cut_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:cut_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:cut_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:cut_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:cut_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:cut_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:cut_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:cut_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:cut_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:cut_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:cut_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:cut_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:cut_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:cut_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:cut_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "minecraft:deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "minecraft:diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "minecraft:dripstone_block",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "minecraft:granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:polished_cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:polished_cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:polished_cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:polished_cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:polished_cut_andesite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:polished_cut_andesite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:polished_cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:polished_cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:polished_cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:polished_cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_andesite_bricks",
+   "output": "create:polished_cut_andesite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:polished_cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:polished_cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:polished_cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:polished_cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:polished_cut_asurine",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:polished_cut_asurine_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:polished_cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:polished_cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:polished_cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:polished_cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_asurine_bricks",
+   "output": "create:polished_cut_asurine_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:polished_cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:polished_cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:polished_cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:polished_cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:polished_cut_calcite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:polished_cut_calcite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:polished_cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:polished_cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:polished_cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:polished_cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_calcite_bricks",
+   "output": "create:polished_cut_calcite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:polished_cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:polished_cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:polished_cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:polished_cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:polished_cut_crimsite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:polished_cut_crimsite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:polished_cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:polished_cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:polished_cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:polished_cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_crimsite_bricks",
+   "output": "create:polished_cut_crimsite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:polished_cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:polished_cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:polished_cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:polished_cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:polished_cut_deepslate",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:polished_cut_deepslate_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:polished_cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:polished_cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:polished_cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:polished_cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_deepslate_bricks",
+   "output": "create:polished_cut_deepslate_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:polished_cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:polished_cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:polished_cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:polished_cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:polished_cut_diorite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:polished_cut_diorite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:polished_cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:polished_cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:polished_cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:polished_cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_diorite_bricks",
+   "output": "create:polished_cut_diorite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:polished_cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:polished_cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:polished_cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:polished_cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:polished_cut_dripstone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:polished_cut_dripstone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:polished_cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:polished_cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:polished_cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:polished_cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_dripstone_bricks",
+   "output": "create:polished_cut_dripstone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:polished_cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:polished_cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:polished_cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:polished_cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:polished_cut_granite",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:polished_cut_granite_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:polished_cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:polished_cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:polished_cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:polished_cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_granite_bricks",
+   "output": "create:polished_cut_granite_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:polished_cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:polished_cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:polished_cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:polished_cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:polished_cut_limestone",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:polished_cut_limestone_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:polished_cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:polished_cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:polished_cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:polished_cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_limestone_bricks",
+   "output": "create:polished_cut_limestone_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:polished_cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:polished_cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:polished_cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:polished_cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:polished_cut_ochrum",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:polished_cut_ochrum_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:polished_cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:polished_cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:polished_cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:polished_cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_ochrum_bricks",
+   "output": "create:polished_cut_ochrum_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:polished_cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:polished_cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:polished_cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:polished_cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:polished_cut_tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:polished_cut_tuff_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:polished_cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:polished_cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:polished_cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:polished_cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "create:polished_cut_tuff_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:polished_cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:polished_cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:polished_cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:polished_cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:polished_cut_veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:polished_cut_veridium_slab",
+   "count": 2
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:polished_cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:polished_cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:polished_cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:polished_cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:polished_cut_veridium_stairs",
+   "count": 1
+  },
+  {
+   "input": "create:rose_quartz",
+   "output": "create:rose_quartz_block",
+   "count": 2
+  },
+  {
+   "input": "create:polished_rose_quartz",
+   "output": "create:rose_quartz_tiles",
+   "count": 2
+  },
+  {
+   "input": "create:cut_andesite",
+   "output": "create:small_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_stairs",
+   "output": "create:small_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite",
+   "output": "create:small_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_andesite_stairs",
+   "output": "create:small_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_andesite_bricks",
+   "output": "create:small_andesite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine",
+   "output": "create:small_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_stairs",
+   "output": "create:small_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine",
+   "output": "create:small_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_asurine_stairs",
+   "output": "create:small_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_asurine_bricks",
+   "output": "create:small_asurine_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite",
+   "output": "create:small_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_stairs",
+   "output": "create:small_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite",
+   "output": "create:small_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_calcite_stairs",
+   "output": "create:small_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_calcite_bricks",
+   "output": "create:small_calcite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite",
+   "output": "create:small_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_stairs",
+   "output": "create:small_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite",
+   "output": "create:small_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_crimsite_stairs",
+   "output": "create:small_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_crimsite_bricks",
+   "output": "create:small_crimsite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate",
+   "output": "create:small_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_stairs",
+   "output": "create:small_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate",
+   "output": "create:small_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_deepslate_stairs",
+   "output": "create:small_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_deepslate_bricks",
+   "output": "create:small_deepslate_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite",
+   "output": "create:small_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_stairs",
+   "output": "create:small_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite",
+   "output": "create:small_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_diorite_stairs",
+   "output": "create:small_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_diorite_bricks",
+   "output": "create:small_diorite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone",
+   "output": "create:small_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_stairs",
+   "output": "create:small_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone",
+   "output": "create:small_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_dripstone_stairs",
+   "output": "create:small_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_dripstone_bricks",
+   "output": "create:small_dripstone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite",
+   "output": "create:small_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_stairs",
+   "output": "create:small_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite",
+   "output": "create:small_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_granite_stairs",
+   "output": "create:small_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_granite_bricks",
+   "output": "create:small_granite_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone",
+   "output": "create:small_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_stairs",
+   "output": "create:small_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone",
+   "output": "create:small_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_limestone_stairs",
+   "output": "create:small_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_limestone_bricks",
+   "output": "create:small_limestone_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum",
+   "output": "create:small_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_stairs",
+   "output": "create:small_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum",
+   "output": "create:small_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_ochrum_stairs",
+   "output": "create:small_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_ochrum_bricks",
+   "output": "create:small_ochrum_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_rose_quartz",
+   "output": "create:small_rose_quartz_tiles",
+   "count": 2
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "create:small_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "create:small_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "create:small_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "create:small_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "create:small_tuff_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:small_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:small_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:small_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:small_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:small_veridium_bricks",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_stairs",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_tuff_stairs",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_tuff_bricks",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:small_tuff_bricks",
+   "output": "minecraft:tuff",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium",
+   "output": "create:veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_stairs",
+   "output": "create:veridium",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium",
+   "output": "create:veridium",
+   "count": 1
+  },
+  {
+   "input": "create:polished_cut_veridium_stairs",
+   "output": "create:veridium",
+   "count": 1
+  },
+  {
+   "input": "create:cut_veridium_bricks",
+   "output": "create:veridium",
+   "count": 1
+  },
+  {
+   "input": "create:small_veridium_bricks",
+   "output": "create:veridium",
+   "count": 1
+  }
+ ],
  "_unhookable": {
   "cutting": 2,
   "deploying": 167,

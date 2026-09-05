@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_polished_cut_ochrum_stairs_to_cut_ochrum_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:polished_cut_ochrum_stairs"
+            }
+        ],
+        "result": {
+            "item": "create:cut_ochrum_slab",
+            "count": 2
+        }
+    }
+}

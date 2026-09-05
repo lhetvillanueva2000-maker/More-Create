@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_polished_cut_andesite_to_polished_cut_andesite_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:polished_cut_andesite"
+            }
+        ],
+        "result": {
+            "item": "create:polished_cut_andesite_stairs",
+            "count": 1
+        }
+    }
+}

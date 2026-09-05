@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_small_dripstone_bricks_to_cut_dripstone_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:small_dripstone_bricks"
+            }
+        ],
+        "result": {
+            "item": "create:cut_dripstone_stairs",
+            "count": 1
+        }
+    }
+}

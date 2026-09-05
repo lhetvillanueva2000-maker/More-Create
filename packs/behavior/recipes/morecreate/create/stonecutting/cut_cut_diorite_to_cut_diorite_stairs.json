@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_cut_diorite_to_cut_diorite_stairs"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:cut_diorite"
+            }
+        ],
+        "result": {
+            "item": "create:cut_diorite_stairs",
+            "count": 1
+        }
+    }
+}

@@ -63,6 +63,28 @@ def crafting(entry):
     ])
 
 
+def stonecutting(entry):
+    """One Bedrock stonecutter recipe.
+
+    Bedrock models the stonecutter as a shapeless recipe tagged `stonecutter`,
+    with a single concrete ingredient - so Create's tag-driven any-to-any stone
+    families have to be expanded into one recipe per source block.
+    """
+    short = lambda i: i.split(":", 1)[1]
+    identifier = "morecreate:cut_%s_to_%s" % (short(entry["input"]), short(entry["output"]))
+    return identifier, OrderedDict([
+        ("format_version", "1.12"),
+        ("minecraft:recipe_shapeless", OrderedDict([
+            ("description", {"identifier": identifier}),
+            ("tags", ["stonecutter"]),
+            ("priority", 1),
+            ("ingredients", [{"item": entry["input"]}]),
+            ("result", OrderedDict([("item", entry["output"]),
+                                    ("count", entry["count"])])),
+        ])),
+    ])
+
+
 def main():
     report = json.load(open(sys.argv[1], encoding="utf-8"))
 
@@ -82,10 +104,24 @@ def main():
         written.append(("crafting", entry["name"], "-> %s x%d"
                         % (entry["result"]["item"], entry["result"]["count"])))
 
+    cut_seen = set()
+    cut_count = 0
+    for entry in report.get("native_stonecutting", []):
+        identifier, doc = stonecutting(entry)
+        if identifier in cut_seen:
+            raise SystemExit("duplicate stonecutter recipe id: %s" % identifier)
+        cut_seen.add(identifier)
+        write(os.path.join(OUT, "stonecutting", identifier.split(":", 1)[1] + ".json"), doc)
+        cut_count += 1
+
     print("wrote %d native recipe files into %s"
-          % (len(written), os.path.relpath(OUT, ROOT)))
+          % (len(written) + cut_count, os.path.relpath(OUT, ROOT)))
     for kind, name, detail in written:
         print("   %-9s %-38s %s" % (kind, name, detail))
+    if cut_count:
+        results = {e["output"] for e in report["native_stonecutting"]}
+        print("   %-9s %d recipes covering %d result blocks"
+              % ("cutting", cut_count, len(results)))
 
 
 if __name__ == "__main__":

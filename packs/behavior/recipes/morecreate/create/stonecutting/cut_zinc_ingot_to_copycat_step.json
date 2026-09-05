@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_zinc_ingot_to_copycat_step"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:zinc_ingot"
+            }
+        ],
+        "result": {
+            "item": "create:copycat_step",
+            "count": 4
+        }
+    }
+}

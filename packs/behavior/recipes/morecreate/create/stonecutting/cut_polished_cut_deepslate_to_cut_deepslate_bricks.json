@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_polished_cut_deepslate_to_cut_deepslate_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:polished_cut_deepslate"
+            }
+        ],
+        "result": {
+            "item": "create:cut_deepslate_bricks",
+            "count": 1
+        }
+    }
+}

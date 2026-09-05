@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:cut_small_asurine_bricks_to_asurine"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "create:small_asurine_bricks"
+            }
+        ],
+        "result": {
+            "item": "create:asurine",
+            "count": 1
+        }
+    }
+}
