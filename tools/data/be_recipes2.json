@@ -1,0 +1,4573 @@
+{
+ "SPOUT_RECIPES": [
+  {
+   "fluid": "minecraft:lava_bucket",
+   "input": "minecraft:bucket",
+   "output": "minecraft:lava_bucket"
+  },
+  {
+   "fluid": "minecraft:lava_bucket",
+   "input": "create:blaze_cake_base",
+   "output": "create:blaze_cake"
+  },
+  {
+   "fluid": "minecraft:water_bucket",
+   "input": "minecraft:bucket",
+   "output": "minecraft:water_bucket"
+  },
+  {
+   "fluid": "minecraft:water_bucket",
+   "input": "minecraft:glass_bottle",
+   "output": "minecraft:potion"
+  },
+  {
+   "fluid": "minecraft:water_bucket",
+   "input": "minecraft:dirt",
+   "output": "minecraft:grass_block"
+  },
+  {
+   "fluid": "create:honey_bucket",
+   "input": "minecraft:bucket",
+   "output": "create:honey_bucket"
+  },
+  {
+   "fluid": "create:honey_bucket",
+   "input": "minecraft:apple",
+   "output": "create:honeyed_apple"
+  },
+  {
+   "fluid": "create:chocolate_bucket",
+   "input": "minecraft:bucket",
+   "output": "create:chocolate_bucket"
+  },
+  {
+   "fluid": "create:chocolate_bucket",
+   "input": "minecraft:sweet_berries",
+   "output": "create:chocolate_glazed_berries"
+  },
+  {
+   "fluid": "create:chocolate_bucket",
+   "input": "minecraft:glow_berries",
+   "output": "create:chocolate_glazed_berries"
+  },
+  {
+   "fluid": "minecraft:milk_bucket",
+   "input": "minecraft:bucket",
+   "output": "minecraft:milk_bucket"
+  },
+  {
+   "fluid": "minecraft:milk_bucket",
+   "input": "minecraft:bread",
+   "output": "create:sweet_roll"
+  }
+ ],
+ "SEQUENCED_RECIPES": [
+  {
+   "id": "precision_mechanism",
+   "surface": "create:golden_sheet",
+   "inProgress": "create:incomplete_precision_mechanism",
+   "steps": [
+    {
+     "held": "create:cogwheel",
+     "keepHeld": false
+    },
+    {
+     "held": "create:large_cogwheel",
+     "keepHeld": false
+    },
+    {
+     "held": "minecraft:iron_nugget",
+     "keepHeld": false
+    }
+   ],
+   "passes": 1,
+   "result": "create:precision_mechanism",
+   "junk": [
+    {
+     "item": "create:golden_sheet",
+     "weight": 53
+    },
+    {
+     "item": "create:andesite_alloy",
+     "weight": 53
+    },
+    {
+     "item": "create:cogwheel",
+     "weight": 33
+    },
+    {
+     "item": "create:shaft",
+     "weight": 13
+    },
+    {
+     "item": "minecraft:gold_nugget",
+     "weight": 13
+    },
+    {
+     "item": "minecraft:iron_ingot",
+     "weight": 6
+    },
+    {
+     "item": "minecraft:clock",
+     "weight": 6
+    }
+   ]
+  }
+ ],
+ "ADDON_CRAFTING_RECIPES": [
+  {
+   "pattern": [
+    "N",
+    "A"
+   ],
+   "key": {
+    "N": {
+     "item": "minecraft:iron_nugget"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:copycat_panel",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "NA"
+   ],
+   "key": {
+    "N": {
+     "item": "minecraft:iron_nugget"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:copycat_step",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    " I ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "create:metal_girder",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    " B ",
+    "AAA",
+    " A "
+   ],
+   "key": {
+    "A": {
+     "item": "create:brass_sheet"
+    },
+    "B": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:brass_hand",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "B"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_rose_quartz"
+    },
+    "B": {
+     "item": "create:iron_sheet"
+    }
+   },
+   "result": {
+    "id": "create:electron_tube",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " A ",
+    "ABA",
+    " A "
+   ],
+   "key": {
+    "A": {
+     "item": "create:iron_sheet"
+    },
+    "B": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:propeller",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " R ",
+    " B ",
+    " A "
+   ],
+   "key": {
+    "R": {
+     "item": "minecraft:redstone_torch"
+    },
+    "B": {
+     "item": "create:brass_sheet"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:redstone_link",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    " B ",
+    "ABA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:iron_sheet"
+    },
+    "B": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:whisk",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "BB",
+    "R "
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "B": {
+     "item": "create:shaft"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "create:clutch",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "BA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:planks"
+    },
+    "B": {
+     "item": "create:shaft"
+    }
+   },
+   "result": {
+    "id": "create:cogwheel",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    " A ",
+    "ABA",
+    " A "
+   ],
+   "key": {
+    "A": {
+     "item": "create:cogwheel"
+    },
+    "B": {
+     "item": "create:andesite_casing"
+    }
+   },
+   "result": {
+    "id": "create:gearbox",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "BA ",
+    "R  "
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "B": {
+     "item": "create:cogwheel"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "create:gearshift",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AB ",
+    "B  "
+   ],
+   "key": {
+    "B": {
+     "item": "minecraft:planks"
+    },
+    "A": {
+     "item": "create:shaft"
+    }
+   },
+   "result": {
+    "id": "create:large_cogwheel",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:dried_kelp"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_belt",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "B"
+   ],
+   "key": {
+    "A": {
+     "item": "create:precision_mechanism"
+    },
+    "B": {
+     "item": "create:brass_casing"
+    }
+   },
+   "result": {
+    "id": "create:rotation_speed_controller",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:shaft",
+    "amount": 8
+   }
+  },
+  {
+   "pattern": [
+    "CAA"
+   ],
+   "key": {
+    "C": {
+     "item": "minecraft:compass"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    }
+   },
+   "result": {
+    "id": "create:speedometer",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WGW",
+    "WWW"
+   ],
+   "key": {
+    "W": {
+     "item": "minecraft:dark_oak_planks"
+    },
+    "G": {
+     "item": "minecraft:glass"
+    }
+   },
+   "result": {
+    "id": "create:dark_oak_window_connected",
+    "amount": 8
+   }
+  },
+  {
+   "pattern": [
+    "A A",
+    "AAA",
+    "A A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:ladder_andesite",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "B B",
+    "BBB",
+    "B B"
+   ],
+   "key": {
+    "B": {
+     "item": "create:brass_nugget"
+    }
+   },
+   "result": {
+    "id": "create:ladder_brass",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "C C",
+    "CCC",
+    "C C"
+   ],
+   "key": {
+    "C": {
+     "item": "minecraft:copper_ingot"
+    }
+   },
+   "result": {
+    "id": "create:ladder_copper",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "QQ",
+    "QQ"
+   ],
+   "key": {
+    "Q": {
+     "item": "create:polished_rose_quartz"
+    }
+   },
+   "result": {
+    "id": "create:rose_quartz_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "QQ",
+    "QQ"
+   ],
+   "key": {
+    "Q": {
+     "item": "create:rose_quartz_block"
+    }
+   },
+   "result": {
+    "id": "create:rose_quartz_tiles",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "QQ",
+    "QQ"
+   ],
+   "key": {
+    "Q": {
+     "item": "create:rose_quartz_tiles"
+    }
+   },
+   "result": {
+    "id": "create:small_rose_quartz_tiles",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "ASA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:brass_ingot"
+    },
+    "S": {
+     "item": "create:shaft"
+    }
+   },
+   "result": {
+    "id": "create:flywheel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "ABA",
+    "BFB",
+    "ABA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:brass_sheet"
+    },
+    "B": {
+     "item": "create:brass_casing"
+    },
+    "F": {
+     "item": "create:flywheel"
+    }
+   },
+   "result": {
+    "id": "create:furnace_engine",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "PPP",
+    "  A"
+   ],
+   "key": {
+    "P": {
+     "item": "minecraft:oak_planks"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:hand_crank",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AWA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:planks"
+    },
+    "W": {
+     "item": "create:water_wheel"
+    }
+   },
+   "result": {
+    "id": "create:large_water_wheel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:oak_planks"
+    },
+    "B": {
+     "item": "create:shaft"
+    }
+   },
+   "result": {
+    "id": "create:water_wheel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "A A",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:basin",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:black_wool"
+    }
+   },
+   "result": {
+    "id": "create:black_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:blue_wool"
+    }
+   },
+   "result": {
+    "id": "create:blue_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "E",
+    "B",
+    "K"
+   ],
+   "key": {
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "B": {
+     "item": "create:brass_ingot"
+    },
+    "K": {
+     "item": "minecraft:dried_kelp"
+    }
+   },
+   "result": {
+    "id": "create:brass_funnel",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "E",
+    "BB",
+    "KK"
+   ],
+   "key": {
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "B": {
+     "item": "create:brass_ingot"
+    },
+    "K": {
+     "item": "minecraft:dried_kelp"
+    }
+   },
+   "result": {
+    "id": "create:brass_tunnel",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:brown_wool"
+    }
+   },
+   "result": {
+    "id": "create:brown_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "S",
+    "I",
+    "S"
+   ],
+   "key": {
+    "S": {
+     "item": "create:iron_sheet"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "create:chute",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "S",
+    "I",
+    "E"
+   ],
+   "key": {
+    "S": {
+     "item": "create:brass_sheet"
+    },
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "I": {
+     "item": "create:chute"
+    }
+   },
+   "result": {
+    "id": "create:chute_smart",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:cyan_wool"
+    }
+   },
+   "result": {
+    "id": "create:cyan_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "E",
+    "A",
+    "H"
+   ],
+   "key": {
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "H": {
+     "item": "create:brass_hand"
+    }
+   },
+   "result": {
+    "id": "create:deployer",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " I ",
+    "INI",
+    " I "
+   ],
+   "key": {
+    "I": {
+     "item": "create:iron_sheet"
+    },
+    "N": {
+     "item": "minecraft:netherrack"
+    }
+   },
+   "result": {
+    "id": "create:empty_blaze_burner",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "S",
+    "A",
+    "P"
+   ],
+   "key": {
+    "S": {
+     "item": "create:shaft"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "P": {
+     "item": "create:propeller"
+    }
+   },
+   "result": {
+    "id": "create:encased_fan",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:gray_wool"
+    }
+   },
+   "result": {
+    "id": "create:gray_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:green_wool"
+    }
+   },
+   "result": {
+    "id": "create:green_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "T"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    },
+    "T": {
+     "item": "minecraft:iron_trapdoor"
+    }
+   },
+   "result": {
+    "id": "create:hatch",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "I",
+    "C"
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_bars"
+    },
+    "C": {
+     "item": "create:copper_casing"
+    }
+   },
+   "result": {
+    "id": "create:item_drain",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:light_blue_wool"
+    }
+   },
+   "result": {
+    "id": "create:light_blue_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:light_gray_wool"
+    }
+   },
+   "result": {
+    "id": "create:light_gray_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:lime_wool"
+    }
+   },
+   "result": {
+    "id": "create:lime_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:magenta_wool"
+    }
+   },
+   "result": {
+    "id": "create:magenta_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SSA",
+    "S  ",
+    "PB "
+   ],
+   "key": {
+    "S": {
+     "item": "create:brass_sheet"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    },
+    "P": {
+     "item": "create:precision_mechanism"
+    },
+    "B": {
+     "item": "create:brass_casing"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_arm",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "S",
+    "A",
+    "I"
+   ],
+   "key": {
+    "S": {
+     "item": "create:shaft"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "I": {
+     "item": "create:iron_sheet"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_bearing",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "E",
+    "B",
+    "C"
+   ],
+   "key": {
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "B": {
+     "item": "create:brass_casing"
+    },
+    "C": {
+     "item": "minecraft:crafting_table"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_crafter",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    " A",
+    "AIA",
+    " C"
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    },
+    "C": {
+     "item": "create:andesite_casing"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_drill",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "C",
+    "A",
+    "W"
+   ],
+   "key": {
+    "C": {
+     "item": "create:cogwheel"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "W": {
+     "item": "create:whisk"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_mixer",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "S",
+    "A",
+    "B"
+   ],
+   "key": {
+    "S": {
+     "item": "create:shaft"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "B": {
+     "item": "minecraft:iron_block"
+    },
+    "I": {
+     "item": "create:iron_sheet"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_press",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " S ",
+    "SIS",
+    " C "
+   ],
+   "key": {
+    "S": {
+     "item": "create:iron_sheet"
+    },
+    "I": {
+     "item": "minecraft:iron_ingot"
+    },
+    "C": {
+     "item": "create:andesite_casing"
+    }
+   },
+   "result": {
+    "id": "create:mechanical_saw",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "C",
+    "A",
+    "S"
+   ],
+   "key": {
+    "C": {
+     "item": "create:cogwheel"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "S": {
+     "item": "minecraft:stone"
+    }
+   },
+   "result": {
+    "id": "create:millstone",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:orange_wool"
+    }
+   },
+   "result": {
+    "id": "create:orange_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:pink_wool"
+    }
+   },
+   "result": {
+    "id": "create:pink_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SIS"
+   ],
+   "key": {
+    "S": {
+     "item": "create:copper_sheet"
+    },
+    "I": {
+     "item": "minecraft:copper_ingot"
+    }
+   },
+   "result": {
+    "id": "create:pipe",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    " S ",
+    "BCB",
+    " A "
+   ],
+   "key": {
+    "S": {
+     "item": "create:iron_sheet"
+    },
+    "B": {
+     "item": "minecraft:barrel"
+    },
+    "C": {
+     "item": "create:andesite_casing"
+    },
+    "A": {
+     "item": "create:andesite_alloy"
+    }
+   },
+   "result": {
+    "id": "create:portable_storage_interface",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:purple_wool"
+    }
+   },
+   "result": {
+    "id": "create:purple_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:red_wool"
+    }
+   },
+   "result": {
+    "id": "create:red_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "B",
+    "P",
+    "E"
+   ],
+   "key": {
+    "B": {
+     "item": "create:brass_sheet"
+    },
+    "P": {
+     "item": "create:pipe"
+    },
+    "E": {
+     "item": "create:electron_tube"
+    }
+   },
+   "result": {
+    "id": "create:smart_fluid_pipe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "E",
+    "A",
+    "O"
+   ],
+   "key": {
+    "E": {
+     "item": "create:electron_tube"
+    },
+    "A": {
+     "item": "create:brass_casing"
+    },
+    "O": {
+     "item": "minecraft:observer"
+    }
+   },
+   "result": {
+    "id": "create:smart_observer",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "C",
+    "K"
+   ],
+   "key": {
+    "C": {
+     "item": "create:copper_casing"
+    },
+    "K": {
+     "item": "minecraft:dried_kelp"
+    }
+   },
+   "result": {
+    "id": "create:spout",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "IBI"
+   ],
+   "key": {
+    "I": {
+     "item": "create:iron_sheet"
+    },
+    "B": {
+     "item": "minecraft:barrel"
+    }
+   },
+   "result": {
+    "id": "create:vault",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " W ",
+    "SAP",
+    " W "
+   ],
+   "key": {
+    "S": {
+     "item": "create:shaft"
+    },
+    "A": {
+     "item": "create:andesite_casing"
+    },
+    "P": {
+     "item": "create:propeller"
+    },
+    "W": {
+     "item": "minecraft:white_wool"
+    }
+   },
+   "result": {
+    "id": "create:windmill_bearing",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:white_wool"
+    }
+   },
+   "result": {
+    "id": "create:windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "WWW",
+    "WSW",
+    "WWW"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "W": {
+     "item": "minecraft:yellow_wool"
+    }
+   },
+   "result": {
+    "id": "create:yellow_windmill_sail",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AB",
+    "BA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:iron_nugget"
+    },
+    "B": {
+     "item": "minecraft:andesite"
+    }
+   },
+   "result": {
+    "id": "create:andesite_alloy",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AB",
+    "BA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:zinc_nugget"
+    },
+    "B": {
+     "item": "minecraft:andesite"
+    }
+   },
+   "result": {
+    "id": "create:andesite_alloy",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:brass_ingot"
+    }
+   },
+   "result": {
+    "id": "create:brass_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:brass_nugget"
+    }
+   },
+   "result": {
+    "id": "create:brass_ingot",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " M ",
+    "SFS",
+    " D "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:milk_bucket"
+    },
+    "S": {
+     "item": "minecraft:sugar"
+    },
+    "D": {
+     "item": "create:dough"
+    },
+    "F": {
+     "item": "minecraft:egg"
+    }
+   },
+   "result": {
+    "id": "minecraft:cake",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:experience_nugget"
+    }
+   },
+   "result": {
+    "id": "create:experience_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "QRR",
+    "RRR",
+    "RRR"
+   ],
+   "key": {
+    "Q": {
+     "item": "minecraft:quartz"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "create:rose_quartz",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:zinc_ingot"
+    }
+   },
+   "result": {
+    "id": "create:zinc_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:zinc_nugget"
+    }
+   },
+   "result": {
+    "id": "create:zinc_ingot",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:polished_andesite"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:cut_andesite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:asurine"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:cut_asurine_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:calcite"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:cut_calcite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:polished_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:cut_deepslate_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:polished_diorite"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:cut_diorite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:dripstone_block"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:cut_dripstone_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:polished_granite"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:cut_granite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "minecraft:polished_tuff"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff_bricks"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "A",
+    "A"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_pillar",
+    "amount": 2
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:cut_tuff_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_andesite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_andesite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_andesite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_andesite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_asurine",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_asurine_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_asurine"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_asurine_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_calcite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_calcite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_calcite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_calcite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_deepslate",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_deepslate_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_deepslate"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_deepslate_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_diorite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_diorite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_diorite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_diorite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_dripstone",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_dripstone_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_dripstone"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_dripstone_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_granite",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_granite_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_granite"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_granite_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_tuff",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_tuff_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:polished_cut_tuff"
+    }
+   },
+   "result": {
+    "id": "create:polished_cut_tuff_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_andesite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_andesite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_andesite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_andesite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_andesite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_andesite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_asurine_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_asurine_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_asurine_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_asurine_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_asurine_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_asurine_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_calcite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_calcite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_calcite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_calcite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_calcite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_calcite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_deepslate_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_deepslate_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_deepslate_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_deepslate_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_deepslate_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_deepslate_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_diorite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_diorite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_diorite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_diorite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_diorite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_diorite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_dripstone_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_dripstone_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_dripstone_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_dripstone_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_dripstone_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_dripstone_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_granite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_granite_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_granite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_granite_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_granite_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_granite_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AA",
+    "AA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:cut_tuff_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_tuff_bricks",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_tuff_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_tuff_bricks_slab",
+    "amount": 6
+   }
+  },
+  {
+   "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+   ],
+   "key": {
+    "A": {
+     "item": "create:small_tuff_bricks"
+    }
+   },
+   "result": {
+    "id": "create:small_tuff_bricks_stairs",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    " S ",
+    "DGD"
+   ],
+   "key": {
+    "G": {
+     "item": "create:golden_sheet"
+    },
+    "D": {
+     "item": "minecraft:glass"
+    },
+    "S": {
+     "item": "minecraft:string"
+    }
+   },
+   "result": {
+    "id": "create:goggles",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "GG ",
+    "GC ",
+    " S "
+   ],
+   "key": {
+    "G": {
+     "item": "create:golden_sheet"
+    },
+    "C": {
+     "item": "create:cogwheel"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "create:wrench",
+    "amount": 1
+   }
+  }
+ ],
+ "VANILLA_CRAFTING_RECIPES": [
+  {
+   "pattern": [
+    "PP",
+    "PP"
+   ],
+   "key": {
+    "P": {
+     "tag": "minecraft:planks"
+    }
+   },
+   "result": {
+    "id": "minecraft:crafting_table",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "P",
+    "P"
+   ],
+   "key": {
+    "P": {
+     "tag": "minecraft:planks"
+    }
+   },
+   "result": {
+    "id": "minecraft:stick",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "PPP",
+    "P P",
+    "PPP"
+   ],
+   "key": {
+    "P": {
+     "tag": "minecraft:planks"
+    }
+   },
+   "result": {
+    "id": "minecraft:chest",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "CCC",
+    "C C",
+    "CCC"
+   ],
+   "key": {
+    "C": {
+     "tag": "minecraft:stone_crafting_materials"
+    }
+   },
+   "result": {
+    "id": "minecraft:furnace",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "C",
+    "S"
+   ],
+   "key": {
+    "C": {
+     "ids": [
+      "minecraft:coal",
+      "minecraft:charcoal"
+     ]
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:torch",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    " S ",
+    "S S",
+    " S "
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:ladder",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "III",
+    " i ",
+    "iii"
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_block"
+    },
+    "i": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:anvil",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " I ",
+    "III",
+    " I "
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:iron_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+   ],
+   "key": {
+    "G": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:gold_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+   ],
+   "key": {
+    "D": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "result": {
+    "id": "minecraft:diamond_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+   ],
+   "key": {
+    "E": {
+     "item": "minecraft:emerald"
+    }
+   },
+   "result": {
+    "id": "minecraft:emerald_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+   ],
+   "key": {
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:redstone_block",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+   ],
+   "key": {
+    "G": {
+     "item": "minecraft:glowstone_dust"
+    }
+   },
+   "result": {
+    "id": "minecraft:glowstone",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "III",
+    "I I",
+    "III"
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:hopper",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "CCC",
+    "CRC",
+    "CCC"
+   ],
+   "key": {
+    "C": {
+     "tag": "minecraft:stone_crafting_materials"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:dropper",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "CCC",
+    "CRC",
+    "CBC"
+   ],
+   "key": {
+    "C": {
+     "tag": "minecraft:stone_crafting_materials"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    },
+    "B": {
+     "item": "minecraft:bow"
+    }
+   },
+   "result": {
+    "id": "minecraft:dispenser",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+   ],
+   "key": {
+    "S": {
+     "tag": "minecraft:stone_crafting_materials"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:observer",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+   ],
+   "key": {
+    "S": {
+     "tag": "minecraft:planks"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:noteblock",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "R",
+    "S"
+   ],
+   "key": {
+    "R": {
+     "item": "minecraft:redstone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:redstone_torch",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SSS",
+    "RRR",
+    "SSS"
+   ],
+   "key": {
+    "S": {
+     "tag": "minecraft:stone_crafting_materials"
+    },
+    "R": {
+     "item": "minecraft:redstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:repeater",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SSS",
+    "RRR",
+    "QQQ"
+   ],
+   "key": {
+    "S": {
+     "tag": "minecraft:stone_crafting_materials"
+    },
+    "R": {
+     "item": "minecraft:redstone_torch"
+    },
+    "Q": {
+     "item": "minecraft:quartz"
+    }
+   },
+   "result": {
+    "id": "minecraft:comparator",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " I ",
+    "ISI",
+    " I "
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:flint"
+    }
+   },
+   "result": {
+    "id": "minecraft:flint_and_steel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " I",
+    "I "
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:shears",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "III",
+    "I I",
+    "III"
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:cauldron",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " I ",
+    "I I",
+    " I "
+   ],
+   "key": {
+    "I": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:bucket",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "PPP",
+    "P P",
+    "PPP"
+   ],
+   "key": {
+    "P": {
+     "item": "minecraft:paper"
+    }
+   },
+   "result": {
+    "id": "minecraft:book",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "PPP"
+   ],
+   "key": {
+    "P": {
+     "item": "minecraft:sugar_cane"
+    }
+   },
+   "result": {
+    "id": "minecraft:paper",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "PPP",
+    "P P",
+    "PPP"
+   ],
+   "key": {
+    "P": {
+     "item": "minecraft:paper"
+    }
+   },
+   "result": {
+    "id": "minecraft:book",
+    "amount": 3
+   }
+  },
+  {
+   "pattern": [
+    "PPP",
+    "BBB",
+    "PPP"
+   ],
+   "key": {
+    "P": {
+     "tag": "minecraft:planks"
+    },
+    "B": {
+     "item": "minecraft:book"
+    }
+   },
+   "result": {
+    "id": "minecraft:bookshelf",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "GG",
+    "GG"
+   ],
+   "key": {
+    "G": {
+     "item": "minecraft:glass"
+    }
+   },
+   "result": {
+    "id": "minecraft:glass_pane",
+    "amount": 16
+   }
+  },
+  {
+   "pattern": [
+    "GGG",
+    "G G",
+    "GGG"
+   ],
+   "key": {
+    "G": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:golden_apple",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "BBB",
+    "B B",
+    "BBB"
+   ],
+   "key": {
+    "B": {
+     "item": "minecraft:brick"
+    }
+   },
+   "result": {
+    "id": "minecraft:bricks",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SS",
+    "SS"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:sandstone"
+    }
+   },
+   "result": {
+    "id": "minecraft:cut_sandstone",
+    "amount": 4
+   }
+  },
+  {
+   "pattern": [
+    "CC",
+    "CC"
+   ],
+   "key": {
+    "C": {
+     "item": "minecraft:clay_ball"
+    }
+   },
+   "result": {
+    "id": "minecraft:clay",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "LLL",
+    "L L",
+    "LLL"
+   ],
+   "key": {
+    "L": {
+     "item": "minecraft:leather"
+    }
+   },
+   "result": {
+    "id": "minecraft:leather_helmet",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "L L",
+    "LLL",
+    "LLL"
+   ],
+   "key": {
+    "L": {
+     "item": "minecraft:leather"
+    }
+   },
+   "result": {
+    "id": "minecraft:leather_chestplate",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "LLL",
+    "L L",
+    "L L"
+   ],
+   "key": {
+    "L": {
+     "item": "minecraft:leather"
+    }
+   },
+   "result": {
+    "id": "minecraft:leather_leggings",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "L L",
+    "L L"
+   ],
+   "key": {
+    "L": {
+     "item": "minecraft:leather"
+    }
+   },
+   "result": {
+    "id": "minecraft:leather_boots",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "SS ",
+    "SA ",
+    " A "
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:stick"
+    },
+    "A": {
+     "item": "minecraft:string"
+    }
+   },
+   "result": {
+    "id": "minecraft:fishing_rod",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    " SS",
+    "S S",
+    " SS"
+   ],
+   "key": {
+    "S": {
+     "item": "minecraft:string"
+    }
+   },
+   "result": {
+    "id": "minecraft:bow",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:wooden_pickaxe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    "MS ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:wooden_axe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "S",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:wooden_shovel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:wooden_hoe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "M",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:wooden_sword",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:cobblestone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:stone_pickaxe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    "MS ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:cobblestone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:stone_axe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "S",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:cobblestone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:stone_shovel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:cobblestone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:stone_hoe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "M",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:cobblestone"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:stone_sword",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:iron_pickaxe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    "MS ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:iron_axe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "S",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:iron_shovel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:iron_hoe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "M",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:iron_sword",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:golden_pickaxe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    "MS ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:golden_axe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "S",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:golden_shovel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:golden_hoe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "M",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:golden_sword",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:diamond_pickaxe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    "MS ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:diamond_axe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "S",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:diamond_shovel",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MM ",
+    " S ",
+    " S "
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:diamond_hoe",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M",
+    "M",
+    "S"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    },
+    "S": {
+     "item": "minecraft:stick"
+    }
+   },
+   "result": {
+    "id": "minecraft:minecraft:diamond_sword",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:iron_helmet",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "MMM",
+    "MMM"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:iron_chestplate",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:iron_leggings",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:iron_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:iron_boots",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:golden_helmet",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "MMM",
+    "MMM"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:golden_chestplate",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:golden_leggings",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:gold_ingot"
+    }
+   },
+   "result": {
+    "id": "minecraft:golden_boots",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "result": {
+    "id": "minecraft:diamond_helmet",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "MMM",
+    "MMM"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "result": {
+    "id": "minecraft:diamond_chestplate",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "MMM",
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "result": {
+    "id": "minecraft:diamond_leggings",
+    "amount": 1
+   }
+  },
+  {
+   "pattern": [
+    "M M",
+    "M M"
+   ],
+   "key": {
+    "M": {
+     "item": "minecraft:diamond"
+    }
+   },
+   "result": {
+    "id": "minecraft:diamond_boots",
+    "amount": 1
+   }
+  }
+ ],
+ "CRAFTING_RECIPES": null
+}

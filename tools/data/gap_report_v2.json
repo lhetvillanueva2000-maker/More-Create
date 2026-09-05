@@ -1,0 +1,123 @@
+{
+ "compat_spouting": [],
+ "compat_mechanical_crafting": [
+  {
+   "name": "crushing_wheel",
+   "pattern": [
+    " AAA ",
+    "AAPAA",
+    "APSPA",
+    "AAPAA",
+    " AAA "
+   ],
+   "key": {
+    "A": {
+     "item": "create:andesite_alloy"
+    },
+    "P": {
+     "tag": "minecraft:planks"
+    },
+    "S": {
+     "item": "minecraft:stone"
+    }
+   },
+   "result": {
+    "id": "create:crushing_wheel",
+    "amount": 2
+   }
+  }
+ ],
+ "compat_sequenced": [],
+ "native_cooking": [
+  {
+   "name": "smelting_zinc_ingot_from_ore",
+   "input": "create:zinc_ore",
+   "output": "create:zinc_ingot",
+   "count": 1,
+   "tags": [
+    "furnace"
+   ],
+   "time": 10.0
+  },
+  {
+   "name": "blasting_zinc_ingot_from_ore",
+   "input": "create:zinc_ore",
+   "output": "create:zinc_ingot",
+   "count": 1,
+   "tags": [
+    "blast_furnace"
+   ],
+   "time": 5.0
+  },
+  {
+   "name": "blasting_zinc_ingot_from_raw_ore",
+   "input": "create:raw_zinc",
+   "output": "create:zinc_ingot",
+   "count": 1,
+   "tags": [
+    "blast_furnace"
+   ],
+   "time": 5.0
+  }
+ ],
+ "native_crafting": [
+  {
+   "name": "appliances_chain_from_zinc",
+   "shape": "shaped",
+   "pattern": [
+    "S",
+    "C",
+    "S"
+   ],
+   "key": {
+    "C": {
+     "item": "create:zinc_ingot"
+    },
+    "S": {
+     "item": "create:zinc_nugget"
+    }
+   },
+   "result": {
+    "item": "minecraft:chain",
+    "count": 1
+   }
+  },
+  {
+   "name": "appliances_dough",
+   "shape": "shapeless",
+   "ingredients": [
+    {
+     "item": "create:wheat_flour"
+    },
+    {
+     "item": "minecraft:water_bucket"
+    }
+   ],
+   "result": {
+    "item": "create:dough",
+    "count": 1
+   }
+  },
+  {
+   "name": "kinetics_minecart_from_contraption_cart",
+   "shape": "shapeless",
+   "ingredients": [
+    {
+     "item": "create:minecart_contraption"
+    }
+   ],
+   "result": {
+    "item": "minecraft:minecart",
+    "count": 1
+   }
+  }
+ ],
+ "_unhookable": {
+  "cutting": 2,
+  "deploying": 167,
+  "emptying": 2,
+  "item_application": 8,
+  "sandpaper_polishing": 1,
+  "compacting": 7
+ }
+}

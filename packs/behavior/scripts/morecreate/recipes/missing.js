@@ -2417,5 +2417,48 @@ export const SPLASHING_FIXES = [
     }
 ];
 
+/**
+ * Mechanical Crafter recipes. The Crushing Wheel is the important one:
+ * the Bedrock addon's crafter already knows how to match a 5x5 pattern
+ * (its own code comments mention the wheel) but the recipe was never
+ * registered, leaving Crushing Wheels uncraftable.
+ */
+export const MECHANICAL_CRAFTING = [
+    {
+        pattern: [
+            " AAA ",
+            "AAPAA",
+            "APSPA",
+            "AAPAA",
+            " AAA "
+        ],
+        key: {
+            A: {
+                item: "create:andesite_alloy"
+            },
+            P: {
+                tag: "minecraft:planks"
+            },
+            S: {
+                item: "minecraft:stone"
+            }
+        },
+        result: {
+            id: "create:crushing_wheel",
+            amount: 2
+        }
+    }
+];
+
+/**
+ * Spout filling recipes missing on Bedrock.
+ */
+export const SPOUTING = [];
+
+/**
+ * Sequenced assembly recipes missing on Bedrock.
+ */
+export const SEQUENCED = [];
+
 /** Total recipes added by More Create. */
-export const TOTAL = 115;
+export const TOTAL = 116;

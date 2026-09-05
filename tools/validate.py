@@ -256,14 +256,21 @@ for ident in sorted(client_entities):
 for path, doc in documents.items():
     if not isinstance(doc, dict):
         continue
-    for key in ("minecraft:recipe_shaped", "minecraft:recipe_shapeless"):
+    for key in ("minecraft:recipe_shaped", "minecraft:recipe_shapeless", "minecraft:recipe_furnace"):
         recipe = doc.get(key)
         if not recipe:
             continue
-        result = recipe.get("result")
-        results = result if isinstance(result, list) else [result]
+        if key == "minecraft:recipe_furnace":
+            # Bedrock furnace recipes take bare id strings and must name the
+            # appliances that accept them.
+            if not recipe.get("tags"):
+                fail("%s: furnace recipe has no tags" % rel(path))
+            results = [{"item": recipe.get("output")}]
+        else:
+            result = recipe.get("result")
+            results = result if isinstance(result, list) else [result]
         for entry in results:
-            rid = entry.get("item")
+            rid = entry.get("item") if isinstance(entry, dict) else entry
             if rid and rid.startswith("morecreate:") and rid not in block_ids | item_ids:
                 fail("%s: result %s is not defined by this pack" % (rel(path), rid))
 

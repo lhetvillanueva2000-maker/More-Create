@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morecreate:appliances_chain_from_zinc"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "S",
+            "C",
+            "S"
+        ],
+        "key": {
+            "C": {
+                "item": "create:zinc_ingot"
+            },
+            "S": {
+                "item": "create:zinc_nugget"
+            }
+        },
+        "result": {
+            "item": "minecraft:chain",
+            "count": 1
+        }
+    }
+}

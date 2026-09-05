@@ -14,10 +14,13 @@ independent and More Create simply does nothing if Create is missing.
 
 ## What it adds
 
-### 1. Missing processing recipes — 115 in total
+### 1. Missing recipes — 122 in total
 
-Produced by diffing Create 1.21.1's recipe data against the tables built into
-the Bedrock addon, then dropping anything whose items do not exist on Bedrock.
+Produced by diffing every recipe folder in Create 1.21.1 against the tables and
+recipe files built into the Bedrock addon, then dropping anything whose items do
+not exist on Bedrock.
+
+**Through Create's Compatibility API (116)**
 
 | Machine | Added | Notes |
 |---|---:|---|
@@ -26,20 +29,65 @@ the Bedrock addon, then dropping anything whose items do not exist on Bedrock.
 | Millstone | 4 | Pink petals, pitcher plant, torchflower, terracotta. |
 | Mechanical Press | 6 | Dirt, coarse dirt, rooted dirt, mycelium, podzol and grass block → dirt path. |
 | Bulk Washing (fan + water) | 2 | Industrial iron block / window → weathered variants. |
+| **Mechanical Crafter** | 1 | **The Crushing Wheel.** It had no recipe anywhere in the Bedrock addon — not on the crafting table, not in the crafter. The crafter's own matcher already handles 5×5 patterns (its code comments even name the wheel), so only the recipe was missing. |
 | **Bug fix** | 1 | Washing Crushed Raw Copper produced `create:copper_nugget`, an item the addon never defines, so the recipe silently yielded nothing. It now returns one copper ingot (the nine nuggets Create gives are worth exactly that) plus the usual clay ball chance. |
 
-Bulk smelting/melting, bulk smoking and bulk haunting were already complete in
-the Bedrock addon — the diff found nothing missing there.
+**As ordinary Bedrock recipe files (6)** — these need no Create hook at all:
+
+| Type | Added | Notes |
+|---|---:|---|
+| Furnace / blast furnace | 3 | Zinc Ore and Raw Zinc could not be smelted into Zinc Ingots. |
+| Crafting table | 3 | Chain from zinc, Dough from flour + water bucket, Minecart back from a Minecart Contraption. |
+
+Bulk smelting, bulk smoking, bulk haunting, mixing, spouting and sequenced
+assembly were already complete — the diff found nothing missing in those.
+
+#### Recipe types Create Bedrock offers no hook for
+
+Create's Compatibility API exposes twelve machines. Six recipe types have no
+hook, so nothing can register them from outside the Create pack — the Bedrock
+deployer, for instance, keeps its recipes in a private `DEPLOY_RECIPES` table
+that no script event can reach. These stay missing until Vatonage adds hooks:
+
+| Type | In Create | Valid on Bedrock |
+|---|---:|---:|
+| Deploying | 167 | 38 |
+| Compacting | 7 | 6 |
+| Item application | 8 | 3 |
+| Cutting (Mechanical Saw) | 2 | 2 |
+| Sandpaper polishing | 1 | 1 |
+| Emptying | 2 | 0 |
+
+Writing More Create's own handlers for these would mean duplicating Create's
+machine logic and risking double-processing, so they are deliberately left out.
 
 ### 2. Encased Chain Drive
+
+**Where to find it:** Creative menu → **Items** tab → the **More Create:
+Kinetics** group. Or craft it — the recipe shows in the recipe book.
+
+**Crafting (shapeless):** Andesite Casing + 3 × Iron Nugget, **or** Andesite
+Casing + 3 × Zinc Nugget.
 
 Faithful to Create: drives relay rotation to each other in a row, everything in
 that row turns the **same** direction at 1:1, and any drive in the row may be
 rotated 90°. They connect on their four side faces only — an axis face can
 never mate with a side face — and the two axis faces are ordinary shaft ports.
 
-**Crafting (shapeless):** Andesite Casing + 3 × Iron Nugget, **or** Andesite
-Casing + 3 × Zinc Nugget.
+The important part is that a chain drive **never reverses rotation**. A row of
+cogwheels flips direction at every mesh; a row of chain drives does not, so
+speed and direction stay identical however long the run gets. That is set by
+`sense: "equal"` with `ratio: 1` on the four side faces, and by leaving the
+faces without an alignment constraint so a drive can be turned 90° mid-row.
+
+Replaying the config through Create's own connection logic:
+
+| Case | Result |
+|---|---|
+| drive → drive, parallel row | `sense=equal ratio=1` |
+| drive → drive, rotated 90° | `sense=equal ratio=1` |
+| drive → drive, axis to axis | `sense=equal ratio=1` |
+| drive side → cogwheel side | rejected, no connection |
 
 ### 3. Hiding shafts and cogwheels inside casings
 
@@ -86,6 +134,39 @@ translated to English:
 
 ---
 
+## Running alongside other Create add-ons
+
+Checked against **Create New Energy** (`ne:`) and **Create Multiblock**
+(`createmb:`) by indexing all 2,735 files across the five packs and looking for
+paths that would override each other.
+
+More Create is clear of both:
+
+- its ids all live under `morecreate:`, which nothing else uses;
+- its script entry is `scripts/morecreate/main.js`, not the usual
+  `scripts/main.js`, so it cannot clash with another pack's scripts;
+- the only files it shares with anything are `blocks.json`,
+  `terrain_texture.json`, `item_texture.json`, `_ui_defs.json` and the item
+  catalog — all of which Minecraft **merges** across packs rather than
+  overriding.
+
+One finding that is **not** about More Create: **New Energy and Multiblock both
+ship their script entry at `scripts/main.js`.** Behaviour packs share one
+merged filesystem, so if those two are enabled together only one of those files
+survives and the other add-on's scripts may not run. Nothing More Create can fix
+— it needs one of those two packs to move its entry point.
+
+Suggested behaviour pack order (top = highest priority):
+
+```
+Create            <- must be above More Create
+More Create
+Create New Energy
+Create Multiblock
+```
+
+---
+
 ## Repository layout
 
 ```
@@ -100,7 +181,9 @@ dist/               built MoreCreate.mcaddon
 | Command | Purpose |
 |---|---|
 | `python3 tools/gen_encased.py` | Regenerates the 12 encased blocks and their loot tables |
-| `python3 tools/gen_recipes.py tools/data/gap_report.json tools/data/be_recipes.json` | Regenerates the missing-recipe tables |
+| `python3 tools/analyze_gaps.py <Create jar dir> <Create BP dir>` | Re-diffs every Java recipe folder against Bedrock into `tools/data/gap_report_v2.json` |
+| `python3 tools/gen_recipes.py tools/data/gap_report.json tools/data/be_recipes.json tools/data/gap_report_v2.json` | Regenerates the compatibility-API recipe tables |
+| `python3 tools/gen_native_recipes.py tools/data/gap_report_v2.json` | Regenerates the plain Bedrock crafting and cooking recipe files |
 | `python3 tools/port_cannon.py <extracted cannon addon>` | Re-runs the cannon asset port |
 | `CREATE_RP=<path to Create RP> python3 tools/validate.py` | Checks JSON, manifests, textures, geometry, lang keys and script imports |
 | `python3 tools/build.py` | Builds `dist/MoreCreate.mcaddon` |

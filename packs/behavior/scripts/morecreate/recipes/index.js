@@ -17,13 +17,16 @@ import {
     BLASTING,
     SMOKING,
     PRESSING,
-    MIXING
+    MIXING,
+    MECHANICAL_CRAFTING,
+    SPOUTING,
+    SEQUENCED
 } from "./missing.js";
 
 function registerAll(machine, recipes) {
     let sent = 0;
     for (const recipe of recipes) {
-        const label = `${machine}:${recipe.input ?? JSON.stringify(recipe.input)}`;
+        const label = `${machine}:${recipe.input ?? recipe.id ?? recipe.result?.id ?? "recipe"}`;
         if (registerRecipe(machine, recipe, label)) sent++;
     }
     return sent;
@@ -40,6 +43,13 @@ export function registerMissingRecipes() {
     total += registerAll("millstone", MILLSTONE);
     total += registerAll("pressing", PRESSING);
     total += registerAll("mixing", MIXING);
+
+    // Mechanical Crafter. The Crushing Wheel's 5x5 pattern lives here - without
+    // it the wheels have no recipe at all in the Bedrock addon.
+    total += registerAll("crafting", MECHANICAL_CRAFTING);
+
+    total += registerAll("spouting", SPOUTING);
+    total += registerAll("sequenced", SEQUENCED);
 
     // Encased Fan processing.
     total += registerAll("splashing", SPLASHING);   // bulk washing

@@ -224,6 +224,41 @@ def main():
                    "do not exist. Compatibility recipes are matched before the built-in\n"
                    "tables, so registering these replaces the broken ones."))
 
+    # ---- second pass: the remaining compat hooks -------------------------
+    v2 = {}
+    if len(sys.argv) > 3 and os.path.isfile(sys.argv[3]):
+        v2 = json.load(open(sys.argv[3]))
+
+    mech = []
+    for entry in v2.get("compat_mechanical_crafting", []):
+        mech.append(OrderedDict([
+            ("pattern", entry["pattern"]),
+            ("key", entry["key"]),
+            ("result", entry["result"]),
+        ]))
+    blocks.append(("MECHANICAL_CRAFTING", mech,
+                   "Mechanical Crafter recipes. The Crushing Wheel is the important one:\n"
+                   "the Bedrock addon's crafter already knows how to match a 5x5 pattern\n"
+                   "(its own code comments mention the wheel) but the recipe was never\n"
+                   "registered, leaving Crushing Wheels uncraftable."))
+
+    spouting = []
+    for entry in v2.get("compat_spouting", []):
+        spouting.append(OrderedDict([
+            ("fluid", entry["fluid"]), ("input", entry["input"]),
+            ("output", entry["output"]), ("amount", entry["amount"]),
+        ]))
+    blocks.append(("SPOUTING", spouting, "Spout filling recipes missing on Bedrock."))
+
+    sequenced = []
+    for entry in v2.get("compat_sequenced", []):
+        sequenced.append(OrderedDict([
+            ("id", entry["id"]), ("input", entry["input"]),
+            ("inProgress", entry["inProgress"]), ("passes", entry["passes"]),
+            ("sequence", entry["sequence"]), ("output", entry["output"]),
+        ]))
+    blocks.append(("SEQUENCED", sequenced, "Sequenced assembly recipes missing on Bedrock."))
+
     header = '''/**
  * Recipes that exist in Create but were missing from the Create Bedrock addon.
  *

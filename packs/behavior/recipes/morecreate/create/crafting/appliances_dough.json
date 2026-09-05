@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:appliances_dough"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "create:wheat_flour"
+            },
+            {
+                "item": "minecraft:water_bucket"
+            }
+        ],
+        "result": {
+            "item": "create:dough",
+            "count": 1
+        }
+    }
+}

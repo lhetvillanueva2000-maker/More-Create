@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "morecreate:kinetics_minecart_from_contraption_cart"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "create:minecart_contraption"
+            }
+        ],
+        "result": {
+            "item": "minecraft:minecart",
+            "count": 1
+        }
+    }
+}

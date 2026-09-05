@@ -1,0 +1,13 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "morecreate:blasting_zinc_ingot_from_ore"
+        },
+        "tags": [
+            "blast_furnace"
+        ],
+        "input": "create:zinc_ore",
+        "output": "create:zinc_ingot"
+    }
+}
