@@ -64,10 +64,11 @@ def destructible():
 def materials(casing, kind):
     """Face textures for one encased block.
 
-    A shaft is hidden completely, so its casing is blank on all six sides. A
-    cogwheel is only sliced in half by the casing - Create draws the gap it
-    shows through with a dedicated `*_encased_cogwheel_side` texture, a dark
-    slot across the middle of the casing.
+    A shaft is hidden completely, so its casing is blank on all six sides and
+    stays opaque. A cogwheel is only sliced in half by the casing: Create's
+    `*_encased_cogwheel_side` texture punches the slot fully *transparent* so
+    the wheel turning inside is visible through it, which is why those faces
+    have to render with `alpha_test` rather than as solid blocks.
 
     The base orientation here is a cogwheel spinning on the north-south axis,
     the same one Create's own cogwheel block is authored in, so the two are
@@ -79,14 +80,22 @@ def materials(casing, kind):
     _, plain, _ = CASINGS[casing]
     if kind == "shaft":
         return {"*": {"texture": plain, "render_method": "opaque"}}
+
+    slot_h = "morecreate:%s_encased_cogwheel_h" % casing
+    slot_v = "morecreate:%s_encased_cogwheel_v" % casing
+    cut = lambda texture: {
+        "texture": texture,
+        "render_method": "alpha_test",
+        "ambient_occlusion": False,
+    }
     return OrderedDict([
-        ("*", {"texture": plain, "render_method": "opaque"}),
-        ("north", {"texture": plain, "render_method": "opaque"}),
-        ("south", {"texture": plain, "render_method": "opaque"}),
-        ("up", {"texture": "morecreate:%s_encased_cogwheel_h" % casing, "render_method": "opaque"}),
-        ("down", {"texture": "morecreate:%s_encased_cogwheel_h" % casing, "render_method": "opaque"}),
-        ("east", {"texture": "morecreate:%s_encased_cogwheel_v" % casing, "render_method": "opaque"}),
-        ("west", {"texture": "morecreate:%s_encased_cogwheel_v" % casing, "render_method": "opaque"}),
+        ("*", cut(plain)),
+        ("north", cut(plain)),
+        ("south", cut(plain)),
+        ("up", cut(slot_h)),
+        ("down", cut(slot_h)),
+        ("east", cut(slot_v)),
+        ("west", cut(slot_v)),
     ])
 
 

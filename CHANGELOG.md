@@ -8,6 +8,7 @@ so `v1.9` is followed by `v2.0`.
 
 | Version | File | What it is |
 |---|---|---|
+| v1.5 | [`MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) | Cogwheel slot is see-through; copper and creative keep their colour |
 | v1.4 | [`MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) | Schematic Cannon screen fix |
 | v1.3 | [`MoreCreate-v1.3.mcaddon`](dist/MoreCreate-v1.3.mcaddon) | Recipe Book, connected chain drives, slotted cogwheel casings, ghost-block fix |
 | v1.2 | [`MoreCreate-v1.2.mcaddon`](dist/MoreCreate-v1.2.mcaddon) | 581 stonecutter recipes |
@@ -131,3 +132,31 @@ Coverage after this version: 703 recipes.
 - The fuel, schematic and output slots stay **empty** on placement, so you
   supply your own gunpowder and schematic. Only the control buttons are placed
   for you.
+
+---
+
+## v1.5 — the cogwheel slot, properly
+
+Two defects in how v1.3 built the slotted casings, both found by inspecting the
+textures pixel by pixel instead of trusting the preview.
+
+- **Copper and creative had lost their colour.** The slot was made by pasting
+  rows 2–13 of the andesite texture onto the other casings, which dragged
+  andesite's brown across three quarters of the texture — copper kept only its
+  top and bottom edge, so it barely read as copper at all. The slot is now taken
+  as a per-pixel *ratio* of how much Create darkened its own andesite casing, and
+  that ratio is applied to each casing, so every one keeps its own frame and body
+  while getting an identical slot. A self-check confirms the derived slot
+  reproduces Create's andesite art to the pixel.
+
+- **The slot should be see-through, not black.** Create does not paint the gap
+  dark — it punches it fully transparent, so the wheel turning inside is
+  genuinely visible through it. The generated textures were opaque black there,
+  and the blocks rendered `opaque`, so the gap read as a flat dark band. The
+  slot is now transparent, those faces render with `alpha_test`, and the encased
+  wheel keeps its hub and web (previously stripped as "hidden") because that is
+  exactly what you now see through the gap. The disc sits at y 6.55–9.45, lining
+  up with the slot rows.
+
+Encased shafts are untouched and stay completely solid — hiding the shaft is the
+whole point of them.

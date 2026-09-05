@@ -14,7 +14,7 @@ DIST = os.path.join(ROOT, "dist")
 
 # Release numbering: v<major>.<minor>, minor rolling into major at 10
 # (v1.9 is followed by v2.0). Bump this when cutting a release.
-VERSION = "1.4"
+VERSION = "1.5"
 OUTPUT = os.path.join(DIST, "MoreCreate-v%s.mcaddon" % VERSION)
 
 PACKS = [

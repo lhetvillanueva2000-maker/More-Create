@@ -4,7 +4,7 @@ An add-on for the **Create** Bedrock addon by Vatonage that adds features missin
 
 - **Author:** Usersainyy
 - **Requires:** Minecraft Bedrock **1.26.13 or newer**, and Vatonage's Create addon (behaviour + resource pack) enabled in the same world.
-- **Download:** [`dist/MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
+- **Download:** [`dist/MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
 
 More Create never imports from the Create pack. Everything is registered through
 Create's **Compatibility API v2** over script events, so the two packs stay
@@ -120,9 +120,10 @@ andesite, brass, copper or creative — and it becomes an encased block.
 - **Encased cogwheel / large cogwheel** — the casing slices through the middle,
   hiding the hub and the through-shaft, leaving only the outer tooth ring
   showing and still turning. The casing carries Create's slotted
-  `*_encased_cogwheel_side` texture, so you can see the dark gap the wheel runs
-  through. Create only ships that art for andesite and brass; the copper and
-  creative slots are generated from the same source so all four match.
+  `*_encased_cogwheel_side` texture, whose gap is **transparent** — you see the
+  wheel itself turning through it, not a painted-on band. Create only ships that
+  art for andesite and brass; copper and creative derive the same slot as a
+  per-pixel darkening ratio, so all four match while keeping their own colour.
 
 This is also a genuine optimisation. Create draws shafts as an *invisible*
 block with a visual entity on top; an encased shaft is registered with
@@ -235,6 +236,8 @@ dist/               built MoreCreate.mcaddon
 | Command | Purpose |
 |---|---|
 | `python3 tools/gen_encased.py` | Regenerates the 12 encased blocks and their loot tables |
+| `python3 tools/gen_cogwheel_textures.py <jar textures> <Create casings>` | Regenerates the slotted casing textures, with a self-check against Create's art |
+| `python3 tools/gen_cogwheel_geo.py <Create RP>` | Regenerates the encased cogwheel visual geometry |
 | `python3 tools/analyze_gaps.py <Create jar dir> <Create BP dir>` | Re-diffs every Java recipe folder against Bedrock into `tools/data/gap_report_v2.json` |
 | `python3 tools/gen_recipes.py tools/data/gap_report.json tools/data/be_recipes.json tools/data/gap_report_v2.json` | Regenerates the compatibility-API recipe tables |
 | `python3 tools/gen_native_recipes.py tools/data/gap_report_v2.json` | Regenerates the plain Bedrock crafting and cooking recipe files |

@@ -18,31 +18,38 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "create:brass_casing",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "north": {
                     "texture": "create:brass_casing",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "south": {
                     "texture": "create:brass_casing",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "up": {
                     "texture": "morecreate:brass_encased_cogwheel_h",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "down": {
                     "texture": "morecreate:brass_encased_cogwheel_h",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "east": {
                     "texture": "morecreate:brass_encased_cogwheel_v",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 },
                 "west": {
                     "texture": "morecreate:brass_encased_cogwheel_v",
-                    "render_method": "opaque"
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
                 }
             },
             "minecraft:destruction_particles": {
