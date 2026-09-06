@@ -2,11 +2,12 @@
 """Split CHANGELOG.md into one release-note file per version, and write the
 script that publishes them to GitHub's Releases tab.
 
-This session cannot create Releases itself: pushing a tag is refused with HTTP
-403, `api.github.com/repos/*` is blocked at the proxy ("GitHub access is not
-enabled for this session"), and the GitHub tools available here can only read
-releases, never create them. What it can do is prepare everything so publishing
-is a single command run somewhere with normal GitHub access.
+The session that develops this repository cannot create releases directly -
+pushing a tag comes back 403, `api.github.com/repos/*` is blocked at its proxy,
+and its GitHub tooling only reads releases. So the script runs in GitHub Actions
+instead (`.github/workflows/publish-releases.yml`), where the repository's own
+token has `contents: write`. It is an ordinary shell script, so it also works
+from any machine with the GitHub CLI authenticated.
 
 The notes are split rather than written twice, so the Releases tab and the
 changelog can never drift apart.

@@ -299,24 +299,33 @@ tables can be rebuilt without the original Create jar to hand.
 browser knows where a vanilla item's texture lives; they are build-time
 reference only and are never shipped inside a pack.
 
-## Publishing to the Releases tab
+## Releases
 
-Every build sits in [`dist/`](dist/) and can be downloaded straight from there,
-but the Releases tab has to be filled in from a machine with normal GitHub
-access — this repository's automation cannot create releases (pushing a tag is
-refused with HTTP 403, and the GitHub tooling available to it can only read
-releases, never create them).
+Every version is on the
+[Releases tab](https://github.com/lhetvillanueva2000-maker/More-Create/releases)
+with its `.mcaddon` attached, and the same files are in [`dist/`](dist/).
 
-Everything else is prepared, so it is one command:
+Publishing is handled by `.github/workflows/publish-releases.yml`, which runs
+`tools/publish_releases.sh` inside GitHub Actions. Each release takes its title
+and notes from the matching section of `CHANGELOG.md`, and its tag points at the
+commit that actually added that build rather than at the branch head.
+
+The workflow exists because the automation that develops this repository can
+push commits but cannot create releases — tag pushes are refused with HTTP 403,
+`api.github.com/repos/*` is blocked at its proxy, and its GitHub tooling can only
+read releases. Actions runs with the repository's own token, which has
+`contents: write`, so it can.
+
+To publish a new version: bump `VERSION` in `tools/build.py`, build, add the
+section to `CHANGELOG.md`, then
 
 ```
-gh auth login
-bash tools/publish_releases.sh
+python3 tools/gen_release_notes.py
 ```
 
-That creates `v1.0` through `v1.6`, each with its tag, its title, its notes
-taken from `CHANGELOG.md`, and its `MoreCreate-v<version>.mcaddon` attached.
-Re-running it is safe — versions that already have a release are skipped.
+and push. Changing `dist/release-notes/` triggers the workflow, which skips every
+version that already has a release. It can also be run by hand from the Actions
+tab, or locally with `gh auth login && bash tools/publish_releases.sh`.
 
 ## Installing
 
