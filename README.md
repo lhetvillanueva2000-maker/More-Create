@@ -290,12 +290,33 @@ dist/               built MoreCreate.mcaddon
 | `python3 tools/gen_browser_textures.py` | Draws the Recipe Browser's chrome — round pause button, panel, slots, arrow, tabs |
 | `python3 tools/gen_browser_ui.py <Create RP> <Create BP>` | Regenerates the Recipe Browser's JSON UI from the book's recipe table |
 | `python3 tools/build.py` | Builds `dist/MoreCreate-v<VERSION>.mcaddon` (bump `VERSION` in the script) |
+| `python3 tools/gen_release_notes.py` | Splits `CHANGELOG.md` into `dist/release-notes/v*.md` and regenerates `tools/publish_releases.sh` |
+| `bash tools/publish_releases.sh` | Publishes every built version to the repository's Releases tab (needs the GitHub CLI) |
 
 `tools/data/` holds the recipe diff the generator consumes, so the recipe
 tables can be rebuilt without the original Create jar to hand.
 `tools/data/vanilla/` holds Mojang's own atlas listings, which is how the
 browser knows where a vanilla item's texture lives; they are build-time
 reference only and are never shipped inside a pack.
+
+## Publishing to the Releases tab
+
+Every build sits in [`dist/`](dist/) and can be downloaded straight from there,
+but the Releases tab has to be filled in from a machine with normal GitHub
+access — this repository's automation cannot create releases (pushing a tag is
+refused with HTTP 403, and the GitHub tooling available to it can only read
+releases, never create them).
+
+Everything else is prepared, so it is one command:
+
+```
+gh auth login
+bash tools/publish_releases.sh
+```
+
+That creates `v1.0` through `v1.6`, each with its tag, its title, its notes
+taken from `CHANGELOG.md`, and its `MoreCreate-v<version>.mcaddon` attached.
+Re-running it is safe — versions that already have a release are skipped.
 
 ## Installing
 
