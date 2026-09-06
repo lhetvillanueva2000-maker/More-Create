@@ -74,7 +74,12 @@ def main():
             for face, spec in element["faces"].items():
                 texture = textures[spec["texture"].lstrip("#")].split("/")[-1]
                 x1, y1, x2, y2 = spec["uv"]
-                turn = spec.get("rotation", 0) % 360
+                # The generator deliberately adds a per-face correction where
+                # Bedrock's default face orientation differs from Java's, so the
+                # expected image has to carry it too - what is being proved here
+                # is that the rectangle maths is exact, not that nothing turned.
+                turn = (spec.get("rotation", 0)
+                        + generator.FACE_ORIENTATION_FIX.get(face, 0)) % 360
 
                 expected = crop(load(os.path.join(java_textures, texture + ".png")),
                                 x1, y1, x2, y2)
@@ -84,7 +89,7 @@ def main():
                     expected = expected.rotate(-turn, expand=True)
 
                 converted = generator.face_uv(
-                    spec, lambda ref, suffix, t=texture: (t, suffix))
+                    spec, lambda ref, suffix, t=texture: (t, suffix), face)
                 baked, suffix = converted["material_instance"]
                 u, v = converted["uv"]
                 width, height = converted["uv_size"]

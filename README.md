@@ -4,7 +4,7 @@ An add-on for the **Create** Bedrock addon by Vatonage that adds features missin
 
 - **Author:** Usersainyy
 - **Requires:** Minecraft Bedrock **1.26.13 or newer**, and Vatonage's Create addon (behaviour + resource pack) enabled in the same world.
-- **Download:** [`dist/MoreCreate-v1.7.mcaddon`](dist/MoreCreate-v1.7.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
+- **Download:** [`dist/MoreCreate-v1.8.mcaddon`](dist/MoreCreate-v1.8.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
 
 More Create never imports from the Create pack. Everything is registered through
 Create's **Compatibility API v2** over script events, so the two packs stay
@@ -277,7 +277,8 @@ dist/               built MoreCreate.mcaddon
 | `python3 tools/gen_book.py tools/data/be_recipes.json tools/data/gap_report.json tools/data/be_recipes2.json` | Regenerates the Recipe Book's recipe table |
 | `python3 tools/gen_browser_textures.py` | Draws the Recipe Browser's chrome — round pause button, panel, slots, arrow, tabs |
 | `python3 tools/gen_browser_ui.py <Create RP> <Create BP>` | Regenerates the Recipe Browser's JSON UI from the book's recipe table |
-| `python3 tools/build.py` | Builds `dist/MoreCreate-v<VERSION>.mcaddon` (bump `VERSION` in the script) |
+| `python3 tools/build.py` | Stamps the pack version into both manifests, then builds `dist/MoreCreate-v<VERSION>.mcaddon` (bump `VERSION` in the script) |
+| `python3 tools/set_version.py [version]` | Stamps the release number into both manifests on its own |
 | `python3 tools/gen_release_notes.py` | Splits `CHANGELOG.md` into `dist/release-notes/v*.md` and regenerates `tools/publish_releases.sh` |
 | `bash tools/publish_releases.sh` | Publishes every built version to the repository's Releases tab (needs the GitHub CLI) |
 
@@ -317,6 +318,10 @@ tab, or locally with `gh auth login && bash tools/publish_releases.sh`.
 
 ## Installing
 
+0. **Updating from an older build?** Delete the old More Create behaviour and
+   resource packs from Minecraft's pack list first. Builds before v1.8 all
+   claimed pack version `1.0.0`, so the game could keep running the copy it
+   already had and a downloaded fix would never appear.
 1. Enable Vatonage's **Create** behaviour and resource packs on the world.
 2. Open `MoreCreate.mcaddon` to import it, then enable both More Create packs on
    the same world.

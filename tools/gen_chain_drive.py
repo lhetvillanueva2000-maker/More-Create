@@ -55,6 +55,13 @@ TEXTURE_SLOTS = {
     "axis_top": "shafttop",
 }
 
+# Bedrock's cube faces do not all start from the same texture orientation Java's
+# do, so a face can sample exactly the right pixels and still be turned. The
+# east/west pair is 90 degrees out: on a lone drive Create's casing strip ran
+# vertically there while running horizontally on the top and bottom, so the
+# frame did not meet at the corners. Correcting those two makes it continuous.
+FACE_ORIENTATION_FIX = {"east": 270, "west": 270}
+
 TOOL_SPEEDS = [
     ("wooden_tier", 1.15), ("stone_tier", 0.6), ("copper_tier", 0.5),
     ("iron_tier", 0.4), ("golden_tier", 0.2), ("diamond_tier", 0.3),
@@ -125,10 +132,11 @@ def rotate_rect(x1, y1, x2, y2, turn):
     return ax, ay, bx, by
 
 
-def face_uv(java_face, slot_of):
+def face_uv(java_face, slot_of, face=None):
     """One Java face -> Bedrock `uv` / `uv_size` / `material_instance`."""
     x1, y1, x2, y2 = java_face["uv"]
-    rotation = java_face.get("rotation", 0) % 360
+    rotation = (java_face.get("rotation", 0)
+                + FACE_ORIENTATION_FIX.get(face, 0)) % 360
     name = java_face["texture"].lstrip("#")
 
     suffix = ""
@@ -154,7 +162,7 @@ def convert(model, slot_of):
         start, end = element["from"], element["to"]
         faces = OrderedDict()
         for face, spec in element["faces"].items():
-            faces[face] = face_uv(spec, slot_of)
+            faces[face] = face_uv(spec, slot_of, face)
         cubes.append(OrderedDict([
             # Bedrock centres a block on the X/Z origin; Java corners it.
             ("origin", [start[0] - 8, start[1], start[2] - 8]),
@@ -274,6 +282,11 @@ def condition(axis, along, part):
 def block(used):
     permutations = []
     for (axis, along, part), (model, turn_x, turn_y) in sorted(placements().items()):
+        # `minecraft:transformation` turns the opposite way about Y to Java's
+        # blockstate. Left as-is it swapped the two ends of every horizontal
+        # run - and left the middle looking fine, because the middle texture is
+        # symmetric, which is exactly what showed up in game.
+        turn_y = (360 - turn_y) % 360
         components = OrderedDict([
             ("minecraft:geometry", OrderedDict([
                 ("identifier", "geometry.morecreate.chain_drive_" + model),

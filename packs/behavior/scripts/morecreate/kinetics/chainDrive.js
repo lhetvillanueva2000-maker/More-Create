@@ -45,7 +45,10 @@ const FACE_BY_INDEX = { 0: "down", 1: "up", 2: "north", 3: "south", 4: "west", 5
  * with `placements()` in tools/gen_chain_drive.py.
  */
 const RUN_AXES = {
-    x: { first: ["south", "north"], second: ["up", "down"] },
+    // Create's "first" perpendicular axis is the lower-ordinal one (X, then Y,
+    // then Z), so a drive turning on X runs along Y first and Z second. Having
+    // those two the wrong way round for X made a run pick the wrong model.
+    x: { first: ["up", "down"], second: ["south", "north"] },
     y: { first: ["east", "west"], second: ["south", "north"] },
     z: { first: ["east", "west"], second: ["up", "down"] }
 };

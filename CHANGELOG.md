@@ -8,6 +8,7 @@ so `v1.9` is followed by `v2.0`.
 
 | Version | File | What it is |
 |---|---|---|
+| v1.8 | [`MoreCreate-v1.8.mcaddon`](dist/MoreCreate-v1.8.mcaddon) | Pack version now bumps per release so updates install; chain drive rotation, seams and casing strip fixed |
 | v1.7 | [`MoreCreate-v1.7.mcaddon`](dist/MoreCreate-v1.7.mcaddon) | Pause menu fixed; Recipe Book stops breaking blocks; chain drive ported from Create's own models |
 | v1.6 | [`MoreCreate-v1.6.mcaddon`](dist/MoreCreate-v1.6.mcaddon) | Recipe Browser on the pause menu; chain drive facing, connected textures and item render fixed |
 | v1.5 | [`MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) | Cogwheel slot is see-through; copper and creative keep their colour |
@@ -303,3 +304,61 @@ The item model comes from Create's own `item.json`, so the shaft through the
 middle is Create's, not an approximation. The block also no longer spawns a
 visual entity: it draws its whole self now, and one sitting on top would
 double-draw the casing.
+
+---
+
+## v1.8 — why updates were not arriving, and the chain drive's rotation
+
+### Installing a new build now actually replaces the old one
+
+Every release from v1.0 to v1.7 shipped `"version": [1, 0, 0]` in both
+manifests. Minecraft identifies an installed pack by UUID **and** version, so
+importing a new `.mcaddon` whose packs claim a version already installed does
+not reliably replace them — the world keeps running the copy it already has.
+
+That is almost certainly why the pause menu was still blank after v1.7 removed
+the code that broke it: the fix was built, published and downloaded, and the
+game went on using v1.6's resource pack. The pack version now follows the
+release, so v1.8's packs identify as `[1, 8, 0]`, and `tools/build.py` stamps it
+automatically so it can never drift again.
+
+**Updating from an older build:** delete the old More Create behaviour and
+resource packs from Minecraft's pack list before importing v1.8, then re-enable
+them on the world. That guarantees a clean swap regardless of what the previous
+install left behind.
+
+### The chain drive turns the right way now
+
+Three separate faults, each found from a specific thing that looked wrong in
+game rather than by another guess:
+
+- **The two ends of a horizontal run were swapped.** Bedrock's
+  `minecraft:transformation` turns the opposite way about Y to Java's blockstate
+  `y` rotation, so `y: 90` and `y: 270` traded places — which is exactly the
+  180° that tells one end of a run from the other. The Y rotation is now
+  negated when the blockstate is ported.
+
+  What made this identifiable rather than a coin flip: the *middle* looked
+  correct and so did every *vertical* run. The middle texture is symmetric
+  left-to-right, so a 180° error is invisible on it, and vertical runs are
+  placed with X rotations, which were never affected. Only horizontal ends —
+  the one case that is both asymmetric and Y-rotated — were wrong.
+
+- **The grey bars between connected drives** were the same fault seen from the
+  other side. A swapped end puts its closed casing edge against its neighbour
+  instead of facing outward, so every seam in a row grew a frame. Connected
+  drives now meet with no bar; a lone drive keeps its full frame, as Create's
+  own `single` model does.
+
+- **The casing strip did not meet at the corners.** Bedrock's cube faces do not
+  all start from the same texture orientation Java's do, so a face can sample
+  exactly the right pixels and still be turned. The east/west pair was 90° out:
+  the strip ran vertically there while running horizontally on the top and
+  bottom. Those two faces now carry a documented correction.
+
+- **A run along X picked the wrong model.** Create's "first" perpendicular axis
+  is the lower-ordinal one, so a drive turning on X runs along Y first and Z
+  second; the script had those the wrong way round for X alone.
+
+`tools/verify_chain_drive.py` still checks all 116 faces pixel for pixel, now
+including the orientation correction, so the rectangle maths stays proven.

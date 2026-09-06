@@ -9,12 +9,14 @@ import os
 import sys
 import zipfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
 
 # Release numbering: v<major>.<minor>, minor rolling into major at 10
 # (v1.9 is followed by v2.0). Bump this when cutting a release.
-VERSION = "1.7"
+VERSION = "1.8"
 OUTPUT = os.path.join(DIST, "MoreCreate-v%s.mcaddon" % VERSION)
 
 PACKS = [
@@ -27,6 +29,13 @@ SKIP_SUFFIXES = (".pyc",)
 
 
 def main():
+    # Stamp the release number into both manifests first. Minecraft keeps the
+    # pack it already has when the version has not moved, so a build that does
+    # not do this can be installed and still not take effect.
+    import set_version
+    print("stamping pack version")
+    set_version.main()
+
     os.makedirs(DIST, exist_ok=True)
     if os.path.exists(OUTPUT):
         os.remove(OUTPUT)

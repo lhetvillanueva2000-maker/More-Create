@@ -2,7 +2,7 @@
     "format_version": 2,
     "metadata": {
         "authors": [
-            "§1Usersainyy§r"
+            "\u00a71Usersainyy\u00a7r"
         ],
         "product_type": "addon"
     },
@@ -13,7 +13,7 @@
         "uuid": "2171db8f-ab05-4c7e-84d3-d1faa8d141db",
         "version": [
             1,
-            0,
+            8,
             0
         ],
         "min_engine_version": [
@@ -28,7 +28,7 @@
             "uuid": "7a9e3d2d-27a5-4803-988e-91b6bcf81216",
             "version": [
                 1,
-                0,
+                8,
                 0
             ]
         }
