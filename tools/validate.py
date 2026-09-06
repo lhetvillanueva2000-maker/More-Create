@@ -318,9 +318,65 @@ for base, _, files in os.walk(script_root):
             if not os.path.isfile(resolved) and not os.path.isfile(resolved + ".js"):
                 fail("%s: unresolved import %s" % (rel(path), target))
 
+# ------------------------------------------------------------------------ ui
+# Every custom UI file has to be listed in `_ui_defs.json` or the game never
+# loads it, and every texture it names has to exist somewhere in the stack -
+# a typo shows up in game as a pink checkerboard rather than an error.
+ui_root = os.path.join(RP, "ui")
+ui_textures = 0
+ui_vanilla = 0
+if os.path.isdir(ui_root):
+    defs_path = os.path.join(ui_root, "_ui_defs.json")
+    listed = set(documents.get(defs_path, {}).get("ui_defs", []))
+    for path, doc in documents.items():
+        if not path.startswith(ui_root + os.sep):
+            continue
+        name = os.path.relpath(path, RP).replace(os.sep, "/")
+        if name == "ui/_ui_defs.json":
+            continue
+        if name not in listed:
+            fail("%s is not listed in ui/_ui_defs.json, so it will not load" % name)
+
+    for entry in sorted(listed):
+        if not os.path.isfile(os.path.join(RP, entry)):
+            fail("ui/_ui_defs.json lists %s, which does not exist" % entry)
+
+    def ui_texture_refs(node):
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if key in ("texture", "$icon", "$machine_texture") \
+                        or key.endswith("_image"):
+                    if isinstance(value, str) and value.startswith("textures/"):
+                        yield value
+                else:
+                    yield from ui_texture_refs(value)
+        elif isinstance(node, list):
+            for value in node:
+                yield from ui_texture_refs(value)
+
+    for path, doc in documents.items():
+        if not path.startswith(ui_root + os.sep):
+            continue
+        for texture in set(ui_texture_refs(doc)):
+            ui_textures += 1
+            if os.path.isfile(os.path.join(RP, texture + ".png")):
+                continue
+            if texture in create_textures:
+                continue
+            if create_rp and os.path.isfile(os.path.join(create_rp, texture + ".png")):
+                continue
+            if texture.startswith(("textures/items/", "textures/blocks/",
+                                   "textures/ui/")):
+                ui_vanilla += 1   # vanilla's own atlas, not ours to verify
+                continue
+            fail("%s: UI texture %s.png not found in this pack or Create's"
+                 % (rel(path), texture))
+
 # ------------------------------------------------------------------- summary
 print("blocks: %d   items: %d   entities: %d   geometries: %d"
       % (len(block_ids), len(item_ids), len(entity_ids), len(own_geometry)))
+print("ui textures referenced: %d (%d vanilla, unverifiable offline)"
+      % (ui_textures, ui_vanilla))
 print("json documents: %d" % len(documents))
 for note in notes:
     print("note: " + note)

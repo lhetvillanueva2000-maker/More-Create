@@ -9,14 +9,18 @@
             "states": {
                 "morecreate:chain": [
                     "none",
-                    "a",
-                    "b"
+                    "mid_a",
+                    "mid_b",
+                    "end_a1",
+                    "end_a2",
+                    "end_b1",
+                    "end_b2"
                 ]
             },
             "traits": {
-                "minecraft:placement_position": {
+                "minecraft:placement_direction": {
                     "enabled_states": [
-                        "minecraft:block_face"
+                        "minecraft:facing_direction"
                     ]
                 }
             }
@@ -36,13 +40,35 @@
                     "texture": "morecreate:encased_chain_drive",
                     "render_method": "opaque"
                 },
-                "up": {
+                "north": {
                     "texture": "morecreate:chain_drive_face",
                     "render_method": "opaque"
                 },
-                "down": {
+                "south": {
                     "texture": "morecreate:chain_drive_face",
                     "render_method": "opaque"
+                }
+            },
+            "minecraft:item_visual": {
+                "geometry": {
+                    "identifier": "geometry.morecreate.encased_chain_drive_item"
+                },
+                "material_instances": {
+                    "*": {
+                        "texture": "morecreate:encased_chain_drive",
+                        "render_method": "opaque",
+                        "ambient_occlusion": false
+                    },
+                    "hole": {
+                        "texture": "morecreate:chain_drive_face",
+                        "render_method": "opaque",
+                        "ambient_occlusion": false
+                    },
+                    "shaft": {
+                        "texture": "create:shaft",
+                        "render_method": "alpha_test",
+                        "ambient_occlusion": false
+                    }
                 }
             },
             "minecraft:destructible_by_mining": {
@@ -95,7 +121,7 @@
         },
         "permutations": [
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'none'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'none'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -114,7 +140,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'a'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'mid_a'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -133,7 +159,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south') && q.block_state('morecreate:chain') == 'b'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'mid_b'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -152,7 +178,83 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'none'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'end_a1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'end_a2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'end_b1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'north' || q.block_state('minecraft:facing_direction') == 'south') && q.block_state('morecreate:chain') == 'end_b2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "morecreate:chain_drive_end_down",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "morecreate:chain_drive_end_down",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'none'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -171,7 +273,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'a'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'mid_a'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -190,7 +292,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'east' || q.block_state('minecraft:block_face') == 'west') && q.block_state('morecreate:chain') == 'b'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'mid_b'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -209,7 +311,83 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'none'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'end_a1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'end_a2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'end_b1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'east' || q.block_state('minecraft:facing_direction') == 'west') && q.block_state('morecreate:chain') == 'end_b2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "morecreate:chain_drive_end_down",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "morecreate:chain_drive_end_down",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'none'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -228,7 +406,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'a'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'mid_a'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -247,7 +425,7 @@
                 }
             },
             {
-                "condition": "(q.block_state('minecraft:block_face') == 'up' || q.block_state('minecraft:block_face') == 'down') && q.block_state('morecreate:chain') == 'b'",
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'mid_b'",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
@@ -260,6 +438,82 @@
                         },
                         "down": {
                             "texture": "morecreate:chain_drive_link_v",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'end_a1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_end_right",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'end_a2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_end_left",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'end_b1'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_end_down",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "(q.block_state('minecraft:facing_direction') == 'up' || q.block_state('minecraft:facing_direction') == 'down') && q.block_state('morecreate:chain') == 'end_b2'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "morecreate:encased_chain_drive",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "morecreate:chain_drive_end_up",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "morecreate:chain_drive_end_down",
                             "render_method": "opaque"
                         }
                     }

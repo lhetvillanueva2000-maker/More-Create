@@ -167,7 +167,48 @@ Millstone         Gravel  ->  Flint
 Bulk Washing      Gravel  ->  Flint (25%), Iron Nugget (13%)
 ```
 
-### 5. Schematic Cannon
+### 5. Recipe Browser (pause menu)
+
+The same 400 recipes as the book, but drawn with item icons instead of text —
+inputs, an arrow, outputs, with the drop chance on each output slot and the
+plain-language line underneath.
+
+**Opening it:** pause the game and press the round More Create button in the
+top-left corner, beside Create's own guide button. Press it again to close it —
+it is a toggle, not a screen you have to back out of.
+
+Nine tabs across the top pick the machine; machines with more than 40 recipes
+split into numbered pages.
+
+```
+[Gravel] ->  [Flint 25%] [Iron Nugget 13%]
+Gravel  ->  Flint 25%, Iron Nugget 13%
+```
+
+Some notes on how it is put together, because Bedrock makes this awkward:
+
+- **JSON UI cannot call a script.** There is no way for a button on the pause
+  menu to open a script-driven form, so the browser is not one — every row is
+  generated ahead of time by `tools/gen_browser_ui.py` and shipped as static
+  JSON UI. That is the same approach Create's pack takes for its own pause-menu
+  guide; the difference is that Create hand-draws one image per recipe, while
+  this builds each row from the real item textures.
+- **It cannot draw an item id.** Outside a real container screen JSON UI only
+  draws texture paths, so `tools/icons.py` resolves all 408 identifiers to a
+  texture — through Create's `item_texture.json`, its block definitions, and
+  vanilla's `blocks.json` / `terrain_texture.json`. Where Create ships one of
+  its own drawn 3D block icons, that is preferred. Every path was checked to
+  exist; none fall back to a placeholder.
+- **It does not touch Create's pause screen file.** Create owns
+  `ui/pause_screen.json` and its whole guide lives in there. Rather than ship a
+  file at the same path — which could hide theirs depending on pack order —
+  More Create adds to the `pause` namespace from its own
+  `ui/morecreate/pause_patch.json`, registered through `ui/_ui_defs.json`. If
+  the game does not pick that patch up, the only thing lost is our button;
+  Create's guide is never at risk, and the Recipe Book item still opens the
+  same 400 recipes as text.
+
+### 6. Schematic Cannon
 
 The Create Cannon / Schematic addon, integrated into More Create and fully
 translated to English:
@@ -244,11 +285,17 @@ dist/               built MoreCreate.mcaddon
 | `python3 tools/port_cannon.py <extracted cannon addon>` | Re-runs the cannon asset port |
 | `CREATE_RP=<path to Create RP> python3 tools/validate.py` | Checks JSON, manifests, textures, geometry, lang keys and script imports |
 | `python3 tools/gen_chain_drive.py` | Regenerates the Encased Chain Drive block and its connection permutations |
+| `python3 tools/gen_chain_textures.py <jar textures>` | Regenerates the chain drive's four directional end textures, verifying each by reading the pixels back |
 | `python3 tools/gen_book.py tools/data/be_recipes.json tools/data/gap_report.json tools/data/be_recipes2.json` | Regenerates the Recipe Book's recipe table |
+| `python3 tools/gen_browser_textures.py` | Draws the Recipe Browser's chrome — round pause button, panel, slots, arrow, tabs |
+| `python3 tools/gen_browser_ui.py <Create RP> <Create BP>` | Regenerates the Recipe Browser's JSON UI from the book's recipe table |
 | `python3 tools/build.py` | Builds `dist/MoreCreate-v<VERSION>.mcaddon` (bump `VERSION` in the script) |
 
 `tools/data/` holds the recipe diff the generator consumes, so the recipe
 tables can be rebuilt without the original Create jar to hand.
+`tools/data/vanilla/` holds Mojang's own atlas listings, which is how the
+browser knows where a vanilla item's texture lives; they are build-time
+reference only and are never shipped inside a pack.
 
 ## Installing
 

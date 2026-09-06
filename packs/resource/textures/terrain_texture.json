@@ -49,11 +49,17 @@
         "morecreate:chain_drive_link_v": {
             "textures": "textures/morecreate/blocks/chain_drive_link_v"
         },
-        "morecreate:chain_drive_end_h": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_h"
+        "morecreate:chain_drive_end_right": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_right"
         },
-        "morecreate:chain_drive_end_v": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_v"
+        "morecreate:chain_drive_end_left": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_left"
+        },
+        "morecreate:chain_drive_end_up": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_up"
+        },
+        "morecreate:chain_drive_end_down": {
+            "textures": "textures/morecreate/blocks/chain_drive_end_down"
         }
     }
 }

@@ -116,7 +116,10 @@ function openBook(player) {
     const form = new ActionFormData()
         .title("§8§lMore Create - Recipe Book")
         .body(`§7Every processing recipe in the game - §f${TOTAL}§7 of them.\n` +
-              "Pick a machine to see what it takes and what it gives back.");
+              "Pick a machine to see what it takes and what it gives back.\n\n" +
+              "§8The same recipes are laid out with item icons in the Recipe\n" +
+              "§8Browser: pause the game and press the round More Create\n" +
+              "§8button in the top-left corner.");
 
     for (const machine of MACHINES) {
         const count = (RECIPES[machine.key] ?? []).length;

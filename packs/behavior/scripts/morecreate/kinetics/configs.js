@@ -116,7 +116,10 @@ const chainLink = () => ({
 });
 
 export const ENCASED_CHAIN_DRIVE_CONFIG = {
-    rotationState: "minecraft:block_face",
+    // Oriented by where the player looks, like Create's cogwheel. The face map
+    // below is symmetric front-to-back, so it does not matter that Create
+    // inverts the reading of `facing_direction`.
+    rotationState: "minecraft:facing_direction",
     entityType: "morecreate:encased_chain_drive_entity",
     faces: {
         north: shaftPort(),

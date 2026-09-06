@@ -20,7 +20,10 @@ import { world, system } from "@minecraft/server";
 
 const CHAIN_DRIVE = "morecreate:encased_chain_drive";
 const CHAIN_STATE = "morecreate:chain";
-const FACE_STATE = "minecraft:block_face";
+// Drives orient by where the player is looking, like Create's own cogwheel, so
+// putting one down on the ground gives a horizontal drive rather than one
+// standing on end.
+const FACE_STATE = "minecraft:facing_direction";
 
 const OFFSETS = {
     north: { x: 0, y: 0, z: -1 },
@@ -33,11 +36,15 @@ const OFFSETS = {
 
 const FACE_BY_INDEX = { 0: "down", 1: "up", 2: "north", 3: "south", 4: "west", 5: "east" };
 
-/** Drive axis -> the two perpendicular axes, in the order the block states use. */
+/**
+ * Drive axis -> the two perpendicular run axes, in the order the block states
+ * use. Must stay in step with `AXES` in tools/gen_chain_drive.py, which decides
+ * which texture each state paints.
+ */
 const PERPENDICULAR = {
     z: { a: ["east", "west"], b: ["up", "down"] },
-    x: { a: ["north", "south"], b: ["up", "down"] },
-    y: { a: ["east", "west"], b: ["north", "south"] }
+    x: { a: ["south", "north"], b: ["up", "down"] },
+    y: { a: ["east", "west"], b: ["south", "north"] }
 };
 
 /** Visual entities More Create spawns, and the blocks allowed to own them. */
@@ -82,14 +89,26 @@ function blockAt(dimension, location, offset) {
     }
 }
 
-/** Which run a drive belongs to: "a", "b", or "none". */
+/**
+ * Where this drive sits in its run.
+ *
+ * Create draws a drive with neighbours on both sides differently from one at
+ * the end of a row: the end has the chain leaving one side only. Painting every
+ * connected drive with the "through" texture is what made a row read as a
+ * repeating pattern instead of a single chain.
+ *
+ * Returns "none", "mid_a"/"mid_b" for a drive with both neighbours on that run
+ * axis, or "end_a1".."end_b2" naming the single neighbour's direction.
+ */
 function resolveChain(block) {
     const perpendicular = PERPENDICULAR[axisOf(readFace(block))];
     for (const key of ["a", "b"]) {
-        for (const direction of perpendicular[key]) {
-            const neighbour = blockAt(block.dimension, block.location, OFFSETS[direction]);
-            if (neighbour?.typeId === CHAIN_DRIVE) return key;
-        }
+        const [first, second] = perpendicular[key];
+        const hasFirst = blockAt(block.dimension, block.location, OFFSETS[first])?.typeId === CHAIN_DRIVE;
+        const hasSecond = blockAt(block.dimension, block.location, OFFSETS[second])?.typeId === CHAIN_DRIVE;
+        if (hasFirst && hasSecond) return `mid_${key}`;
+        if (hasFirst) return `end_${key}1`;
+        if (hasSecond) return `end_${key}2`;
     }
     return "none";
 }

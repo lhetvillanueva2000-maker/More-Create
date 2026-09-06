@@ -8,6 +8,7 @@ so `v1.9` is followed by `v2.0`.
 
 | Version | File | What it is |
 |---|---|---|
+| v1.6 | [`MoreCreate-v1.6.mcaddon`](dist/MoreCreate-v1.6.mcaddon) | Recipe Browser on the pause menu; chain drive facing, connected textures and item render fixed |
 | v1.5 | [`MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) | Cogwheel slot is see-through; copper and creative keep their colour |
 | v1.4 | [`MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) | Schematic Cannon screen fix |
 | v1.3 | [`MoreCreate-v1.3.mcaddon`](dist/MoreCreate-v1.3.mcaddon) | Recipe Book, connected chain drives, slotted cogwheel casings, ghost-block fix |
@@ -160,3 +161,74 @@ textures pixel by pixel instead of trusting the preview.
 
 Encased shafts are untouched and stay completely solid — hiding the shaft is the
 whole point of them.
+
+---
+
+## v1.6 — the Recipe Browser, and the chain drive properly
+
+### Recipe Browser
+
+The Recipe Book from v1.3 read out 400 recipes as text. This adds a second way
+to read the same 400, drawn the way a recipe browser should be: input slots, an
+arrow, output slots, the drop chance printed on each output, and the
+plain-language line underneath.
+
+**Open it from the pause menu** — a round button carrying the pack icon, next to
+Create's own guide button. Press it again to close it. Nine tabs across the top
+pick the machine; the bigger machines split into numbered pages of forty.
+
+Three things about Bedrock made this harder than it sounds, and each is worth
+recording:
+
+- **JSON UI cannot call a script.** A button on the pause menu has no way to
+  open a script-driven form, so the browser is not one — all 400 rows are
+  generated ahead of time and shipped as static JSON UI. Create's pack solves
+  the same problem the same way for its own guide; the difference is Create
+  hand-draws an image per recipe, while these rows are assembled from the real
+  item textures.
+- **JSON UI cannot draw an item id**, only a texture path. So all 408
+  identifiers are resolved to a path at build time — through Create's
+  `item_texture.json`, through Create's block definitions, and through Mojang's
+  own `blocks.json` and `terrain_texture.json`. Where Create ships one of its
+  drawn 3D block icons that is used instead, which also fixes the greyscale
+  foliage textures that are meant to be tinted. Every resolved path was checked
+  to exist; nothing falls back to a placeholder, and connected-texture sheets
+  are swapped for the plain 16×16 tile beside them so a slot shows a block
+  rather than sixteen corner pieces.
+- **It does not touch Create's `ui/pause_screen.json`.** Create's entire guide
+  lives in that file, and a second file at the same path could hide it
+  depending on pack order. More Create instead adds to the `pause` namespace
+  from its own `ui/morecreate/pause_patch.json`, registered through
+  `ui/_ui_defs.json`. If the game does not pick that patch up, the only thing
+  lost is our button — Create's guide is never at risk, and the Recipe Book item
+  still opens the same recipes as text.
+
+### Encased Chain Drive
+
+- **The connected texture pointed the wrong way.** A drive with one neighbour
+  drew its chain leaving the wrong edge, because the two faces showing the
+  sprocket look at each other from opposite sides and were given the same
+  texture. There are now four directional end textures — right, left, up, down —
+  and each face takes the variant that sends the chain *toward* the neighbour.
+  The generator verifies this by reading the pixels back out of each texture and
+  reporting which edge the chain actually leaves.
+- **Drives now face the player when placed**, like Create's own cogwheel, rather
+  than facing the block face you clicked. Putting one down on the ground gives a
+  horizontal drive instead of one standing on end.
+- **The item render was wrong** — a bare cube with no shaft, lying on the wrong
+  axis. It has its own model now, with the shaft stubs on and the axis matching
+  the way the block lands when you place it.
+
+### Recipes, triple-checked
+
+Checked four independent ways, all passing:
+
+1. Replayed every registration through Create's compatibility bridge — **129
+   accepted, 0 rejected**.
+2. Confirmed the specific recipes that had been reported missing are present.
+3. Merged the tables exactly as Create's `getRecipesForType` does and read the
+   results back: bulk washing 76, bulk smelting 87, bulk smoking 10, bulk
+   haunting 30, crushing 150. `Gravel -> Flint 25% + Iron Nugget 12.5%` confirmed
+   end to end.
+4. Re-scanned the 596 native recipe files: **0 duplicate identifiers, 0
+   structural problems**.
