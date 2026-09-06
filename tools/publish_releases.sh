@@ -18,10 +18,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 REPO="lhetvillanueva2000-maker/More-Create"
-TARGET="claude/more-create-bedrock-mod-ccmzb3"
+# Each tag points at the commit that actually added that build.
 
 publish() {
-    local tag="$1" title="$2" notes="$3" asset="$4" extra="${5:-}"
+    local tag="$1" title="$2" notes="$3" asset="$4" target="$5" extra="${6:-}"
 
     if [ ! -f "$asset" ]; then
         echo "skip $tag: $asset is missing"
@@ -36,17 +36,17 @@ publish() {
     # shellcheck disable=SC2086 # $extra is deliberately word-split
     gh release create "$tag" "$asset" \
         --repo "$REPO" \
-        --target "$TARGET" \
+        --target "$target" \
         --title "$title" \
         --notes-file "$notes" $extra
 }
 
-publish "v1.0" "More Create v1.0 - what More Create is" "dist/release-notes/v1.0.md" "dist/MoreCreate-v1.0.mcaddon" "--latest=false"
-publish "v1.1" "More Create v1.1 - everything new" "dist/release-notes/v1.1.md" "dist/MoreCreate-v1.1.mcaddon" "--latest=false"
-publish "v1.2" "More Create v1.2 - more added" "dist/release-notes/v1.2.md" "dist/MoreCreate-v1.2.mcaddon" "--latest=false"
-publish "v1.3" "More Create v1.3 - fixes and the Recipe Book" "dist/release-notes/v1.3.md" "dist/MoreCreate-v1.3.mcaddon" "--latest=false"
-publish "v1.4" "More Create v1.4 - the Schematic Cannon screen" "dist/release-notes/v1.4.md" "dist/MoreCreate-v1.4.mcaddon" "--latest=false"
-publish "v1.5" "More Create v1.5 - the cogwheel slot, properly" "dist/release-notes/v1.5.md" "dist/MoreCreate-v1.5.mcaddon" "--latest=false"
-publish "v1.6" "More Create v1.6 - the Recipe Browser, and the chain drive properly" "dist/release-notes/v1.6.md" "dist/MoreCreate-v1.6.mcaddon" "--latest"
+publish "v1.0" "More Create v1.0 - what More Create is" "dist/release-notes/v1.0.md" "dist/MoreCreate-v1.0.mcaddon" "d350b27bca7d20a22c701c1499f3c2fe719a1181" "--latest=false"
+publish "v1.1" "More Create v1.1 - everything new" "dist/release-notes/v1.1.md" "dist/MoreCreate-v1.1.mcaddon" "d350b27bca7d20a22c701c1499f3c2fe719a1181" "--latest=false"
+publish "v1.2" "More Create v1.2 - more added" "dist/release-notes/v1.2.md" "dist/MoreCreate-v1.2.mcaddon" "d350b27bca7d20a22c701c1499f3c2fe719a1181" "--latest=false"
+publish "v1.3" "More Create v1.3 - fixes and the Recipe Book" "dist/release-notes/v1.3.md" "dist/MoreCreate-v1.3.mcaddon" "d350b27bca7d20a22c701c1499f3c2fe719a1181" "--latest=false"
+publish "v1.4" "More Create v1.4 - the Schematic Cannon screen" "dist/release-notes/v1.4.md" "dist/MoreCreate-v1.4.mcaddon" "d85090e25734fc602037fc9f2a8f6bcae041ec17" "--latest=false"
+publish "v1.5" "More Create v1.5 - the cogwheel slot, properly" "dist/release-notes/v1.5.md" "dist/MoreCreate-v1.5.mcaddon" "75d81e386019ed9afe680026694d97e5ee66176f" "--latest=false"
+publish "v1.6" "More Create v1.6 - the Recipe Browser, and the chain drive properly" "dist/release-notes/v1.6.md" "dist/MoreCreate-v1.6.mcaddon" "e689fd68d870ff38c6c4c744812f39bde9519254" "--latest"
 
 echo "done - https://github.com/$REPO/releases"

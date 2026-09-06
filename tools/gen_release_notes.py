@@ -17,6 +17,7 @@ Usage: gen_release_notes.py
 import os
 import re
 import stat
+import subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHANGELOG = os.path.join(ROOT, "CHANGELOG.md")
@@ -26,6 +27,21 @@ SCRIPT_OUT = os.path.join(ROOT, "tools/publish_releases.sh")
 REPO = "lhetvillanueva2000-maker/More-Create"
 # Releases are cut from the branch the work lives on.
 TARGET = "claude/more-create-bedrock-mod-ccmzb3"
+
+
+def build_commit(asset):
+    """The commit that added a build, so its tag points at the real thing.
+
+    Falls back to the branch when the file is not committed yet, which is what
+    happens the first time a new version is generated before it is committed.
+    """
+    try:
+        sha = subprocess.run(
+            ["git", "log", "--diff-filter=A", "--format=%H", "-1", "--", asset],
+            cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+    except Exception:
+        return TARGET
+    return sha or TARGET
 
 
 def sections():
@@ -68,10 +84,10 @@ def main():
         'cd "$(dirname "$0")/.."',
         "",
         'REPO="%s"' % REPO,
-        'TARGET="%s"' % TARGET,
+        '# Each tag points at the commit that actually added that build.',
         "",
         "publish() {",
-        '    local tag="$1" title="$2" notes="$3" asset="$4" extra="${5:-}"',
+        '    local tag="$1" title="$2" notes="$3" asset="$4" target="$5" extra="${6:-}"',
         "",
         '    if [ ! -f "$asset" ]; then',
         '        echo "skip $tag: $asset is missing"',
@@ -86,7 +102,7 @@ def main():
         '    # shellcheck disable=SC2086 # $extra is deliberately word-split',
         '    gh release create "$tag" "$asset" \\',
         '        --repo "$REPO" \\',
-        '        --target "$TARGET" \\',
+        '        --target "$target" \\',
         '        --title "$title" \\',
         '        --notes-file "$notes" $extra',
         "}",
@@ -116,9 +132,10 @@ def main():
                  "" if exists else "   WARNING: no .mcaddon built"))
 
         extra = '--latest' if version == latest else '--latest=false'
-        lines.append('publish "%s" "%s" "%s" "%s" "%s"'
+        lines.append('publish "%s" "%s" "%s" "%s" "%s" "%s"'
                      % (version, title,
-                        "dist/release-notes/%s.md" % version, asset, extra))
+                        "dist/release-notes/%s.md" % version, asset,
+                        build_commit(asset), extra))
 
     lines += ["", 'echo "done - https://github.com/$REPO/releases"', ""]
 

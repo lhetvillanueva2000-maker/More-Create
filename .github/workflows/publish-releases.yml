@@ -1,0 +1,40 @@
+# Fills in the Releases tab from the builds already committed under dist/.
+#
+# This exists because the automation that develops this repository cannot create
+# releases itself - it can push commits, but tag pushes are refused and its
+# GitHub tooling can only read releases. Actions runs with the repository's own
+# token, which can.
+#
+# It runs when this file changes, and on demand from the Actions tab. It is not
+# wired to every push, so ordinary work does not trigger it.
+
+name: Publish releases
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/publish-releases.yml
+      - dist/release-notes/**
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the branch, with full history for the build commits
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create a release for every built version
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash tools/publish_releases.sh
+
+      - name: Show what the Releases tab now holds
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release list --repo "$GITHUB_REPOSITORY" --limit 20
