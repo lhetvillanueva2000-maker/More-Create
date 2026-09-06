@@ -4,32 +4,41 @@
     "padding": 8,
     "num_mip_levels": 4,
     "texture_data": {
-        "morecreate:encased_chain_drive": {
-            "textures": "textures/morecreate/blocks/encased_chain_drive"
-        },
-        "morecreate:chain_drive_face": {
-            "textures": "textures/morecreate/blocks/gearbox"
-        },
-        "morecreate:cannon_base": {
-            "textures": "textures/morecreate/blocks/cannon_base"
-        },
-        "morecreate:cannon_block": {
-            "textures": "textures/morecreate/blocks/cannon_block"
-        },
-        "morecreate:schematic_table": {
-            "textures": "textures/morecreate/blocks/schematic_table"
-        },
         "morecreate:andesite_encased_cogwheel_h": {
             "textures": "textures/morecreate/blocks/andesite_encased_cogwheel_h"
         },
         "morecreate:andesite_encased_cogwheel_v": {
             "textures": "textures/morecreate/blocks/andesite_encased_cogwheel_v"
         },
+        "morecreate:axis": {
+            "textures": "textures/morecreate/blocks/axis"
+        },
+        "morecreate:axis_r270": {
+            "textures": "textures/morecreate/blocks/axis_r270"
+        },
+        "morecreate:axis_r90": {
+            "textures": "textures/morecreate/blocks/axis_r90"
+        },
+        "morecreate:axis_top": {
+            "textures": "textures/morecreate/blocks/axis_top"
+        },
+        "morecreate:axis_top_r270": {
+            "textures": "textures/morecreate/blocks/axis_top_r270"
+        },
+        "morecreate:axis_top_r90": {
+            "textures": "textures/morecreate/blocks/axis_top_r90"
+        },
         "morecreate:brass_encased_cogwheel_h": {
             "textures": "textures/morecreate/blocks/brass_encased_cogwheel_h"
         },
         "morecreate:brass_encased_cogwheel_v": {
             "textures": "textures/morecreate/blocks/brass_encased_cogwheel_v"
+        },
+        "morecreate:cannon_base": {
+            "textures": "textures/morecreate/blocks/cannon_base"
+        },
+        "morecreate:cannon_block": {
+            "textures": "textures/morecreate/blocks/cannon_block"
         },
         "morecreate:copper_encased_cogwheel_h": {
             "textures": "textures/morecreate/blocks/copper_encased_cogwheel_h"
@@ -43,23 +52,44 @@
         "morecreate:creative_encased_cogwheel_v": {
             "textures": "textures/morecreate/blocks/creative_encased_cogwheel_v"
         },
-        "morecreate:chain_drive_link_h": {
-            "textures": "textures/morecreate/blocks/chain_drive_link_h"
+        "morecreate:encased_chain_drive": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive"
         },
-        "morecreate:chain_drive_link_v": {
-            "textures": "textures/morecreate/blocks/chain_drive_link_v"
+        "morecreate:encased_chain_drive_end": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_end"
         },
-        "morecreate:chain_drive_end_right": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_right"
+        "morecreate:encased_chain_drive_end_r270": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_end_r270"
         },
-        "morecreate:chain_drive_end_left": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_left"
+        "morecreate:encased_chain_drive_end_r90": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_end_r90"
         },
-        "morecreate:chain_drive_end_up": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_up"
+        "morecreate:encased_chain_drive_middle": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_middle"
         },
-        "morecreate:chain_drive_end_down": {
-            "textures": "textures/morecreate/blocks/chain_drive_end_down"
+        "morecreate:encased_chain_drive_middle_r270": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_middle_r270"
+        },
+        "morecreate:encased_chain_drive_middle_r90": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_middle_r90"
+        },
+        "morecreate:encased_chain_drive_r270": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_r270"
+        },
+        "morecreate:encased_chain_drive_r90": {
+            "textures": "textures/morecreate/blocks/encased_chain_drive_r90"
+        },
+        "morecreate:gearbox": {
+            "textures": "textures/morecreate/blocks/gearbox"
+        },
+        "morecreate:gearbox_r270": {
+            "textures": "textures/morecreate/blocks/gearbox_r270"
+        },
+        "morecreate:gearbox_r90": {
+            "textures": "textures/morecreate/blocks/gearbox_r90"
+        },
+        "morecreate:schematic_table": {
+            "textures": "textures/morecreate/blocks/schematic_table"
         }
     }
 }

@@ -1,8 +1,6 @@
 {
     "ui_defs": [
         "ui/custom_chest_ui.json",
-        "ui/chest_screen.json",
-        "ui/morecreate/browser.json",
-        "ui/morecreate/pause_patch.json"
+        "ui/chest_screen.json"
     ]
 }

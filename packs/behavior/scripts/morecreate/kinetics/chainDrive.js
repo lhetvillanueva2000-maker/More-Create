@@ -19,10 +19,11 @@
 import { world, system } from "@minecraft/server";
 
 const CHAIN_DRIVE = "morecreate:encased_chain_drive";
-const CHAIN_STATE = "morecreate:chain";
+const PART_STATE = "morecreate:part";
+const ALONG_STATE = "morecreate:along";
 // Drives orient by where the player is looking, like Create's own cogwheel, so
 // putting one down on the ground gives a horizontal drive rather than one
-// standing on end.
+// standing on end. Create's rpm system reads this state too.
 const FACE_STATE = "minecraft:facing_direction";
 
 const OFFSETS = {
@@ -37,14 +38,16 @@ const OFFSETS = {
 const FACE_BY_INDEX = { 0: "down", 1: "up", 2: "north", 3: "south", 4: "west", 5: "east" };
 
 /**
- * Drive axis -> the two perpendicular run axes, in the order the block states
- * use. Must stay in step with `AXES` in tools/gen_chain_drive.py, which decides
- * which texture each state paints.
+ * Drive axis -> the two directions a run can travel in, in Create's order.
+ *
+ * Create calls the first of the pair `axis_along_first`; which one a drive
+ * belongs to decides whether its model is turned 90 degrees. Must stay in step
+ * with `placements()` in tools/gen_chain_drive.py.
  */
-const PERPENDICULAR = {
-    z: { a: ["east", "west"], b: ["up", "down"] },
-    x: { a: ["south", "north"], b: ["up", "down"] },
-    y: { a: ["east", "west"], b: ["south", "north"] }
+const RUN_AXES = {
+    x: { first: ["south", "north"], second: ["up", "down"] },
+    y: { first: ["east", "west"], second: ["south", "north"] },
+    z: { first: ["east", "west"], second: ["up", "down"] }
 };
 
 /** Visual entities More Create spawns, and the blocks allowed to own them. */
@@ -89,42 +92,46 @@ function blockAt(dimension, location, offset) {
     }
 }
 
+/** A neighbour counts only if it is a drive turning on the same axis. */
+function linkedNeighbour(block, direction) {
+    const other = blockAt(block.dimension, block.location, OFFSETS[direction]);
+    if (other?.typeId !== CHAIN_DRIVE) return false;
+    return axisOf(readFace(other)) === axisOf(readFace(block));
+}
+
 /**
- * Where this drive sits in its run.
+ * Where this drive sits in its run: which run axis, and which end of it.
  *
- * Create draws a drive with neighbours on both sides differently from one at
- * the end of a row: the end has the chain leaving one side only. Painting every
- * connected drive with the "through" texture is what made a row read as a
- * repeating pattern instead of a single chain.
- *
- * Returns "none", "mid_a"/"mid_b" for a drive with both neighbours on that run
- * axis, or "end_a1".."end_b2" naming the single neighbour's direction.
+ * Create splits this into `part` (none/start/middle/end) and
+ * `axis_along_first`. A drive with neighbours on both sides is `middle`; one
+ * with a single neighbour is `start` or `end` depending on which side that
+ * neighbour is, and those two use the same model turned 180 degrees. Getting
+ * that pairing backwards is what made a row's two ends point the same way.
  */
 function resolveChain(block) {
-    const perpendicular = PERPENDICULAR[axisOf(readFace(block))];
-    for (const key of ["a", "b"]) {
-        const [first, second] = perpendicular[key];
-        const hasFirst = blockAt(block.dimension, block.location, OFFSETS[first])?.typeId === CHAIN_DRIVE;
-        const hasSecond = blockAt(block.dimension, block.location, OFFSETS[second])?.typeId === CHAIN_DRIVE;
-        if (hasFirst && hasSecond) return `mid_${key}`;
-        if (hasFirst) return `end_${key}1`;
-        if (hasSecond) return `end_${key}2`;
+    const runs = RUN_AXES[axisOf(readFace(block))];
+    for (const [along, pair] of [[true, runs.first], [false, runs.second]]) {
+        const [first, second] = pair;
+        const hasFirst = linkedNeighbour(block, first);
+        const hasSecond = linkedNeighbour(block, second);
+        if (hasFirst && hasSecond) return { part: "middle", along };
+        if (hasFirst) return { part: "start", along };
+        if (hasSecond) return { part: "end", along };
     }
-    return "none";
+    return { part: "none", along: false };
 }
 
 function refreshDrive(block) {
     if (block?.typeId !== CHAIN_DRIVE) return;
     const wanted = resolveChain(block);
-    let current;
     try {
-        current = block.permutation.getState(CHAIN_STATE);
-    } catch {
-        return;
-    }
-    if (current === wanted) return;
-    try {
-        block.setPermutation(block.permutation.withState(CHAIN_STATE, wanted));
+        if (block.permutation.getState(PART_STATE) === wanted.part &&
+            block.permutation.getState(ALONG_STATE) === wanted.along) {
+            return;
+        }
+        block.setPermutation(block.permutation
+            .withState(PART_STATE, wanted.part)
+            .withState(ALONG_STATE, wanted.along));
     } catch {
         /* the chunk unloaded between reading and writing */
     }

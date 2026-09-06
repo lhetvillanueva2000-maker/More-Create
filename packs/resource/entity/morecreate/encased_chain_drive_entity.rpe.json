@@ -10,7 +10,7 @@
                 "default": "textures/create/common/blocks/shaft"
             },
             "geometry": {
-                "default": "geometry.morecreate.encased_chain_drive"
+                "default": "geometry.morecreate.chain_drive_single"
             },
             "animations": {
                 "rotation": "animation.create.rpm.rotation",

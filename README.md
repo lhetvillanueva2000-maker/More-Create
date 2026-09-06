@@ -4,7 +4,7 @@ An add-on for the **Create** Bedrock addon by Vatonage that adds features missin
 
 - **Author:** Usersainyy
 - **Requires:** Minecraft Bedrock **1.26.13 or newer**, and Vatonage's Create addon (behaviour + resource pack) enabled in the same world.
-- **Download:** [`dist/MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
+- **Download:** [`dist/MoreCreate-v1.7.mcaddon`](dist/MoreCreate-v1.7.mcaddon) — every version is listed in [CHANGELOG.md](CHANGELOG.md)
 
 More Create never imports from the Create pack. Everything is registered through
 Create's **Compatibility API v2** over script events, so the two packs stay
@@ -109,6 +109,15 @@ Replaying the config through Create's own connection logic:
 | drive → drive, axis to axis | `sense=equal ratio=1` |
 | drive side → cogwheel side | rejected, no connection |
 
+**How it is drawn.** The block is not a cube with one texture per face — it
+carries Create's own six models, converted to Bedrock geometry straight from the
+jar. That matters because Create rotates the casing texture per face (the metal
+strip runs *around* the block) and tells the two ends of a run apart by turning
+the model 180°, which is not the same as mirroring the texture. Bedrock UVs can
+express a 180° turn but not 90°, so those are baked as pre-turned copies.
+`tools/verify_chain_drive.py` checks all 116 faces against Java's own sampling,
+pixel for pixel, so this cannot silently drift again.
+
 ### 3. Hiding shafts and cogwheels inside casings
 
 Right-click a shaft, cogwheel or large cogwheel with **any** casing —
@@ -167,46 +176,25 @@ Millstone         Gravel  ->  Flint
 Bulk Washing      Gravel  ->  Flint (25%), Iron Nugget (13%)
 ```
 
-### 5. Recipe Browser (pause menu)
+### 5. Recipe Browser — not currently shipped
 
-The same 400 recipes as the book, but drawn with item icons instead of text —
-inputs, an arrow, outputs, with the drop chance on each output slot and the
-plain-language line underneath.
+v1.6 added a JEI-style browser opened from a button on the pause menu. It is
+**removed in v1.7**: the way it attached itself to the pause screen blanked that
+screen entirely, so pausing showed an empty menu with no way out of the world.
 
-**Opening it:** pause the game and press the round More Create button in the
-top-left corner, beside Create's own guide button. Press it again to close it —
-it is a toggle, not a screen you have to back out of.
+The cause was the entry point, not the browser. Bedrock's JSON UI cannot call a
+script, so a pause-menu button has to be added by patching the vanilla
+`pause_screen_content` control. More Create did that from its own file with
+`"namespace": "pause"`, hoping the patch would merge. Instead it *replaced* the
+vanilla control with one that has no content, and a control with no content
+draws nothing.
 
-Nine tabs across the top pick the machine; machines with more than 40 recipes
-split into numbered pages.
-
-```
-[Gravel] ->  [Flint 25%] [Iron Nugget 13%]
-Gravel  ->  Flint 25%, Iron Nugget 13%
-```
-
-Some notes on how it is put together, because Bedrock makes this awkward:
-
-- **JSON UI cannot call a script.** There is no way for a button on the pause
-  menu to open a script-driven form, so the browser is not one — every row is
-  generated ahead of time by `tools/gen_browser_ui.py` and shipped as static
-  JSON UI. That is the same approach Create's pack takes for its own pause-menu
-  guide; the difference is that Create hand-draws one image per recipe, while
-  this builds each row from the real item textures.
-- **It cannot draw an item id.** Outside a real container screen JSON UI only
-  draws texture paths, so `tools/icons.py` resolves all 408 identifiers to a
-  texture — through Create's `item_texture.json`, its block definitions, and
-  vanilla's `blocks.json` / `terrain_texture.json`. Where Create ships one of
-  its own drawn 3D block icons, that is preferred. Every path was checked to
-  exist; none fall back to a placeholder.
-- **It does not touch Create's pause screen file.** Create owns
-  `ui/pause_screen.json` and its whole guide lives in there. Rather than ship a
-  file at the same path — which could hide theirs depending on pack order —
-  More Create adds to the `pause` namespace from its own
-  `ui/morecreate/pause_patch.json`, registered through `ui/_ui_defs.json`. If
-  the game does not pick that patch up, the only thing lost is our button;
-  Create's guide is never at risk, and the Recipe Book item still opens the
-  same 400 recipes as text.
+The generators are still here (`tools/gen_browser_ui.py`,
+`tools/gen_browser_textures.py`, `tools/icons.py`) because the browser itself was
+fine — only its door was wrong. Re-adding it needs an entry point that cannot
+touch a vanilla screen, most likely the container-title trick the Schematic
+Cannon already uses. Until then the **Recipe Book** item lists the same 400
+recipes.
 
 ### 6. Schematic Cannon
 
@@ -284,8 +272,8 @@ dist/               built MoreCreate.mcaddon
 | `python3 tools/gen_native_recipes.py tools/data/gap_report_v2.json` | Regenerates the plain Bedrock crafting and cooking recipe files |
 | `python3 tools/port_cannon.py <extracted cannon addon>` | Re-runs the cannon asset port |
 | `CREATE_RP=<path to Create RP> python3 tools/validate.py` | Checks JSON, manifests, textures, geometry, lang keys and script imports |
-| `python3 tools/gen_chain_drive.py` | Regenerates the Encased Chain Drive block and its connection permutations |
-| `python3 tools/gen_chain_textures.py <jar textures>` | Regenerates the chain drive's four directional end textures, verifying each by reading the pixels back |
+| `python3 tools/gen_chain_drive.py <Create jar assets/create>` | Ports Create's own chain drive models to Bedrock geometry, bakes the turned textures, and writes the block |
+| `python3 tools/verify_chain_drive.py <Create jar assets/create>` | Proves every converted face samples the same pixels Create's model does |
 | `python3 tools/gen_book.py tools/data/be_recipes.json tools/data/gap_report.json tools/data/be_recipes2.json` | Regenerates the Recipe Book's recipe table |
 | `python3 tools/gen_browser_textures.py` | Draws the Recipe Browser's chrome — round pause button, panel, slots, arrow, tabs |
 | `python3 tools/gen_browser_ui.py <Create RP> <Create BP>` | Regenerates the Recipe Browser's JSON UI from the book's recipe table |

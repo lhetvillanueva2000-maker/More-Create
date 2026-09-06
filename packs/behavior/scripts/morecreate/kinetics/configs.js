@@ -120,7 +120,10 @@ export const ENCASED_CHAIN_DRIVE_CONFIG = {
     // below is symmetric front-to-back, so it does not matter that Create
     // inverts the reading of `facing_direction`.
     rotationState: "minecraft:facing_direction",
-    entityType: "morecreate:encased_chain_drive_entity",
+    // The block draws its whole self now that it carries Create's own models,
+    // so there is nothing for a visual entity to add - and one sitting on top
+    // would double-draw the casing. Create still drives it kinetically.
+    noEntity: true,
     faces: {
         north: shaftPort(),
         south: shaftPort(),

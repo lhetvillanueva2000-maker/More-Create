@@ -8,6 +8,7 @@ so `v1.9` is followed by `v2.0`.
 
 | Version | File | What it is |
 |---|---|---|
+| v1.7 | [`MoreCreate-v1.7.mcaddon`](dist/MoreCreate-v1.7.mcaddon) | Pause menu fixed; Recipe Book stops breaking blocks; chain drive ported from Create's own models |
 | v1.6 | [`MoreCreate-v1.6.mcaddon`](dist/MoreCreate-v1.6.mcaddon) | Recipe Browser on the pause menu; chain drive facing, connected textures and item render fixed |
 | v1.5 | [`MoreCreate-v1.5.mcaddon`](dist/MoreCreate-v1.5.mcaddon) | Cogwheel slot is see-through; copper and creative keep their colour |
 | v1.4 | [`MoreCreate-v1.4.mcaddon`](dist/MoreCreate-v1.4.mcaddon) | Schematic Cannon screen fix |
@@ -232,3 +233,73 @@ Checked four independent ways, all passing:
    end to end.
 4. Re-scanned the 596 native recipe files: **0 duplicate identifiers, 0
    structural problems**.
+
+---
+
+## v1.7 — the pause menu, and the chain drive from Create's own models
+
+### The pause menu works again
+
+v1.6's Recipe Browser button **blanked the pause screen**. Pressing Escape showed
+an empty menu with no buttons, and no way to leave the world. That is fixed by
+removing the browser's pause-menu patch entirely.
+
+The browser needed a door, and Bedrock's JSON UI cannot call a script, so the
+only way to put a button on the pause menu is to patch the vanilla
+`pause_screen_content` control. More Create did that from its own file declaring
+`"namespace": "pause"`, expecting the patch to merge with the vanilla screen. It
+did not merge — it **replaced** the vanilla control with one that has no content
+of its own, and a control with no content draws nothing.
+
+v1.6's notes claimed the worst case was "our button does not appear". That was
+wrong, and it was the wrong thing to gamble on a screen you need in order to quit
+the game. The browser is out until it has an entry point that cannot touch a
+vanilla screen; the **Recipe Book** item still lists all 400 recipes, and its
+generators are kept for when the door is rebuilt.
+
+### The Recipe Book no longer breaks blocks
+
+In creative, every item breaks a block instantly on tap — and on touch controls
+the tap that opens the book lands on whatever you are looking at, so reading the
+book mined the ground in front of you. The book now carries
+`minecraft:can_destroy_in_creative: false`. It is a reference, not a tool.
+
+### The Encased Chain Drive is ported, not guessed
+
+The drive has been drawn wrong twice, both times because a texture transform was
+worked out by hand and looked plausible. It is now converted directly from
+`assets/create/models/block/encased_chain_drive/*.json` in the Create jar, and
+the conversion is *checked*.
+
+What the guesses got wrong:
+
+- **The side line ran the wrong way.** Create rotates the casing texture per
+  face, so the metal strip runs around the block; a Bedrock
+  `material_instances` cube cannot rotate a texture, so every side face showed
+  the strip horizontally.
+- **The two ends of a row pointed the same way.** Create tells `start` from
+  `end` by turning the whole model 180°. Earlier versions used a *mirrored*
+  copy of the end texture instead — which puts the sprocket in the right place
+  but leaves the frame's lit edge on the wrong side, so one end of every row
+  read as inverted.
+- **Vertical runs had no connected look at all.** Create ships
+  `end_vertical` and `middle_vertical` models; there was no Bedrock equivalent,
+  so a drive mounted on top of a row stayed unconnected.
+
+All six of Create's models — `single`, `end_horizontal`, `middle_horizontal`,
+`end_vertical`, `middle_vertical` and `item` — are now real Bedrock geometry,
+placed by `minecraft:transformation` using the same rotations Create's blockstate
+uses. Bedrock UVs can express a 180° turn (negate both `uv_size` components) but
+not 90° or 270°, so those are baked as pre-turned copies of the texture with the
+UV rectangle moved to match.
+
+That rectangle rule is the part that went wrong before, so it is no longer taken
+on trust: `tools/verify_chain_drive.py` renders every one of the **116 faces**
+both ways — Java's (crop the UV rectangle, turn the patch) and Bedrock's (crop
+the converted rectangle out of the pre-turned texture) — and compares them pixel
+for pixel at 64× scale. All 116 match.
+
+The item model comes from Create's own `item.json`, so the shaft through the
+middle is Create's, not an approximation. The block also no longer spawns a
+visual entity: it draws its whole self now, and one sitting on top would
+double-draw the casing.
